@@ -9,7 +9,7 @@ import UIKit
 
 class MainMenuViewController: UICollectionViewController {
 
-    let menuItems: [MenuItem] = [MenuItem(imageName: "cardsDeck", labelText: "Kолода карт"), MenuItem(imageName: "exercises", labelText: "упражнения"), MenuItem(imageName: "dragon", labelText: "Dragon")]
+    let menuItems = MenuItem.getItems()
     
     private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 35)
     private let interLineSpacing = 10
@@ -51,7 +51,6 @@ class MainMenuViewController: UICollectionViewController {
         cell.imageView.layer.borderWidth = 1.0
         cell.imageView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
         cell.imageView.layer.cornerRadius = 20
-        //cell.imageView.image = UIImage(named: "cardsDeck")
         return cell
     }
 
@@ -98,9 +97,7 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let itemWindh = screenWindh - 2*CGFloat(edgeInsets.right)
-        
         return CGSize(width: itemWindh, height: itemWindh)
     }
 }
