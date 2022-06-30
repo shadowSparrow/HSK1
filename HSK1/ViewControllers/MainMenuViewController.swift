@@ -57,6 +57,9 @@ class MainMenuViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
     
     
     /*

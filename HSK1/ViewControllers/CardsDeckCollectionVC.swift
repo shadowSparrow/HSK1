@@ -11,6 +11,7 @@ private let reuseIdentifier = "Cell"
 
 class CardsDeckCollectionVC: UICollectionViewController {
 
+    let characters: [String] = DataManager.shared.characters.shuffled()
     private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 25)
     private let interLineSpacing = 10
     private let screenWindh = UIScreen.main.bounds.width
@@ -23,7 +24,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -48,12 +49,17 @@ class CardsDeckCollectionVC: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 20
+        return characters.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
+        cell.backgroundColor = .white
+        cell.layer.cornerRadius = 20
+        cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
+        cell.layer.borderWidth = 1
+        let character = characters[indexPath.row]
+        cell.characterLabel.text = character
         // Configure the cell
         return cell
     }
