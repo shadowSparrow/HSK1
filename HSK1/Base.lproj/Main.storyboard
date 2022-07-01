@@ -61,7 +61,6 @@
                                 <connections>
                                     <outlet property="cellLabel" destination="eNV-jj-T1M" id="dTL-Lm-bfd"/>
                                     <outlet property="imageView" destination="fFg-kv-97J" id="QT1-Fw-9y3"/>
-                                    <segue destination="ha5-Wf-Okz" kind="show" id="lE4-rY-ZD3"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -92,7 +91,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="hhZ-1z-fto" customClass="CardCollectionViewCell" customModule="HSK1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="124" width="364" height="442"/>
+                                <rect key="frame" x="0.0" y="185" width="364" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ySN-qm-hCH">
                                     <rect key="frame" x="0.0" y="0.0" width="364" height="442"/>
