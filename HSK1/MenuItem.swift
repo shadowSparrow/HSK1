@@ -11,7 +11,6 @@ struct MenuItem {
     let imageName: String
     let labelText: String
 }
-
 extension MenuItem {
     static func getItems() -> [MenuItem]  {
         let imageNames = DataManager.shared.imageNames

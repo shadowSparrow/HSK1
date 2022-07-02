@@ -63,7 +63,9 @@ class MainMenuViewController: UICollectionViewController {
         UIView.animate(withDuration: 0.4, delay: 0, options: .autoreverse, animations: {
             cell?.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
             cell?.transform = CGAffineTransform.init(scaleX: 1, y: 1)
-        }, completion: nil)
+        }) { bool in
+            self.performSegue(withIdentifier: "segue", sender: nil)
+        }
  
         
     }

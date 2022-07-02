@@ -70,6 +70,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="tX1-fn-uQj"/>
+                    <connections>
+                        <segue destination="ha5-Wf-Okz" kind="show" identifier="segue" id="6yT-54-VgS"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIM-ug-BcU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +94,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="hhZ-1z-fto" customClass="CardCollectionViewCell" customModule="HSK1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="185" width="364" height="442"/>
+                                <rect key="frame" x="0.0" y="124" width="364" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ySN-qm-hCH">
                                     <rect key="frame" x="0.0" y="0.0" width="364" height="442"/>
