@@ -106,17 +106,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myH-RL-qyY">
+                                            <rect key="frame" x="117" y="344" width="130" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" constant="67" id="3Gc-Oe-xTi"/>
+                                        <constraint firstAttribute="trailing" secondItem="myH-RL-qyY" secondAttribute="trailing" constant="117" id="D8j-7g-hhN"/>
                                         <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="ySN-qm-hCH" secondAttribute="top" constant="106" id="TM2-g7-lTP"/>
                                         <constraint firstAttribute="bottom" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="106" id="Xf4-qL-yeE"/>
+                                        <constraint firstAttribute="bottom" secondItem="myH-RL-qyY" secondAttribute="bottom" constant="23" id="jFq-kq-65g"/>
+                                        <constraint firstItem="myH-RL-qyY" firstAttribute="top" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="8" symbolic="YES" id="n8X-yr-LUE"/>
+                                        <constraint firstItem="myH-RL-qyY" firstAttribute="leading" secondItem="ySN-qm-hCH" secondAttribute="leading" constant="117" id="rWV-RD-OYZ"/>
                                         <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="ySN-qm-hCH" secondAttribute="leading" constant="67" id="xGg-JT-lww"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="364" height="442"/>
                                 <connections>
                                     <outlet property="characterLabel" destination="JxG-wL-Edo" id="Mk1-wV-B97"/>
+                                    <outlet property="pingYingLabel" destination="myH-RL-qyY" id="lRo-EP-1EP"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

@@ -58,16 +58,13 @@ class MainMenuViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let cell = collectionView.cellForItem(at: indexPath)
-        UIView.animate(withDuration: 0.4, delay: 0, options: .autoreverse, animations: {
+        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut, animations: {
             cell?.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
-            cell?.transform = CGAffineTransform.init(scaleX: 1, y: 1)
+            cell?.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
         }) { bool in
             self.performSegue(withIdentifier: "segue", sender: nil)
         }
- 
-        
     }
     
     

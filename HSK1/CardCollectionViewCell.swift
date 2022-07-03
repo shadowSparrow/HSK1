@@ -9,5 +9,6 @@ import UIKit
 
 class CardCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var pingYingLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
 }

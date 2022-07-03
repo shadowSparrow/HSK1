@@ -69,6 +69,18 @@ class CardsDeckCollectionVC: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell else {return}
+        
+        if cell.pingYingLabel.isHidden {
+            UIView.transition(from: cell.characterLabel, to: cell.pingYingLabel, duration: 1, options: [.transitionFlipFromLeft,.showHideTransitionViews],  completion: nil)
+        } else {
+            UIView.transition(from: cell.pingYingLabel, to: cell.characterLabel, duration: 1, options:
+                                [.transitionFlipFromLeft,.showHideTransitionViews],  completion: nil)
+            
+        }
+    }
+  
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
