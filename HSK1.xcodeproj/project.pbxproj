@@ -18,6 +18,7 @@
 		04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1CF2867705A00A3FC68 /* Main.storyboard */; };
 		04AFC1D32867705B00A3FC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1D22867705B00A3FC68 /* Assets.xcassets */; };
 		04AFC1D62867705B00A3FC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1D42867705B00A3FC68 /* LaunchScreen.storyboard */; };
+		04FF527B2875A59A00FE2F65 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF527A2875A59A00FE2F65 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		04AFC1D22867705B00A3FC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AFC1D52867705B00A3FC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AFC1D72867705B00A3FC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FF527A2875A59A00FE2F65 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				04AFC1C92867705A00A3FC68 /* AppDelegate.swift */,
 				04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */,
 				04111399286B6647008B5DD9 /* MenuItem.swift */,
+				04FF527A2875A59A00FE2F65 /* Character.swift */,
 				0411139B286C9430008B5DD9 /* DataMananger.swift */,
 				0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */,
 				04111397286B19A9008B5DD9 /* CollectionViewCell.swift */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FF527B2875A59A00FE2F65 /* Character.swift in Sources */,
 				041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */,
 				04111396286B17F0008B5DD9 /* MainMenuViewController.swift in Sources */,
 				04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */,

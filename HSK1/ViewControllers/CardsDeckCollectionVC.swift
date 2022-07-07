@@ -7,11 +7,11 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "cell"
 
 class CardsDeckCollectionVC: UICollectionViewController {
 
-    let characters: [String] = DataManager.shared.characters.shuffled()
+    var characters: [Character] = Character.getCharacters()
     private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 25)
     private let interLineSpacing = 10
     private let screenWindh = UIScreen.main.bounds.width
@@ -19,14 +19,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     /*
@@ -53,34 +45,31 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
         cell.backgroundColor = .white
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         cell.layer.borderWidth = 1
         let character = characters[indexPath.row]
-        cell.characterLabel.text = character
+        cell.setCharacter(character: character)
         // Configure the cell
         return cell
     }
     
-
-
-
     // MARK: UICollectionViewDelegate
-
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell else {return}
-        
-        if cell.pingYingLabel.isHidden {
-            UIView.transition(from: cell.characterLabel, to: cell.pingYingLabel, duration: 1, options: [.transitionFlipFromLeft,.showHideTransitionViews],  completion: nil)
+        let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
+        var character = characters[indexPath.row]
+        if character.isFlipped == false {
+            cell.flipCard()
+            character.isFlipped = true
         } else {
-            UIView.transition(from: cell.pingYingLabel, to: cell.characterLabel, duration: 1, options:
-                                [.transitionFlipFromLeft,.showHideTransitionViews],  completion: nil)
-            
+            cell.flipBack()
+            character.isFlipped = false
         }
     }
-  
+        
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
@@ -113,21 +102,15 @@ class CardsDeckCollectionVC: UICollectionViewController {
 }
 
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let itemWindth = screenWindh - (2*edgeInsets.right)
         let itemHeight = screenHeight - (2*edgeInsets.left)
-        
         return CGSize(width: itemWindth, height: 500)
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interLineSpacing)
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         edgeInsets
     }
-    
 }
