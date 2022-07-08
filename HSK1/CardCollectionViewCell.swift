@@ -21,11 +21,11 @@ class CardCollectionViewCell: UICollectionViewCell {
         
         
         if character.isFlipped == true {
-            UIView.transition(from: characterLabel, to: detailView, duration: 1, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
+            UIView.transition(from: characterLabel, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
              }
         
     else {
-            UIView.transition(from: detailView, to: characterLabel, duration: 1, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
+            UIView.transition(from: detailView, to: characterLabel, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
         }
     }
     

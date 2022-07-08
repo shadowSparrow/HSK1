@@ -8,17 +8,16 @@
 import UIKit
 
 private let reuseIdentifier = "cell"
-
 class CardsDeckCollectionVC: UICollectionViewController {
-
     var characters: [Character] = Character.getCharacters()
-    private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 25)
-    private let interLineSpacing = 10
+    private let edgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    private let interLineSpacing = 0
     private let screenWindh = UIScreen.main.bounds.width
     private let screenHeight = UIScreen.main.bounds.height
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.isPagingEnabled = true
+        collectionView.contentInset =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 
     /*
@@ -32,7 +31,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -43,17 +41,16 @@ class CardsDeckCollectionVC: UICollectionViewController {
         // #warning Incomplete implementation, return the number of items
         return characters.count
     }
-
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        cell.backgroundColor = .white
+        //cell.backgroundColor = .gray
+        //cell.characterLabel.backgroundColor = .darkGray
+        //cell.detailView.backgroundColor = .green
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         cell.layer.borderWidth = 1
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
-        // Configure the cell
         return cell
     }
     
@@ -89,23 +86,17 @@ class CardsDeckCollectionVC: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
         return false
     }
-
     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return false
     }
 
     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
     }
     */
-
 }
-
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWindth = screenWindh - (2*edgeInsets.right)
-        let itemHeight = screenHeight - (2*edgeInsets.left)
-        return CGSize(width: itemWindth, height: 500)
+        return CGSize(width: screenWindh, height: 500)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interLineSpacing)
