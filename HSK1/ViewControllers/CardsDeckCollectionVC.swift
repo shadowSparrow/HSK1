@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
@@ -14,10 +15,16 @@ class CardsDeckCollectionVC: UICollectionViewController {
     private let interLineSpacing = 0
     private let screenWindh = UIScreen.main.bounds.width
     private let screenHeight = UIScreen.main.bounds.height
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.isPagingEnabled = true
         collectionView.contentInset =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
 
     /*
@@ -43,9 +50,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        //cell.backgroundColor = .gray
-        //cell.characterLabel.backgroundColor = .darkGray
-        //cell.detailView.backgroundColor = .green
+        cell.backgroundColor = .systemIndigo
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         cell.layer.borderWidth = 1
@@ -66,7 +71,12 @@ class CardsDeckCollectionVC: UICollectionViewController {
             character.isFlipped = false
         }
     }
-        
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let systemSoundID: SystemSoundID = 1104
+        AudioServicesPlaySystemSound(systemSoundID)
+    }
+    
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
