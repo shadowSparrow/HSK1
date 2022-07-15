@@ -10,7 +10,6 @@ import UIKit
 class MainMenuViewController: UICollectionViewController {
 
     let menuItems = MenuItem.getItems()
-    
     private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 35)
     private let interLineSpacing = 10
     private let screenWindh = UIScreen.main.bounds.width
@@ -37,14 +36,12 @@ class MainMenuViewController: UICollectionViewController {
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-    
         let item = menuItems[indexPath.row]
         cell.imageView.image = UIImage(named: item.imageName)
         cell.cellLabel.text = item.labelText
@@ -66,45 +63,12 @@ class MainMenuViewController: UICollectionViewController {
             self.performSegue(withIdentifier: "segue", sender: nil)
         }
     }
-    
-    
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
 }
 
 extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         edgeInsets
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemWindh = screenWindh - 2*CGFloat(edgeInsets.right)
         return CGSize(width: itemWindh, height: itemWindh)
