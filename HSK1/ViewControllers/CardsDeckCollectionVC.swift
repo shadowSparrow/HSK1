@@ -20,7 +20,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
         super.viewDidLoad()
         collectionView.isPagingEnabled = true
         collectionView.contentInset =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        
     }
     
     // MARK: UICollectionViewDataSource
@@ -50,6 +49,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
         let character = characters[indexPath.row]
         if character.isFlipped == false {
             cell.flipCard()
+            //cell.playsound()
             character.isFlipped = true
         } else {
             cell.flipBack()
@@ -72,3 +72,7 @@ extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
         edgeInsets
     }
 }
+
+
+
+

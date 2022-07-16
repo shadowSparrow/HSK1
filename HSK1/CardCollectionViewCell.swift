@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CardCollectionViewCell: UICollectionViewCell {
     
@@ -16,6 +17,9 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var detailExamplesLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     
+    @IBOutlet weak var playButton: UIButton!
+    
+    var player: AVAudioPlayer?
     var character: Character?
     
     func setCharacter(character: Character) {
@@ -37,12 +41,35 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    
+    @IBAction func playAction(_ sender: Any) {
+        playsound()
+    }
+    
     func flipCard() {
         UIView.transition(from: characterLabel, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
+        playButton.isHidden = true
     }
     
     func flipBack() {
         UIView.transition(from: detailView, to: characterLabel, duration: 0.5, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
+        playButton.isHidden = false
+    }
+    
+    func playsound() {
+        let urlString = Bundle.main.path(forResource: "爱", ofType: "mp3")
+        do {
+            try AVAudioSession.sharedInstance().setMode(.default)
+            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+            guard let urlString = urlString else {return}
+            player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+            guard let player = player else {
+                return
+            }
+            player.play()
+        } catch {
+            print("soundError")
+        }
     }
         
 }
