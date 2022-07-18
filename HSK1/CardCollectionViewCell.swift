@@ -10,13 +10,13 @@ import AVFoundation
 
 class CardCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var characterView: UIView!
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var detailCharacterLabel: UILabel!
     @IBOutlet weak var detailPingYingLabel: UILabel!
     @IBOutlet weak var detailTranslationLabel: UILabel!
     @IBOutlet weak var detailExamplesLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
-    
     @IBOutlet weak var playButton: UIButton!
     
     var player: AVAudioPlayer?
@@ -34,25 +34,24 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailExamplesLabel.text = character.examples
         
         if character.isFlipped == true {
-            UIView.transition(from: characterLabel, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
+            UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
              }
     else {
-            UIView.transition(from: detailView, to: characterLabel, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
+            UIView.transition(from: detailView, to: characterView, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
         }
     }
-    
     
     @IBAction func playAction(_ sender: Any) {
         playsound()
     }
     
     func flipCard() {
-        UIView.transition(from: characterLabel, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
+        UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
         playButton.isHidden = true
     }
     
     func flipBack() {
-        UIView.transition(from: detailView, to: characterLabel, duration: 0.5, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
+        UIView.transition(from: detailView, to: characterView, duration: 0.5, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
         playButton.isHidden = false
     }
     

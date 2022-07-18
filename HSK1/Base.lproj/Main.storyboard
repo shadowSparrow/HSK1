@@ -139,7 +139,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="xLB-UV-RgK">
                                                             <rect key="frame" x="163" y="29.999999999999993" width="73.333333333333314" height="93.333333333333314"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
                                                                     <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="57.333333333333336"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ling">
@@ -151,7 +151,7 @@
                                                                     </attributedString>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
                                                                     <rect key="frame" x="16.000000000000004" y="70.333333333333343" width="41.333333333333343" height="23"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ноль">
@@ -204,50 +204,62 @@
                                                 <constraint firstItem="NeL-wm-dSL" firstAttribute="top" secondItem="DB2-10-mdn" secondAttribute="top" constant="40" id="qs1-By-QrY"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
-                                            <rect key="frame" x="67" y="106" width="366" height="288"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="零">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="200" name="STKaiti"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-L9-mrO">
-                                            <rect key="frame" x="169" y="353" width="163" height="31"/>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-vl-wb0">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-L9-mrO">
+                                                    <rect key="frame" x="99" y="381" width="163" height="31"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="163" id="BQr-wo-VW5"/>
+                                                        <constraint firstAttribute="height" constant="31" id="LDn-IF-8eR"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="" cornerStyle="small"/>
+                                                    <connections>
+                                                        <action selector="playAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="NoJ-aD-4f4"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="500" height="233"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="零">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="200" name="STKaiti"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="31" id="LDn-IF-8eR"/>
+                                                <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" id="7J2-qF-hVK"/>
+                                                <constraint firstAttribute="bottom" secondItem="zT5-L9-mrO" secondAttribute="bottom" constant="88" id="85j-RO-NdA"/>
+                                                <constraint firstItem="zT5-L9-mrO" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="99" id="HsG-HK-P36"/>
+                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" id="PYB-qi-ln1"/>
+                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="OCc-vl-wb0" secondAttribute="top" id="qbf-32-l47"/>
                                             </constraints>
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="" cornerStyle="small"/>
-                                            <connections>
-                                                <action selector="playAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="NoJ-aD-4f4"/>
-                                            </connections>
-                                        </button>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="zT5-L9-mrO" firstAttribute="leading" secondItem="Bsg-8q-mtQ" secondAttribute="leading" constant="169" id="03G-mJ-n51"/>
-                                        <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" constant="67" id="3Gc-Oe-xTi"/>
-                                        <constraint firstAttribute="bottom" secondItem="zT5-L9-mrO" secondAttribute="bottom" constant="116" id="EGc-i5-zmn"/>
+                                        <constraint firstAttribute="trailing" secondItem="OCc-vl-wb0" secondAttribute="trailing" id="1qX-L9-0fL"/>
                                         <constraint firstAttribute="trailing" secondItem="DB2-10-mdn" secondAttribute="trailing" id="I6u-Ns-cnK"/>
+                                        <constraint firstItem="OCc-vl-wb0" firstAttribute="leading" secondItem="Bsg-8q-mtQ" secondAttribute="leading" id="IKq-Bn-b6H"/>
+                                        <constraint firstItem="OCc-vl-wb0" firstAttribute="top" secondItem="Bsg-8q-mtQ" secondAttribute="top" id="RG1-Zn-ap9"/>
                                         <constraint firstItem="DB2-10-mdn" firstAttribute="leading" secondItem="Bsg-8q-mtQ" secondAttribute="leading" id="Rqc-L0-w7S"/>
-                                        <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="Bsg-8q-mtQ" secondAttribute="top" constant="106" id="TM2-g7-lTP"/>
-                                        <constraint firstAttribute="bottom" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="106" id="Xf4-qL-yeE"/>
+                                        <constraint firstAttribute="bottom" secondItem="OCc-vl-wb0" secondAttribute="bottom" id="WCC-XD-7kC"/>
                                         <constraint firstAttribute="bottom" secondItem="DB2-10-mdn" secondAttribute="bottom" id="fLq-4W-JfF"/>
                                         <constraint firstItem="DB2-10-mdn" firstAttribute="top" secondItem="Bsg-8q-mtQ" secondAttribute="top" id="g9S-ZD-0aV"/>
-                                        <constraint firstAttribute="trailing" secondItem="zT5-L9-mrO" secondAttribute="trailing" constant="168" id="tL2-en-CYT"/>
-                                        <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="Bsg-8q-mtQ" secondAttribute="leading" constant="67" id="xGg-JT-lww"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="500" height="500"/>
                                 <connections>
                                     <outlet property="characterLabel" destination="JxG-wL-Edo" id="Mk1-wV-B97"/>
+                                    <outlet property="characterView" destination="OCc-vl-wb0" id="5xI-CO-8WV"/>
                                     <outlet property="detailCharacterLabel" destination="df2-lz-YyY" id="sdU-Nj-KzW"/>
                                     <outlet property="detailExamplesLabel" destination="zvC-zv-3OR" id="dEa-0e-MLV"/>
                                     <outlet property="detailPingYingLabel" destination="Zbr-mA-c1z" id="tRK-d4-xQv"/>
