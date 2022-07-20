@@ -27,9 +27,9 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.characterLabel.text = character.name
         self.detailCharacterLabel.text = character.name
         self.detailPingYingLabel.text = character.pingYing
-        self.detailCharacterLabel.backgroundColor = .gray
-        self.detailPingYingLabel.backgroundColor = .gray
-        self.detailTranslationLabel.backgroundColor = .gray
+        //self.detailCharacterLabel.backgroundColor = .gray
+        //self.detailPingYingLabel.backgroundColor = .gray
+        //self.detailTranslationLabel.backgroundColor = .gray
         self.detailTranslationLabel.text = character.translation
         self.detailExamplesLabel.text = character.examples
         
