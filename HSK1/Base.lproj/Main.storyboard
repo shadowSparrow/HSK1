@@ -108,13 +108,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="371" height="507"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="NeL-wm-dSL">
-                                                    <rect key="frame" x="50" y="40" width="271" height="152"/>
+                                                    <rect key="frame" x="50" y="40" width="271" height="153"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-vs-5O5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="152"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" preferredMaxLayoutWidth="251" translatesAutoresizingMaskIntoConstraints="NO" id="df2-lz-YyY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="152"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="150" id="kM6-Ku-Qfr"/>
                                                                     </constraints>
@@ -137,9 +137,9 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="xLB-UV-RgK">
-                                                            <rect key="frame" x="163" y="29.333333333333336" width="108" height="93.333333333333314"/>
+                                                            <rect key="frame" x="163" y="29.999999999999993" width="108" height="93.333333333333314"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
                                                                     <rect key="frame" x="0.0" y="0.0" width="108" height="57.333333333333336"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ling">
@@ -151,8 +151,8 @@
                                                                     </attributedString>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
-                                                                    <rect key="frame" x="16" y="70.333333333333329" width="76" height="23"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
+                                                                    <rect key="frame" x="16" y="70.333333333333343" width="76" height="23"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ноль">
                                                                             <attributes>
@@ -171,56 +171,50 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvC-zv-3OR">
-                                                    <rect key="frame" x="50" y="202" width="271" height="215"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">零下五度  [língxià wŭdù]   пять градусов ниже нуля
-零三号  [yī líng sān hào]  №103
-结果等于零  jiéguŏ děngyú líng 
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-96-siL">
+                                                    <rect key="frame" x="20" y="203" width="331" height="95.666666666666686"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvC-zv-3OR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="229.66666666666666" height="95.666666666666671"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="零下五度">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment>
+                                                                    <string key="content">  [língxià wŭdù]   пять градусов ниже нуля
 </string>
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="результат равен нулю">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                                    <attributes>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oe-bw-hCt">
+                                                            <rect key="frame" x="271.66666666666669" y="0.0" width="59.333333333333314" height="95.666666666666671"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="" image="play.circle" catalog="system"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Lg-96-siL" secondAttribute="trailing" constant="20" id="BIE-4L-nFx"/>
                                                 <constraint firstItem="NeL-wm-dSL" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="50" id="NcX-yB-G71"/>
-                                                <constraint firstAttribute="bottom" secondItem="zvC-zv-3OR" secondAttribute="bottom" constant="90" id="Paw-Ts-xRI"/>
-                                                <constraint firstItem="zvC-zv-3OR" firstAttribute="top" secondItem="NeL-wm-dSL" secondAttribute="bottom" constant="10" id="T9I-Nj-W5I"/>
                                                 <constraint firstItem="NeL-wm-dSL" firstAttribute="top" secondItem="DB2-10-mdn" secondAttribute="top" constant="40" id="U1W-U8-SRW"/>
+                                                <constraint firstItem="4Lg-96-siL" firstAttribute="top" secondItem="NeL-wm-dSL" secondAttribute="bottom" constant="10" id="ZxE-Y2-JtR"/>
                                                 <constraint firstAttribute="trailing" secondItem="NeL-wm-dSL" secondAttribute="trailing" constant="50" id="cRh-TO-eL7"/>
-                                                <constraint firstAttribute="trailing" secondItem="zvC-zv-3OR" secondAttribute="trailing" constant="50" id="gfy-Op-SLv"/>
-                                                <constraint firstItem="zvC-zv-3OR" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="50" id="i8h-0p-WXz"/>
+                                                <constraint firstItem="4Lg-96-siL" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="20" id="ilp-ul-wOX"/>
                                             </constraints>
                                         </view>
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-vl-wb0">
                                             <rect key="frame" x="0.0" y="0.0" width="371" height="507"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
-                                                    <rect key="frame" x="70" y="100" width="231" height="267"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="零">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="200" name="STKaiti"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-L9-mrO">
                                                     <rect key="frame" x="70" y="387" width="231" height="30.666666666666686"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,6 +229,19 @@
                                                         <action selector="playAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="NoJ-aD-4f4"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
+                                                    <rect key="frame" x="47" y="103" width="231" height="267"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="零">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="200" name="STKaiti"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
@@ -302,6 +309,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
