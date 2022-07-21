@@ -18,6 +18,8 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var detailExamplesLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var exampleSoundButton: UIButton!
+    
     
     var player: AVAudioPlayer?
     var character: Character?
@@ -45,6 +47,11 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     @IBAction func playAction(_ sender: Any) {
         playsound(name: character?.name ?? "")
+    }
+    
+    
+    @IBAction func exampleSoundAction(_ sender: Any) {
+        playsound(name: "我爱祖国")
     }
     
     func flipCard() {

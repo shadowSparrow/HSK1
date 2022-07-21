@@ -177,14 +177,8 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvC-zv-3OR">
                                                             <rect key="frame" x="0.0" y="0.0" width="229.66666666666666" height="95.666666666666671"/>
                                                             <attributedString key="attributedText">
-                                                                <fragment content="零下五度">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
                                                                 <fragment>
-                                                                    <string key="content">  [língxià wŭdù]   пять градусов ниже нуля
+                                                                    <string key="content">零下五度  [língxià wŭdù]   пять градусов ниже нуля
 </string>
                                                                     <attributes>
                                                                         <font key="NSFont" metaFont="system" size="20"/>
@@ -194,10 +188,13 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oe-bw-hCt">
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oe-bw-hCt">
                                                             <rect key="frame" x="271.66666666666669" y="0.0" width="59.333333333333314" height="95.666666666666671"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" title="" image="play.circle" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="exampleSoundAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="5up-uX-V73"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
