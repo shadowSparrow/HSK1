@@ -33,7 +33,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         //self.detailPingYingLabel.backgroundColor = .gray
         //self.detailTranslationLabel.backgroundColor = .gray
         self.detailTranslationLabel.text = character.translation
-        self.detailExamplesLabel.text = character.examples
+        self.detailExamplesLabel.text = character.examples[0].chinese
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
@@ -51,7 +51,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     
     @IBAction func exampleSoundAction(_ sender: Any) {
-        playsound(name: "我爱祖国")
+        playsound(name: detailExamplesLabel.text ?? "")
     }
     
     func flipCard() {

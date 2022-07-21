@@ -25,6 +25,7 @@
 		04C58C99288987AA004DFA47 /* 爱好.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C92288987AA004DFA47 /* 爱好.mp3 */; };
 		04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C93288987AA004DFA47 /* 爱.mp3 */; };
 		04C58C9B288987AA004DFA47 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C94288987AA004DFA47 /* 爸爸.mp3 */; };
+		04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C58C9E2889A361004DFA47 /* CharacterData.swift */; };
 		04FF527B2875A59A00FE2F65 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF527A2875A59A00FE2F65 /* Character.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		04C58C92288987AA004DFA47 /* 爱好.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱好.mp3"; path = "sounds/爱好.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "sounds/爱.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C94288987AA004DFA47 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸.mp3"; path = "sounds/爸爸.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C9E2889A361004DFA47 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		04FF527A2875A59A00FE2F65 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 			children = (
 				04FF527A2875A59A00FE2F65 /* Character.swift */,
 				04111399286B6647008B5DD9 /* MenuItem.swift */,
+				04C58C9E2889A361004DFA47 /* CharacterData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */,
 				04111398286B19A9008B5DD9 /* CollectionViewCell.swift in Sources */,
 				04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */,
+				04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */,
 				0411139A286B6647008B5DD9 /* MenuItem.swift in Sources */,
 				0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */,
 			);
