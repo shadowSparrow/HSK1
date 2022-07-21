@@ -35,14 +35,16 @@ class CardCollectionViewCell: UICollectionViewCell {
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
+            playButton.isHidden = true
              }
     else {
             UIView.transition(from: detailView, to: characterView, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
+        playButton.isHidden = false 
         }
     }
     
     @IBAction func playAction(_ sender: Any) {
-        playsound()
+        playsound(name: character?.name ?? "")
     }
     
     func flipCard() {
@@ -55,8 +57,8 @@ class CardCollectionViewCell: UICollectionViewCell {
         playButton.isHidden = false
     }
     
-    func playsound() {
-        let urlString = Bundle.main.path(forResource: "爱", ofType: "mp3")
+    func playsound(name: String) {
+        let urlString = Bundle.main.path(forResource: name, ofType: "mp3")
         do {
             try AVAudioSession.sharedInstance().setMode(.default)
             try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)

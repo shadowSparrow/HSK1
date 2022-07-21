@@ -13,7 +13,10 @@
 		0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139B286C9430008B5DD9 /* DataMananger.swift */; };
 		0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */; };
 		041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */; };
-		04975C232882FA0400F2F10F /* 爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04975C222882FA0400F2F10F /* 爱.mp3 */; };
+		0468C8FF2889502E004E2483 /* 八.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0468C8FC2889502E004E2483 /* 八.mp3 */; };
+		0468C9002889502E004E2483 /* 母爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0468C8FD2889502E004E2483 /* 母爱.mp3 */; };
+		0468C9012889502E004E2483 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0468C8FE2889502E004E2483 /* 爸爸.mp3 */; };
+		0468C903288950FE004E2483 /* 爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0468C902288950FE004E2483 /* 爱.mp3 */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
 		04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1CF2867705A00A3FC68 /* Main.storyboard */; };
@@ -29,7 +32,10 @@
 		0411139B286C9430008B5DD9 /* DataMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMananger.swift; sourceTree = "<group>"; };
 		0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDeckCollectionVC.swift; sourceTree = "<group>"; };
 		0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		04975C222882FA0400F2F10F /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "../../../爱.mp3"; sourceTree = "<group>"; };
+		0468C8FC2889502E004E2483 /* 八.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "八.mp3"; path = "../../../../八.mp3"; sourceTree = "<group>"; };
+		0468C8FD2889502E004E2483 /* 母爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "母爱.mp3"; path = "../../../../母爱.mp3"; sourceTree = "<group>"; };
+		0468C8FE2889502E004E2483 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸.mp3"; path = "../../../../爸爸.mp3"; sourceTree = "<group>"; };
+		0468C902288950FE004E2483 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "../../../../爱.mp3"; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,17 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		0468C8FA28895013004E2483 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0468C902288950FE004E2483 /* 爱.mp3 */,
+				0468C8FC2889502E004E2483 /* 八.mp3 */,
+				0468C8FD2889502E004E2483 /* 母爱.mp3 */,
+				0468C8FE2889502E004E2483 /* 爸爸.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		04AFC1BD2867705A00A3FC68 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +99,7 @@
 				04AFC1C92867705A00A3FC68 /* AppDelegate.swift */,
 				04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */,
 				04111399286B6647008B5DD9 /* MenuItem.swift */,
-				04975C222882FA0400F2F10F /* 爱.mp3 */,
+				0468C8FA28895013004E2483 /* sounds */,
 				04FF527A2875A59A00FE2F65 /* Character.swift */,
 				0411139B286C9430008B5DD9 /* DataMananger.swift */,
 				0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */,
@@ -154,10 +171,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04975C232882FA0400F2F10F /* 爱.mp3 in Resources */,
 				04AFC1D62867705B00A3FC68 /* LaunchScreen.storyboard in Resources */,
 				04AFC1D32867705B00A3FC68 /* Assets.xcassets in Resources */,
+				0468C9012889502E004E2483 /* 爸爸.mp3 in Resources */,
 				04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */,
+				0468C9002889502E004E2483 /* 母爱.mp3 in Resources */,
+				0468C8FF2889502E004E2483 /* 八.mp3 in Resources */,
+				0468C903288950FE004E2483 /* 爱.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
