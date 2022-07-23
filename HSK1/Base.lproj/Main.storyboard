@@ -15,9 +15,9 @@
             <objects>
                 <collectionViewController id="xNR-iA-8mI" customClass="MainMenuViewController" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5uo-Ib-xvR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DMw-5M-PTw">
                             <size key="itemSize" width="301" height="300"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -28,36 +28,33 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="XhY-u1-c7O" customClass="CollectionViewCell" customModule="HSK1" customModuleProvider="target">
                                 <rect key="frame" x="37" y="0.0" width="301" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Bgy-Xx-01H">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wbd-DW-sm6">
                                     <rect key="frame" x="0.0" y="0.0" width="301" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-kv-97J">
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-kv-97J">
                                             <rect key="frame" x="38" y="8" width="225" height="225"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="225" id="0zD-In-P3g"/>
                                                 <constraint firstAttribute="width" constant="225" id="uQl-jO-QtA"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-jj-T1M">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-jj-T1M">
                                             <rect key="frame" x="38" y="241" width="225" height="51"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="Kb6-Ib-FRX"/>
-                                                <constraint firstAttribute="height" constant="51" id="Orc-fX-ouk"/>
-                                            </constraints>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.28627450980392155" green="0.35686274509803922" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <viewLayoutGuide key="safeArea" id="N7U-oL-6dd"/>
+                                    <viewLayoutGuide key="safeArea" id="DMP-nX-a4V"/>
                                     <constraints>
-                                        <constraint firstItem="eNV-jj-T1M" firstAttribute="leading" secondItem="N7U-oL-6dd" secondAttribute="leading" constant="38" id="81U-E8-vqn"/>
-                                        <constraint firstItem="eNV-jj-T1M" firstAttribute="top" secondItem="fFg-kv-97J" secondAttribute="bottom" constant="8" symbolic="YES" id="ExC-e0-oDq"/>
-                                        <constraint firstItem="fFg-kv-97J" firstAttribute="top" secondItem="N7U-oL-6dd" secondAttribute="top" constant="8" id="JjG-5p-3ID"/>
-                                        <constraint firstItem="fFg-kv-97J" firstAttribute="leading" secondItem="eNV-jj-T1M" secondAttribute="leading" id="v8P-94-KPK"/>
+                                        <constraint firstItem="fFg-kv-97J" firstAttribute="top" secondItem="DMP-nX-a4V" secondAttribute="top" constant="8" id="JjG-5p-3ID"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.7803921568627451" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <size key="customSize" width="301" height="300"/>
                                 <connections>
                                     <outlet property="cellLabel" destination="eNV-jj-T1M" id="dTL-Lm-bfd"/>
@@ -84,7 +81,7 @@
             <objects>
                 <collectionViewController modalTransitionStyle="flipHorizontal" id="ha5-Wf-Okz" customClass="CardsDeckCollectionVC" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" id="Qzb-Bm-JOq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
@@ -291,9 +288,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WoN-pc-Z1O" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ao5-3K-VZQ">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="Ao5-3K-VZQ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

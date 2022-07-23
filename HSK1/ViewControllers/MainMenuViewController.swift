@@ -35,9 +35,13 @@ class MainMenuViewController: UICollectionViewController {
         let item = menuItems[indexPath.row]
         cell.imageView.image = UIImage(named: item.imageName)
         cell.cellLabel.text = item.labelText
-        cell.imageView.layer.borderWidth = 1.0
+        //cell.imageView.layer.borderWidth = 1.0
         cell.imageView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
         cell.imageView.layer.cornerRadius = 20
+        //cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 20
+        cell.cellLabel.layer.cornerRadius = 20
+        cell.cellLabel.layer.borderWidth = 1
         return cell
     }
 
