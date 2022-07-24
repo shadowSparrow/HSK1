@@ -18,7 +18,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.isPagingEnabled = true
+        //collectionView.isPagingEnabled = true
         collectionView.contentInset =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
@@ -37,7 +37,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
         
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
-        cell.layer.borderWidth = 1
+        //cell.layer.borderWidth = 1
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
         return cell
@@ -56,6 +56,58 @@ class CardsDeckCollectionVC: UICollectionViewController {
             character.isFlipped = false
         }
     }
+    
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
+        for cell in collectionView.visibleCells {
+                var offsetX = centerX - cell.center.x
+                if offsetX < 0 {
+                    offsetX *= -1
+                }
+            
+            
+                
+            UIView.animate(withDuration: 0.09, delay: 0, options: .curveLinear, animations: {
+                cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+                    if offsetX > 50 {
+                            let offsetPercentage = (offsetX - 50) / self.view.bounds.width
+                        var scaleX = 1-offsetPercentage
+                            if scaleX < 0.6 {
+                                scaleX = 0.6
+                        }
+                        cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
+                    }
+            }, completion: nil)
+            
+        
+            }
+    }
+    /*
+     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+         let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
+         for cell in mainCollectionView.visibleCells {
+
+             var offsetX = centerX - cell.center.x
+             if offsetX < 0 {
+                 offsetX *= -1
+             }
+
+             cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+             if offsetX > 50 {
+
+                 let offsetPercentage = (offsetX - 50) / view.bounds.width
+                 var scaleX = 1-offsetPercentage
+
+                 if scaleX < 0.8 {
+                     scaleX = 0.8
+                 }
+                 cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
+             }
+         }
+     }
+     */
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let systemSoundID: SystemSoundID = 1104
         AudioServicesPlaySystemSound(systemSoundID)

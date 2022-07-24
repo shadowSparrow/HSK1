@@ -41,7 +41,7 @@ class MainMenuViewController: UICollectionViewController {
         //cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 20
         cell.cellLabel.layer.cornerRadius = 20
-        cell.cellLabel.layer.borderWidth = 1
+        //cell.cellLabel.layer.borderWidth = 1
         return cell
     }
 

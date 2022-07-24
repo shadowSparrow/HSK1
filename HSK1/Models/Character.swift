@@ -38,6 +38,19 @@ extension Character {
                    pingYing: charactersName[2].pingYing,
                    translation: charactersName[2].translation,
                    examples: charactersName[2].examples),
+         Character(name: charactersName[2].character,
+                   pingYing: charactersName[2].pingYing,
+                   translation: charactersName[2].translation,
+                   examples: charactersName[2].examples),
+         Character(name: charactersName[2].character,
+                   pingYing: charactersName[2].pingYing,
+                   translation: charactersName[2].translation,
+                   examples: charactersName[2].examples),
+         Character(name: charactersName[2].character,
+                   pingYing: charactersName[2].pingYing,
+                   translation: charactersName[2].translation,
+                   examples: charactersName[2].examples),
+         
         ]
          return characters
     }
