@@ -12,18 +12,18 @@
         <scene sceneID="Q6e-RY-jmA">
             <objects>
                 <collectionViewController id="xNR-iA-8mI" customClass="MainMenuViewController" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5uo-Ib-xvR">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" springLoaded="YES" id="5uo-Ib-xvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DMw-5M-PTw">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="10" id="DMw-5M-PTw">
                             <size key="itemSize" width="301" height="300"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="XhY-u1-c7O" customClass="CollectionViewCell" customModule="HSK1" customModuleProvider="target">
+                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="XhY-u1-c7O" customClass="CollectionViewCell" customModule="HSK1" customModuleProvider="target">
                                 <rect key="frame" x="37" y="0.0" width="301" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -31,15 +31,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-kv-97J">
-                                            <rect key="frame" x="20" y="20" width="261" height="213"/>
+                                            <rect key="frame" x="20" y="19.999999999999986" width="261" height="231.66666666666663"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-jj-T1M">
-                                            <rect key="frame" x="20" y="241" width="261" height="39"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-jj-T1M">
+                                            <rect key="frame" x="0.0" y="251.66666666666666" width="301" height="48.333333333333343"/>
                                             <color key="backgroundColor" red="0.28627450980392155" green="0.35686274509803922" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="39" id="Hjt-Lc-Do9"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <color key="textColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -47,13 +44,14 @@
                                 </view>
                                 <color key="backgroundColor" red="0.75294117647058822" green="0.7803921568627451" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="eNV-jj-T1M" secondAttribute="bottom" constant="12" id="Kag-Gz-ugq"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="eNV-jj-T1M" secondAttribute="trailing" constant="12" id="Mub-w6-Ocy"/>
-                                    <constraint firstItem="eNV-jj-T1M" firstAttribute="leading" secondItem="XhY-u1-c7O" secondAttribute="leadingMargin" constant="12" id="Tiy-3H-bZN"/>
+                                    <constraint firstItem="eNV-jj-T1M" firstAttribute="leading" secondItem="XhY-u1-c7O" secondAttribute="leading" id="5nj-Hx-fPZ"/>
+                                    <constraint firstItem="eNV-jj-T1M" firstAttribute="top" secondItem="fFg-kv-97J" secondAttribute="bottom" id="Z8r-3x-Gcx"/>
                                     <constraint firstItem="fFg-kv-97J" firstAttribute="leading" secondItem="XhY-u1-c7O" secondAttribute="leadingMargin" constant="12" id="Zwa-yW-CJ1"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="fFg-kv-97J" secondAttribute="trailing" constant="12" id="dEh-T3-jpp"/>
+                                    <constraint firstAttribute="trailing" secondItem="eNV-jj-T1M" secondAttribute="trailing" id="dvm-lG-6kf"/>
+                                    <constraint firstAttribute="bottom" secondItem="eNV-jj-T1M" secondAttribute="bottom" id="fdn-xk-oyf"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="fFg-kv-97J" secondAttribute="bottom" constant="40.329999999999998" id="kTg-ra-whL"/>
                                     <constraint firstItem="fFg-kv-97J" firstAttribute="top" secondItem="XhY-u1-c7O" secondAttribute="topMargin" constant="12" id="pP7-qU-DbR"/>
-                                    <constraint firstItem="eNV-jj-T1M" firstAttribute="top" secondItem="fFg-kv-97J" secondAttribute="bottom" constant="8" symbolic="YES" id="sUP-dP-3Zu"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="cellLabel" destination="eNV-jj-T1M" id="dTL-Lm-bfd"/>
