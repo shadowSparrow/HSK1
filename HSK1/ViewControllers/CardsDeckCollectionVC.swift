@@ -18,8 +18,15 @@ class CardsDeckCollectionVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //collectionView.isPagingEnabled = true
-        collectionView.contentInset =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        //collectionView.showsHorizontalScrollIndicator = true
+        
+        collectionView.contentInset =  UIEdgeInsets(top: 0, left: 00, bottom: 0, right: 0)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //collectionView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        //collectionView.transform = CGAffineTransform(scaleX: 1, y: 1)
     }
     
     // MARK: UICollectionViewDataSource
@@ -60,22 +67,19 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
+        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/4
         for cell in collectionView.visibleCells {
                 var offsetX = centerX - cell.center.x
                 if offsetX < 0 {
                     offsetX *= -1
                 }
-            
-            
-                
-            UIView.animate(withDuration: 0.09, delay: 0, options: .curveLinear, animations: {
+            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseInOut,.allowUserInteraction], animations: {
                 cell.transform = CGAffineTransform(scaleX: 1, y: 1)
                     if offsetX > 50 {
                             let offsetPercentage = (offsetX - 50) / self.view.bounds.width
                         var scaleX = 1-offsetPercentage
                             if scaleX < 0.6 {
-                                scaleX = 0.6
+                                    scaleX = 0.6
                         }
                         cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
                     }

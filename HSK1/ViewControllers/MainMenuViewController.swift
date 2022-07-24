@@ -64,7 +64,7 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
         edgeInsets
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWindh = screenWindh - 2*CGFloat(edgeInsets.right)
-        return CGSize(width: itemWindh, height: itemWindh)
+        let itemWindh = screenWindh - 2 * CGFloat(edgeInsets.right)
+        return CGSize(width: 300, height: 300)
     }
 }
