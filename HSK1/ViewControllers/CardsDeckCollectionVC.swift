@@ -10,6 +10,9 @@ import AVFoundation
 
 private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     var characters: [Character] = Character.getCharacters()
     private let edgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     private let interLineSpacing = 0
@@ -29,13 +32,19 @@ class CardsDeckCollectionVC: UICollectionViewController {
         //collectionView.transform = CGAffineTransform(scaleX: 1, y: 1)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        
+        pageControl.numberOfPages = characters.count
+        
         return characters.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,7 +76,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/4
+        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
         for cell in collectionView.visibleCells {
                 var offsetX = centerX - cell.center.x
                 if offsetX < 0 {
@@ -84,9 +93,13 @@ class CardsDeckCollectionVC: UICollectionViewController {
                         cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
                     }
             }, completion: nil)
-            
-        
             }
+        
+        pageControl.currentPage = Int(
+                (collectionView.contentOffset.x / collectionView.frame.width)
+                    .rounded(.toNearestOrAwayFromZero)
+                )
+        
     }
     /*
      func scrollViewDidScroll(_ scrollView: UIScrollView) {
