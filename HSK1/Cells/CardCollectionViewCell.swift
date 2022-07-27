@@ -17,6 +17,8 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var detailTranslationLabel: UILabel!
     @IBOutlet weak var detailExamplesLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
+    
+    @IBOutlet weak var characterViewImage: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var exampleSoundButton: UIButton!
     
@@ -27,11 +29,9 @@ class CardCollectionViewCell: UICollectionViewCell {
     func setCharacter(character: Character) {
         self.character = character
         self.characterLabel.text = character.name
+        self.characterViewImage.image = UIImage(named: character.imageName)
         self.detailCharacterLabel.text = character.name
         self.detailPingYingLabel.text = character.pingYing
-        //self.detailCharacterLabel.backgroundColor = .gray
-        //self.detailPingYingLabel.backgroundColor = .gray
-        //self.detailTranslationLabel.backgroundColor = .gray
         self.detailTranslationLabel.text = character.translation
         self.detailExamplesLabel.text = character.examples[0].chinese
         

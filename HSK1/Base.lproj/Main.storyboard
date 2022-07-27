@@ -102,6 +102,31 @@
                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-10-mdn">
                                             <rect key="frame" x="0.0" y="0.0" width="371" height="507"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-L9-mrO">
+                                                    <rect key="frame" x="0.0" y="215.33333333333331" width="371" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.28627450980000002" green="0.35686274509999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain">
+                                                        <backgroundConfiguration key="background"/>
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="ПРОИЗНОШЕНИЕ">
+                                                                <attributes>
+                                                                    <color key="NSBackgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <color key="NSColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="12" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <attributedString key="attributedSubtitle"/>
+                                                        <color key="baseForegroundColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="playAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="NoJ-aD-4f4"/>
+                                                    </connections>
+                                                </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="NeL-wm-dSL">
                                                     <rect key="frame" x="50" y="40" width="271" height="153"/>
                                                     <subviews>
@@ -134,7 +159,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="xLB-UV-RgK">
                                                             <rect key="frame" x="163" y="29.999999999999993" width="108" height="93.333333333333314"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-mA-c1z">
                                                                     <rect key="frame" x="0.0" y="0.0" width="108" height="57.333333333333336"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ling">
@@ -146,7 +171,7 @@
                                                                     </attributedString>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="4" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
                                                                     <rect key="frame" x="16" y="70.333333333333343" width="76" height="23"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="ноль">
@@ -207,32 +232,8 @@
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-vl-wb0">
                                             <rect key="frame" x="0.0" y="0.0" width="371" height="507"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-L9-mrO">
-                                                    <rect key="frame" x="0.0" y="432" width="371" height="75"/>
-                                                    <color key="backgroundColor" red="0.28627450980000002" green="0.35686274509999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain">
-                                                        <backgroundConfiguration key="background"/>
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="ПРОИЗНОШЕНИЕ">
-                                                                <attributes>
-                                                                    <color key="NSBackgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <color key="NSColor" red="0.9882352941176471" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="12" name="Helvetica"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <attributedString key="attributedSubtitle"/>
-                                                        <color key="baseForegroundColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="playAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="NoJ-aD-4f4"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
-                                                    <rect key="frame" x="70" y="100" width="231" height="267"/>
+                                                    <rect key="frame" x="86" y="20" width="199" height="233"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="零">
                                                             <attributes>
@@ -244,17 +245,20 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-nZ-TUd">
+                                                    <rect key="frame" x="86" y="293" width="199" height="204"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.75294117647058822" green="0.7803921568627451" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="zT5-L9-mrO" secondAttribute="bottom" id="3QZ-Ks-6p3"/>
-                                                <constraint firstAttribute="trailing" secondItem="zT5-L9-mrO" secondAttribute="trailing" id="7Nc-Uc-wcV"/>
-                                                <constraint firstItem="zT5-L9-mrO" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" id="LFe-5L-Nsd"/>
-                                                <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" constant="70" id="LeS-Mw-sxJ"/>
-                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="OCc-vl-wb0" secondAttribute="top" constant="100" id="Ovf-iq-UT4"/>
-                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="70" id="ZSf-ie-Uo3"/>
-                                                <constraint firstAttribute="bottom" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="140" id="fAV-Kb-Uvs"/>
-                                                <constraint firstItem="zT5-L9-mrO" firstAttribute="top" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="65" id="uz8-vd-hA0"/>
+                                                <constraint firstAttribute="bottom" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="254" id="1GK-ej-4qQ"/>
+                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="OCc-vl-wb0" secondAttribute="top" constant="20" symbolic="YES" id="CwZ-We-5Ye"/>
+                                                <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" constant="86" id="D3d-Db-uye"/>
+                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="86" id="Jj8-Pb-v0U"/>
+                                                <constraint firstItem="ccg-nZ-TUd" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="86" id="akp-9U-eQA"/>
+                                                <constraint firstAttribute="trailing" secondItem="ccg-nZ-TUd" secondAttribute="trailing" constant="86" id="d7n-Ed-ZiY"/>
+                                                <constraint firstAttribute="bottom" secondItem="ccg-nZ-TUd" secondAttribute="bottom" constant="10" id="rAf-hb-wji"/>
+                                                <constraint firstItem="ccg-nZ-TUd" firstAttribute="top" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="40" id="usw-a7-Wpz"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -272,6 +276,7 @@
                                 <connections>
                                     <outlet property="characterLabel" destination="JxG-wL-Edo" id="Mk1-wV-B97"/>
                                     <outlet property="characterView" destination="OCc-vl-wb0" id="5xI-CO-8WV"/>
+                                    <outlet property="characterViewImage" destination="ccg-nZ-TUd" id="6Ch-3H-MK5"/>
                                     <outlet property="detailCharacterLabel" destination="df2-lz-YyY" id="sdU-Nj-KzW"/>
                                     <outlet property="detailExamplesLabel" destination="zvC-zv-3OR" id="dEa-0e-MLV"/>
                                     <outlet property="detailPingYingLabel" destination="Zbr-mA-c1z" id="tRK-d4-xQv"/>
@@ -288,7 +293,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="ao5-hc-jJy">
                         <nil key="title"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="gF3-0v-bul">
+                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="gF3-0v-bul">
                             <rect key="frame" x="131.33333333333334" y="9.6666666666666643" width="112.66666666666666" height="25"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="pageIndicatorTintColor" name="AccentColor"/>
