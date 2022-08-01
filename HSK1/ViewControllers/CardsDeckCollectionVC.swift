@@ -52,6 +52,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
         //cell.characterLabel.backgroundColor = .gray
         
         cell.layer.cornerRadius = 20
+        
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         //cell.layer.borderWidth = 1
         let character = characters[indexPath.row]

@@ -13,12 +13,14 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterView: UIView!
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var detailCharacterLabel: UILabel!
-    @IBOutlet weak var detailPingYingLabel: UILabel!
+
     @IBOutlet weak var detailTranslationLabel: UILabel!
     @IBOutlet weak var detailExamplesLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     
     @IBOutlet weak var characterViewImage: UIImageView!
+    
+    @IBOutlet weak var characterDetailViewImage: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var exampleSoundButton: UIButton!
     
@@ -26,26 +28,34 @@ class CardCollectionViewCell: UICollectionViewCell {
     var player: AVAudioPlayer?
     var character: Character?
     
+    
+    
     func setCharacter(character: Character) {
         self.character = character
         self.characterLabel.text = character.name
         self.characterViewImage.image = UIImage(named: character.imageName)
+        self.characterDetailViewImage.image = UIImage(named: character.imageName)
+        self.characterDetailViewImage.layer.cornerRadius = 20
         self.detailCharacterLabel.text = character.name
-        self.detailPingYingLabel.text = character.pingYing
+        self.playButton.titleLabel?.text = character.pingYing
+        self.detailCharacterLabel.layer.cornerRadius = 20
+        self.detailTranslationLabel.layer.cornerRadius = 20
         self.detailTranslationLabel.text = character.translation
         self.detailExamplesLabel.text = character.examples[0].chinese
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
-            playButton.isHidden = true
+            //playButton.isHidden = true
              }
     else {
             UIView.transition(from: detailView, to: characterView, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
-        playButton.isHidden = false 
+        //playButton.isHidden = false
         }
     }
     
-    @IBAction func playAction(_ sender: Any) {
+    
+    
+    @IBAction func playButtonAction(_ sender: Any) {
         playsound(name: character?.name ?? "")
     }
     
@@ -56,12 +66,12 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
-        playButton.isHidden = true
+        //playButton.isHidden = true
     }
     
     func flipBack() {
         UIView.transition(from: detailView, to: characterView, duration: 0.5, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
-        playButton.isHidden = false
+        //playButton.isHidden = false
     }
     
     func playsound(name: String) {
