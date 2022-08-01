@@ -113,7 +113,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
 }
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: screenWindh, height: 500)
+        return CGSize(width: screenWindh, height: screenHeight - 175)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interLineSpacing)

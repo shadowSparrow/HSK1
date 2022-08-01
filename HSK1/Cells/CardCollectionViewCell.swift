@@ -41,15 +41,16 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailCharacterLabel.layer.cornerRadius = 20
         self.detailTranslationLabel.layer.cornerRadius = 20
         self.detailTranslationLabel.text = character.translation
-        self.detailExamplesLabel.text = character.examples[0].chinese
+        self.detailExamplesLabel.layer.cornerRadius = 10
+        
+        self.detailExamplesLabel.text = character.examples[0].chinese + character.examples[0].pingYing + character.examples[0].translation
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
-            //playButton.isHidden = true
+            
              }
     else {
             UIView.transition(from: detailView, to: characterView, duration: 0, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
-        //playButton.isHidden = false
         }
     }
     
@@ -61,7 +62,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     
     @IBAction func exampleSoundAction(_ sender: Any) {
-        playsound(name: detailExamplesLabel.text ?? "")
+        playsound(name: "我爱祖国" ?? "")
     }
     
     func flipCard() {

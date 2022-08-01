@@ -14,7 +14,7 @@ class DataManager {
     
     var characters = [
         CharacterData(character: "爱", imageName: "learnItem", pingYing: "ài", translation: "любить, любовь, любимый", examples: [
-            Example(chinese: "爱祖国", pingYing: "ài zǔguó", translation: "любить родину"),
+            Example(chinese: "我爱祖国", pingYing: " wǒàizǔguó", translation: " любить родину"),
             Example(chinese: "母爱", pingYing: "mǔ’ài", translation: "материнская любовь"),
             Example(chinese: "爱女", pingYing: "àinǚ", translation: "любимая дочь")
         ]),
