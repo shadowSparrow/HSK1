@@ -13,13 +13,19 @@
 		0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139B286C9430008B5DD9 /* DataMananger.swift */; };
 		0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */; };
 		041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */; };
+		043CC3FE2898530900303CD4 /* 爱女.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC3FD2898530900303CD4 /* 爱女.mp3 */; };
+		043CC402289854D000303CD4 /* 八个月.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC3FF289854D000303CD4 /* 八个月.mp3 */; };
+		043CC403289854D000303CD4 /* 第八个.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC400289854D000303CD4 /* 第八个.mp3 */; };
+		043CC404289854D000303CD4 /* 八张图片.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC401289854D000303CD4 /* 八张图片.mp3 */; };
+		043CC408289855BB00303CD4 /* 爸爸比妈妈大.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */; };
+		043CC409289855BB00303CD4 /* 这是我爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */; };
+		043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
 		04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1CF2867705A00A3FC68 /* Main.storyboard */; };
 		04AFC1D32867705B00A3FC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1D22867705B00A3FC68 /* Assets.xcassets */; };
 		04AFC1D62867705B00A3FC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1D42867705B00A3FC68 /* LaunchScreen.storyboard */; };
 		04C58C95288987AA004DFA47 /* 我爱祖国.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C8E288987AA004DFA47 /* 我爱祖国.mp3 */; };
-		04C58C96288987AA004DFA47 /* 爱听音乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C8F288987AA004DFA47 /* 爱听音乐.mp3 */; };
 		04C58C97288987AA004DFA47 /* 母爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C90288987AA004DFA47 /* 母爱.mp3 */; };
 		04C58C98288987AA004DFA47 /* 八.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C91288987AA004DFA47 /* 八.mp3 */; };
 		04C58C99288987AA004DFA47 /* 爱好.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C92288987AA004DFA47 /* 爱好.mp3 */; };
@@ -36,6 +42,13 @@
 		0411139B286C9430008B5DD9 /* DataMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMananger.swift; sourceTree = "<group>"; };
 		0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDeckCollectionVC.swift; sourceTree = "<group>"; };
 		0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		043CC3FD2898530900303CD4 /* 爱女.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱女.mp3"; path = "sounds/爱女.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC3FF289854D000303CD4 /* 八个月.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "八个月.mp3"; path = "sounds/八个月.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC400289854D000303CD4 /* 第八个.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "第八个.mp3"; path = "sounds/第八个.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC401289854D000303CD4 /* 八张图片.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "八张图片.mp3"; path = "sounds/八张图片.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸比妈妈大.mp3"; path = "sounds/爸爸比妈妈大.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "这是我爸爸.mp3"; path = "sounds/这是我爸爸.mp3"; sourceTree = SOURCE_ROOT; };
+		043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "他爸爸很高.mp3"; path = "sounds/他爸爸很高.mp3"; sourceTree = SOURCE_ROOT; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,13 +56,12 @@
 		04AFC1D22867705B00A3FC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AFC1D52867705B00A3FC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AFC1D72867705B00A3FC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C58C8E288987AA004DFA47 /* 我爱祖国.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "我爱祖国.mp3"; path = "sounds/我爱祖国.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C8F288987AA004DFA47 /* 爱听音乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱听音乐.mp3"; path = "sounds/爱听音乐.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C90288987AA004DFA47 /* 母爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "母爱.mp3"; path = "sounds/母爱.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C91288987AA004DFA47 /* 八.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "八.mp3"; path = "sounds/八.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C92288987AA004DFA47 /* 爱好.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱好.mp3"; path = "sounds/爱好.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "sounds/爱.mp3"; sourceTree = SOURCE_ROOT; };
-		04C58C94288987AA004DFA47 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸.mp3"; path = "sounds/爸爸.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C8E288987AA004DFA47 /* 我爱祖国.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "我爱祖国.mp3"; path = "HSK1/sounds/ai/我爱祖国.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C90288987AA004DFA47 /* 母爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "母爱.mp3"; path = "HSK1/sounds/ai/母爱.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C91288987AA004DFA47 /* 八.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "八.mp3"; path = "HSK1/sounds/ba/八.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C92288987AA004DFA47 /* 爱好.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱好.mp3"; path = "HSK1/sounds/ai/爱好.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "HSK1/sounds/ai/爱.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C94288987AA004DFA47 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸.mp3"; path = "HSK1/sounds/baba/爸爸.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C9E2889A361004DFA47 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		04FF527A2875A59A00FE2F65 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,16 +86,46 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		0468C8FA28895013004E2483 /* sounds */ = {
+		043CC3FA2898501D00303CD4 /* ai */ = {
 			isa = PBXGroup;
 			children = (
-				04C58C91288987AA004DFA47 /* 八.mp3 */,
+				043CC3FD2898530900303CD4 /* 爱女.mp3 */,
 				04C58C8E288987AA004DFA47 /* 我爱祖国.mp3 */,
 				04C58C90288987AA004DFA47 /* 母爱.mp3 */,
 				04C58C93288987AA004DFA47 /* 爱.mp3 */,
-				04C58C8F288987AA004DFA47 /* 爱听音乐.mp3 */,
 				04C58C92288987AA004DFA47 /* 爱好.mp3 */,
+			);
+			path = ai;
+			sourceTree = "<group>";
+		};
+		043CC3FB2898504000303CD4 /* ba */ = {
+			isa = PBXGroup;
+			children = (
+				043CC3FF289854D000303CD4 /* 八个月.mp3 */,
+				043CC401289854D000303CD4 /* 八张图片.mp3 */,
+				043CC400289854D000303CD4 /* 第八个.mp3 */,
+				04C58C91288987AA004DFA47 /* 八.mp3 */,
+			);
+			path = ba;
+			sourceTree = "<group>";
+		};
+		043CC3FC2898505100303CD4 /* baba */ = {
+			isa = PBXGroup;
+			children = (
+				043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */,
+				043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */,
+				043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */,
 				04C58C94288987AA004DFA47 /* 爸爸.mp3 */,
+			);
+			path = baba;
+			sourceTree = "<group>";
+		};
+		0468C8FA28895013004E2483 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				043CC3FC2898505100303CD4 /* baba */,
+				043CC3FB2898504000303CD4 /* ba */,
+				043CC3FA2898501D00303CD4 /* ai */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -199,16 +241,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043CC3FE2898530900303CD4 /* 爱女.mp3 in Resources */,
 				04C58C98288987AA004DFA47 /* 八.mp3 in Resources */,
+				043CC402289854D000303CD4 /* 八个月.mp3 in Resources */,
 				04C58C97288987AA004DFA47 /* 母爱.mp3 in Resources */,
 				04C58C99288987AA004DFA47 /* 爱好.mp3 in Resources */,
 				04AFC1D62867705B00A3FC68 /* LaunchScreen.storyboard in Resources */,
+				043CC403289854D000303CD4 /* 第八个.mp3 in Resources */,
 				04C58C95288987AA004DFA47 /* 我爱祖国.mp3 in Resources */,
+				043CC404289854D000303CD4 /* 八张图片.mp3 in Resources */,
+				043CC408289855BB00303CD4 /* 爸爸比妈妈大.mp3 in Resources */,
 				04AFC1D32867705B00A3FC68 /* Assets.xcassets in Resources */,
 				04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */,
-				04C58C96288987AA004DFA47 /* 爱听音乐.mp3 in Resources */,
 				04C58C9B288987AA004DFA47 /* 爸爸.mp3 in Resources */,
+				043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */,
 				04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */,
+				043CC409289855BB00303CD4 /* 这是我爸爸.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

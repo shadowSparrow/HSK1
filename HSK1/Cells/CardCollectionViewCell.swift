@@ -16,6 +16,10 @@ class CardCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var detailTranslationLabel: UILabel!
     @IBOutlet weak var detailExamplesLabel: UILabel!
+    
+    @IBOutlet weak var detailExampleLabelOne: UILabel!
+    
+    @IBOutlet weak var detailExampleLabelTwo: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     
     @IBOutlet weak var characterViewImage: UIImageView!
@@ -24,11 +28,8 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var exampleSoundButton: UIButton!
     
-    
     var player: AVAudioPlayer?
     var character: Character?
-    
-    
     
     func setCharacter(character: Character) {
         self.character = character
@@ -44,6 +45,8 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailExamplesLabel.layer.cornerRadius = 10
         
         self.detailExamplesLabel.text = character.examples[0].chinese + character.examples[0].pingYing + character.examples[0].translation
+        self.detailExampleLabelOne.text = character.examples[1].chinese + character.examples[1].pingYing + character.examples[1].translation
+        self.detailExampleLabelTwo.text = character.examples[2].chinese + character.examples[2].pingYing + character.examples[2].translation
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
@@ -54,25 +57,30 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    
-    
     @IBAction func playButtonAction(_ sender: Any) {
         playsound(name: character?.name ?? "")
     }
     
-    
     @IBAction func exampleSoundAction(_ sender: Any) {
-        playsound(name: "我爱祖国" ?? "")
+        playsound(name: character?.examples[0].chinese ?? "")
     }
+    
+    @IBAction func exampleSoundOneAction(_ sender: Any) {
+        playsound(name: character?.examples[1].chinese ?? "")
+    }
+    
+    @IBAction func exampleSoundTwoAction(_ sender: Any) {
+        playsound(name: character?.examples[2].chinese ?? "")
+    }
+    
+    
     
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
-        //playButton.isHidden = true
     }
     
     func flipBack() {
         UIView.transition(from: detailView, to: characterView, duration: 0.5, options: [.transitionFlipFromTop,.showHideTransitionViews], completion: nil)
-        //playButton.isHidden = false
     }
     
     func playsound(name: String) {
