@@ -168,11 +168,11 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-IJ-9sm">
                                                     <rect key="frame" x="50" y="370" width="286" height="129"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-96-siL">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-96-siL">
                                                             <rect key="frame" x="0.0" y="0.0" width="286" height="29.666666666666668"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" id="zvC-zv-3OR">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="29.666666666666668"/>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="13" id="zvC-zv-3OR">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="零下五度">
@@ -182,7 +182,7 @@
                                                                             </attributes>
                                                                         </fragment>
                                                                         <fragment>
-                                                                            <string key="content">  [língxià wŭdù]   пять градусов ниже нуля
+                                                                            <string key="content">  língxià wŭdù   пять градусов ниже нуля
 </string>
                                                                             <attributes>
                                                                                 <font key="NSFont" metaFont="system" size="20"/>
@@ -193,17 +193,17 @@
                                                                     <nil key="highlightedColor"/>
                                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                 </label>
-                                                                <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" id="1Oe-bw-hCt">
-                                                                    <rect key="frame" x="123.33333333333333" y="0.0" width="162.66666666666669" height="29.666666666666668"/>
+                                                                <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" id="1Oe-bw-hCt">
+                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="play.circle" catalog="system">
                                                                         <attributedString key="attributedTitle"/>
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
                                                                     </state>
-                                                                    <buttonConfiguration key="configuration" style="tinted" imagePadding="0.0" buttonSize="mini">
+                                                                    <buttonConfiguration key="configuration" style="tinted" imagePadding="0.0">
                                                                         <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
                                                                         <attributedString key="attributedTitle"/>
                                                                         <attributedString key="attributedSubtitle"/>
                                                                     </buttonConfiguration>
@@ -213,22 +213,15 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pFp-dZ-hBV">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pFp-dZ-hBV">
                                                             <rect key="frame" x="0.0" y="49.666666666666679" width="286" height="29.666666666666664"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" minimumFontSize="10" id="dRR-rD-g5f">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="29.666666666666668"/>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" minimumFontSize="13" id="dRR-rD-g5f">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <attributedString key="attributedText">
-                                                                        <fragment content="零下五度">
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
                                                                         <fragment>
-                                                                            <string key="content"> língxià wŭdù]   5 градусов ниже нуля
+                                                                            <string key="content">零下五度 língxià wŭdù]   5 градусов ниже нуля
 </string>
                                                                             <attributes>
                                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -241,15 +234,16 @@
                                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                 </label>
                                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yzJ-ta-myJ">
-                                                                    <rect key="frame" x="108.33333333333333" y="0.0" width="177.66666666666669" height="29.666666666666668"/>
+                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="play.circle" catalog="system">
                                                                         <attributedString key="attributedTitle"/>
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                     </state>
-                                                                    <buttonConfiguration key="configuration" style="tinted" image="play.circle" catalog="system">
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                                    <buttonConfiguration key="configuration" style="tinted" imagePadding="0.0">
+                                                                        <imageReference key="image" image="play.circle" catalog="system" symbolScale="default"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
                                                                         <attributedString key="attributedTitle"/>
                                                                     </buttonConfiguration>
                                                                     <connections>
@@ -259,22 +253,15 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-y0-hg5">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-y0-hg5">
                                                             <rect key="frame" x="0.0" y="99.333333333333314" width="286" height="29.666666666666657"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="0FY-cS-ZLN">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="29.666666666666668"/>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" id="0FY-cS-ZLN">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <attributedString key="attributedText">
-                                                                        <fragment content="零下五度">
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
                                                                         <fragment>
-                                                                            <string key="content"> língxià wŭdù]   5 градусов ниже нуля
+                                                                            <string key="content">零下五度 língxià wŭdù]   5 градусов ниже нуля
 </string>
                                                                             <attributes>
                                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -287,7 +274,7 @@
                                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                 </label>
                                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yuB-3D-wMu">
-                                                                    <rect key="frame" x="108.33333333333333" y="0.0" width="177.66666666666669" height="29.666666666666668"/>
+                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="play.circle" catalog="system">
@@ -295,7 +282,7 @@
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                     </state>
                                                                     <buttonConfiguration key="configuration" style="tinted" image="play.circle" catalog="system">
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
                                                                         <attributedString key="attributedTitle"/>
                                                                     </buttonConfiguration>
                                                                     <connections>
@@ -306,6 +293,11 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="4Lg-96-siL" firstAttribute="leading" secondItem="cHJ-IJ-9sm" secondAttribute="leading" id="H7A-QP-oMU"/>
+                                                        <constraint firstItem="4Lg-96-siL" firstAttribute="top" secondItem="cHJ-IJ-9sm" secondAttribute="top" id="XzW-lw-obM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4Lg-96-siL" secondAttribute="trailing" id="kQY-OJ-Ibf"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.75294117647058822" green="0.7803921568627451" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
