@@ -3,7 +3,6 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,7 +105,7 @@
                                                     <rect key="frame" x="45" y="40" width="296" height="255"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-vs-5O5">
-                                                            <rect key="frame" x="0.0" y="33.333333333333329" width="128.66666666666666" height="188.66666666666669"/>
+                                                            <rect key="frame" x="0.0" y="41.666666666666671" width="128.66666666666666" height="172"/>
                                                             <subviews>
                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" preferredMaxLayoutWidth="251" id="df2-lz-YyY">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128.66666666666666" height="153"/>
@@ -125,18 +124,12 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wim-Lq-Bbr">
-                                                                    <rect key="frame" x="0.0" y="158" width="128.66666666666666" height="30.666666666666657"/>
-                                                                    <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="tinted" image="play" catalog="system" imagePlacement="trailing" imagePadding="22">
+                                                                    <rect key="frame" x="0.0" y="158" width="128.66666666666666" height="14"/>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                                    </accessibility>
+                                                                    <buttonConfiguration key="configuration" style="tinted" title="">
                                                                         <backgroundConfiguration key="background"/>
-                                                                        <attributedString key="attributedTitle">
-                                                                            <fragment content="Button">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" size="12" name="Helvetica"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
                                                                     </buttonConfiguration>
                                                                     <connections>
                                                                         <action selector="playButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="INO-Xd-5IV"/>
@@ -171,42 +164,14 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-96-siL">
                                                             <rect key="frame" x="0.0" y="0.0" width="286" height="29.666666666666668"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="13" id="zvC-zv-3OR">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="零下五度">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">  língxià wŭdù   пять градусов ниже нуля
-</string>
-                                                                            <attributes>
-                                                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                                </label>
-                                                                <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" id="1Oe-bw-hCt">
-                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
+                                                                <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" id="1Oe-bw-hCt">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" image="play.circle" catalog="system">
-                                                                        <attributedString key="attributedTitle"/>
+                                                                    <state key="normal" title="">
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
                                                                     </state>
-                                                                    <buttonConfiguration key="configuration" style="tinted" imagePadding="0.0">
-                                                                        <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
-                                                                        <attributedString key="attributedTitle"/>
-                                                                        <attributedString key="attributedSubtitle"/>
-                                                                    </buttonConfiguration>
+                                                                    <buttonConfiguration key="configuration" style="tinted"/>
                                                                     <connections>
                                                                         <action selector="exampleSoundAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="5up-uX-V73"/>
                                                                     </connections>
@@ -216,36 +181,15 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pFp-dZ-hBV">
                                                             <rect key="frame" x="0.0" y="49.666666666666679" width="286" height="29.666666666666664"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" minimumFontSize="13" id="dRR-rD-g5f">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment>
-                                                                            <string key="content">零下五度 língxià wŭdù]   5 градусов ниже нуля
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                                </label>
                                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yzJ-ta-myJ">
-                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="play.circle" catalog="system">
                                                                         <attributedString key="attributedTitle"/>
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                     </state>
-                                                                    <buttonConfiguration key="configuration" style="tinted" imagePadding="0.0">
-                                                                        <imageReference key="image" image="play.circle" catalog="system" symbolScale="default"/>
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
-                                                                        <attributedString key="attributedTitle"/>
-                                                                    </buttonConfiguration>
+                                                                    <buttonConfiguration key="configuration" style="tinted" title=""/>
                                                                     <connections>
                                                                         <action selector="exampleSoundAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="gzH-1W-xWk"/>
                                                                         <action selector="exampleSoundOneAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="OOU-RW-BWb"/>
@@ -256,35 +200,15 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-y0-hg5">
                                                             <rect key="frame" x="0.0" y="99.333333333333314" width="286" height="29.666666666666657"/>
                                                             <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" id="0FY-cS-ZLN">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="29.666666666666668"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment>
-                                                                            <string key="content">零下五度 língxià wŭdù]   5 градусов ниже нуля
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                                </label>
-                                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yuB-3D-wMu">
-                                                                    <rect key="frame" x="168" y="0.0" width="118" height="29.666666666666668"/>
+                                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yuB-3D-wMu">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="29.666666666666668"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="play.circle" catalog="system">
                                                                         <attributedString key="attributedTitle"/>
                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                     </state>
-                                                                    <buttonConfiguration key="configuration" style="tinted" image="play.circle" catalog="system">
-                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
-                                                                        <attributedString key="attributedTitle"/>
-                                                                    </buttonConfiguration>
+                                                                    <buttonConfiguration key="configuration" style="tinted" title=""/>
                                                                     <connections>
                                                                         <action selector="exampleSoundAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="j89-bF-UKz"/>
                                                                         <action selector="exampleSoundTwoAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="Gil-Lk-IDv"/>
@@ -360,11 +284,11 @@
                                     <outlet property="characterView" destination="OCc-vl-wb0" id="5xI-CO-8WV"/>
                                     <outlet property="characterViewImage" destination="ccg-nZ-TUd" id="6Ch-3H-MK5"/>
                                     <outlet property="detailCharacterLabel" destination="df2-lz-YyY" id="sdU-Nj-KzW"/>
-                                    <outlet property="detailExampleLabelOne" destination="dRR-rD-g5f" id="NSp-HL-1rG"/>
-                                    <outlet property="detailExampleLabelTwo" destination="0FY-cS-ZLN" id="eVe-g1-dML"/>
-                                    <outlet property="detailExamplesLabel" destination="zvC-zv-3OR" id="dEa-0e-MLV"/>
                                     <outlet property="detailTranslationLabel" destination="CN6-hH-add" id="bVk-5g-QTF"/>
                                     <outlet property="detailView" destination="DB2-10-mdn" id="X3A-ub-Cno"/>
+                                    <outlet property="exampleSoundButton" destination="1Oe-bw-hCt" id="uQP-bj-DfM"/>
+                                    <outlet property="exampleSoundbuttonOne" destination="yzJ-ta-myJ" id="x0r-1S-ON8"/>
+                                    <outlet property="exampleSoundbuttonTwo" destination="yuB-3D-wMu" id="faH-KX-f7r"/>
                                     <outlet property="playButton" destination="Wim-Lq-Bbr" id="V9u-zu-PfM"/>
                                 </connections>
                             </collectionViewCell>
@@ -417,7 +341,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play" catalog="system" width="120" height="128"/>
         <image name="play.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

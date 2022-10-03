@@ -44,10 +44,7 @@ class MainMenuViewController: UICollectionViewController {
         //cell.cellLabel.layer.borderWidth = 1
         return cell
     }
-
-    
     // MARK: UICollectionViewDelegate
-
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
@@ -58,7 +55,6 @@ class MainMenuViewController: UICollectionViewController {
         }
     }
 }
-
 extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         edgeInsets

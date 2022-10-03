@@ -12,7 +12,6 @@ private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
-    
     var characters: [Character] = Character.getCharacters()
     private let edgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     private let interLineSpacing = 0
@@ -21,9 +20,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //collectionView.showsHorizontalScrollIndicator = true
-        
         collectionView.contentInset =  UIEdgeInsets(top: 0, left: 00, bottom: 0, right: 0)
     }
     
@@ -33,7 +30,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
     }
     
     // MARK: UICollectionViewDataSource
@@ -42,22 +38,17 @@ class CardsDeckCollectionVC: UICollectionViewController {
         return 1
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         pageControl.numberOfPages = characters.count
-        
         return characters.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        //cell.characterLabel.backgroundColor = .gray
         
         cell.layer.cornerRadius = 20
-        
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
-        //cell.layer.borderWidth = 1
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
-        //cell.characterViewImage.image = UIImage(named: "learnItem")
+        
         return cell
     }
     
@@ -77,12 +68,9 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    
         let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
-        
         for cell in collectionView.visibleCells {
             var offsetX = centerX - cell.center.x
-            
             if offsetX < 0 {
                     offsetX *= -1
        }
@@ -98,7 +86,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
                     }
             }, completion: nil)
             }
-        
         pageControl.currentPage = Int(
                 (collectionView.contentOffset.x / collectionView.frame.width)
                     .rounded(.toNearestOrAwayFromZero)
