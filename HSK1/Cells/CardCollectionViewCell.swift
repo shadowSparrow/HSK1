@@ -38,7 +38,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.exampleSoundButton.setTitle(character.examples[0].chinese, for: .normal)
         self.exampleSoundbuttonOne.setTitle(character.examples[1].chinese, for: .normal)
         
-        
+//      Quantity of example buttons
         if character.examples.count <= 2 {
             self.exampleSoundbuttonTwo.isHidden = true
         } else {
@@ -46,8 +46,6 @@ class CardCollectionViewCell: UICollectionViewCell {
             self.exampleSoundbuttonTwo.setTitle(character.examples[2].chinese, for: .normal)
         }
         
-        
-       
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
              }
