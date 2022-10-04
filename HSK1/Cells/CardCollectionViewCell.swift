@@ -13,8 +13,6 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var detailCharacterLabel: UILabel!
     @IBOutlet weak var detailTranslationLabel: UILabel!
-    
-    
     @IBOutlet weak var exampleSoundbuttonOne: UIButton!
     @IBOutlet weak var exampleSoundbuttonTwo: UIButton!
     @IBOutlet weak var characterLabel: UILabel!
@@ -37,10 +35,16 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailCharacterLabel.layer.cornerRadius = 20
         self.detailTranslationLabel.layer.cornerRadius = 20
         self.detailTranslationLabel.text = character.translation
-        
         self.exampleSoundButton.setTitle(character.examples[0].chinese, for: .normal)
         self.exampleSoundbuttonOne.setTitle(character.examples[1].chinese, for: .normal)
-        self.exampleSoundbuttonTwo.setTitle(character.examples[2].chinese, for: .normal)
+        
+        
+        if character.examples.count <= 2 {
+            self.exampleSoundbuttonTwo.isHidden = true
+        } else {
+            self.exampleSoundbuttonTwo.isHidden = false
+            self.exampleSoundbuttonTwo.setTitle(character.examples[2].chinese, for: .normal)
+        }
         
         
        
@@ -53,7 +57,6 @@ class CardCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func playButtonAction(_ sender: Any) {
-        
         playsound(name: character?.name ?? "")
     }
     @IBAction func exampleSoundAction(_ sender: UIButton) {

@@ -13,10 +13,9 @@ class DataManager {
     var labelNames = ["学习", "练习", "游戏"]
     
     var characters = [
-        CharacterData(character: "爱", imageName: "love", pingYing: "ài", translation: "любить, любовь, любимый", examples: [
-            Example(chinese: "我爱祖国", pingYing: " wǒàizǔguó", translation: " любить родину"),
-            Example(chinese: "母爱", pingYing: " mǔ’ài", translation: " материнская любовь"),
-            Example(chinese: "爱女", pingYing: " àinǚ", translation: " любимая дочь")
+        CharacterData(character: "家", imageName: "family", pingYing: "jiā", translation: "дом, семья", examples: [
+            Example(chinese: "你家在哪儿？", pingYing: " nǐ jiā zài nǎr？", translation: "Где твой дом?"),
+            Example(chinese: "我家有四口人", pingYing: " jiā yǒu sì kǒu rén", translation: " В моей семье 4 человека")
         ]),
         CharacterData(character: "八", imageName: "eight", pingYing: "bā", translation: "восемь, восьмой, разделять", examples: [
          
