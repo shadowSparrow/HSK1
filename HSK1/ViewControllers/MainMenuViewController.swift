@@ -67,4 +67,6 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
         let itemWindh = screenWindh - 2 * CGFloat(edgeInsets.right)
         return CGSize(width: 300, height: 300)
     }
+    
+    
 }

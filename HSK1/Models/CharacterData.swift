@@ -22,18 +22,11 @@ class CharacterData {
         self.translation = translation
         self.examples = examples
 }
-
+    
 }
 
 struct Example {
     var chinese: String
     var pingYing: String
     var translation: String
-    
-    /*
-    init(chinese: String, pingYing: String, translation: String) {
-        self.chinese = chinese
-        self.pingYing = pingYing
-        self.translation = translation
-      */
 }
