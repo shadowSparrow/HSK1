@@ -16,25 +16,13 @@ class QuizViewController: UIViewController {
 
         let parent = self.view!
         let view = UILabel()
-        let secondView = UILabel()
-        
         parent.backgroundColor = .gray
         view.backgroundColor = .white
         view.layer.masksToBounds = true
         view.layer.cornerRadius = CGFloat(25)
-        
-        view.font.withSize(5)
         view.textAlignment = .center
         view.text = characters[0].pingYing
-    
-        secondView.backgroundColor = .white
-        secondView.layer.masksToBounds = true
-        secondView.layer.cornerRadius = CGFloat(25)
-        secondView.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-        secondView.textAlignment = .center
-        secondView.text = characters[2].name
         parent.addSubview(view)
-        parent.addSubview(secondView)
         
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalToConstant: 150).isActive = true
@@ -42,12 +30,11 @@ class QuizViewController: UIViewController {
         view.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         view.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: -150).isActive = true
         
-        secondView.translatesAutoresizingMaskIntoConstraints = false
-        secondView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        secondView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        let secondView = createAnswerVariant(text: characters[2].name)
+        parent.addSubview(secondView)
         secondView.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         secondView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: 0).isActive = true
-        
+
         let variant = createAnswerVariant(text: characters[0].name)
         parent.addSubview(variant)
         variant.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
