@@ -46,14 +46,15 @@ class QuizViewController: UIViewController {
         secondVariant.topAnchor.constraint(equalTo: variant.bottomAnchor, constant: 10).isActive = true
     }
     
-    func createAnswerVariant(text: String) -> UILabel {
-        let variant = UILabel()
+    func createAnswerVariant(text: String) -> UIButton {
+        let variant = UIButton()
         variant.backgroundColor = .white
-        variant.layer.masksToBounds = true
+    
         variant.layer.cornerRadius = CGFloat(25)
-        variant.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-        variant.textAlignment = .center
-        variant.text = text
+        variant.setTitle(text, for: .normal)
+        variant.setTitleColor(.black, for: .normal)
+        variant.titleLabel?.layer.masksToBounds = true
+        variant.titleLabel?.textColor = UIColor.black
         variant.translatesAutoresizingMaskIntoConstraints = false
         variant.widthAnchor.constraint(equalToConstant: 200).isActive = true
         variant.heightAnchor.constraint(equalToConstant: 50).isActive = true
