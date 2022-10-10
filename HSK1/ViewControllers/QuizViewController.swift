@@ -19,7 +19,6 @@ class QuizViewController: UIViewController {
         let secondView = UILabel()
         
         parent.backgroundColor = .gray
-        
         view.backgroundColor = .white
         view.layer.masksToBounds = true
         view.layer.cornerRadius = CGFloat(25)
@@ -32,6 +31,8 @@ class QuizViewController: UIViewController {
         secondView.layer.masksToBounds = true
         secondView.layer.cornerRadius = CGFloat(25)
         secondView.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
+        secondView.textAlignment = .center
+        secondView.text = characters[2].name
         parent.addSubview(view)
         parent.addSubview(secondView)
         
@@ -46,8 +47,31 @@ class QuizViewController: UIViewController {
         secondView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         secondView.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         secondView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: 0).isActive = true
+        
+        let variant = createAnswerVariant(text: characters[0].name)
+        parent.addSubview(variant)
+        variant.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
+        variant.topAnchor.constraint(equalTo: secondView.bottomAnchor, constant: 10).isActive = true
+        
+        let secondVariant = createAnswerVariant(text: characters[1].name)
+        parent.addSubview(secondVariant)
+        secondVariant.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
+        secondVariant.topAnchor.constraint(equalTo: variant.bottomAnchor, constant: 10).isActive = true
     }
     
+    func createAnswerVariant(text: String) -> UILabel {
+        let variant = UILabel()
+        variant.backgroundColor = .white
+        variant.layer.masksToBounds = true
+        variant.layer.cornerRadius = CGFloat(25)
+        variant.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
+        variant.textAlignment = .center
+        variant.text = text
+        variant.translatesAutoresizingMaskIntoConstraints = false
+        variant.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        variant.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        return variant
+    }
 
     /*
     // MARK: - Navigation
