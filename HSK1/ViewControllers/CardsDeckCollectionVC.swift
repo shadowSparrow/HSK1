@@ -90,9 +90,8 @@ class CardsDeckCollectionVC: UICollectionViewController {
                 (collectionView.contentOffset.x / collectionView.frame.width)
                     .rounded(.toNearestOrAwayFromZero)
                 )
-        
     }
-    
+
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let systemSoundID: SystemSoundID = 1104
         AudioServicesPlaySystemSound(systemSoundID)
