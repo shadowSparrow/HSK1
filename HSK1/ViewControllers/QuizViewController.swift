@@ -9,11 +9,14 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
-    var characters: [Character] = Character.getCharacters()
+    var characters: [Character] = Character.getCharacters().shuffled()
     let pingYingView = UILabel()
     var firstVariantButton: UIButton!
     var secondVariantButton: UIButton!
     var thirdVariantButton: UIButton!
+    var firstVariant: String?
+    var secondVariant: String?
+    var thirdVariant: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,17 +37,18 @@ class QuizViewController: UIViewController {
         pingYingView.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         pingYingView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: -150).isActive = true
         
-        firstVariantButton = createAnswerVariant(text: characters.randomElement()!.name)
+       
+        firstVariantButton = createAnswerVariant(text: characters[0].name)
         parent.addSubview(firstVariantButton)
         firstVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         firstVariantButton.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: 0).isActive = true
-
-        secondVariantButton = createAnswerVariant(text: characters.randomElement()!.name)
+        
+        secondVariantButton = createAnswerVariant(text: characters[1].name)
         parent.addSubview(secondVariantButton)
         secondVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
         secondVariantButton.topAnchor.constraint(equalTo: firstVariantButton.bottomAnchor, constant: 10).isActive = true
         
-        thirdVariantButton = createAnswerVariant(text: characters.randomElement()!.name)
+        thirdVariantButton = createAnswerVariant(text: characters[2].name)
         parent.addSubview(thirdVariantButton)
         thirdVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
         thirdVariantButton.topAnchor.constraint(equalTo: secondVariantButton.bottomAnchor, constant: 10).isActive = true
