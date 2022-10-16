@@ -14,6 +14,7 @@ class QuizViewController: UIViewController {
     var firstVariantButton: UIButton!
     var secondVariantButton: UIButton!
     var thirdVariantButton: UIButton!
+    var pingYingRandomElement: Character?
     var firstVariant: String?
     var secondVariant: String?
     var thirdVariant: String?
@@ -28,7 +29,9 @@ class QuizViewController: UIViewController {
         pingYingView.layer.masksToBounds = true
         pingYingView.layer.cornerRadius = CGFloat(25)
         pingYingView.textAlignment = .center
-        pingYingView.text = characters.randomElement()?.pingYing
+        
+        pingYingRandomElement = characters.randomElement()
+        pingYingView.text = pingYingRandomElement?.pingYing
         parent.addSubview(pingYingView)
         
         pingYingView.translatesAutoresizingMaskIntoConstraints = false
@@ -52,9 +55,23 @@ class QuizViewController: UIViewController {
         parent.addSubview(thirdVariantButton)
         thirdVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
         thirdVariantButton.topAnchor.constraint(equalTo: secondVariantButton.bottomAnchor, constant: 10).isActive = true
+        
+        firstVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
+        secondVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
+        thirdVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
     }
     
-    
+
+    @objc func rightOrWrongVariant(sender: UIButton) {
+        
+        var actionButton: UIButton = sender
+        if sender.titleLabel?.text == pingYingRandomElement?.name {
+            sender.backgroundColor = .green
+        } else {
+            sender.backgroundColor = .red
+        }
+        
+    }
     
     func createAnswerVariant(text: String) -> UIButton {
         let variant = UIButton()
@@ -69,15 +86,4 @@ class QuizViewController: UIViewController {
         variant.heightAnchor.constraint(equalToConstant: 50).isActive = true
         return variant
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
