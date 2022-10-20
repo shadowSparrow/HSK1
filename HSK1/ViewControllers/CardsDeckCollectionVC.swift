@@ -30,6 +30,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        pageControl.isHidden = true 
     }
     
     // MARK: UICollectionViewDataSource
@@ -43,12 +44,10 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
-        
         return cell
     }
     
@@ -91,7 +90,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
                     .rounded(.toNearestOrAwayFromZero)
                 )
     }
-
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let systemSoundID: SystemSoundID = 1104
         AudioServicesPlaySystemSound(systemSoundID)

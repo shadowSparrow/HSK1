@@ -23,7 +23,6 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
 
         let parent = self.view!
-        
         parent.backgroundColor = .gray
         pingYingView.backgroundColor = .white
         pingYingView.layer.masksToBounds = true
@@ -40,7 +39,6 @@ class QuizViewController: UIViewController {
         pingYingView.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
         pingYingView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: -150).isActive = true
         
-       
         firstVariantButton = createAnswerVariant(text: characters[0].name)
         parent.addSubview(firstVariantButton)
         firstVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
@@ -63,14 +61,12 @@ class QuizViewController: UIViewController {
     
 
     @objc func rightOrWrongVariant(sender: UIButton) {
-        
-        var actionButton: UIButton = sender
+        var _: UIButton = sender
         if sender.titleLabel?.text == pingYingRandomElement?.name {
             sender.backgroundColor = .green
         } else {
             sender.backgroundColor = .red
         }
-        
     }
     
     func createAnswerVariant(text: String) -> UIButton {
