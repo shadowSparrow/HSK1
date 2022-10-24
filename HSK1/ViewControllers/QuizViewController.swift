@@ -11,9 +11,12 @@ class QuizViewController: UIViewController {
 
     var characters: [Character] = Character.getCharacters().shuffled()
     let pingYingView = UILabel()
+    
     var firstVariantButton: UIButton!
     var secondVariantButton: UIButton!
     var thirdVariantButton: UIButton!
+    var nextQuestionButton: UIButton!
+    
     var pingYingRandomElement: Character?
     var firstVariant: String?
     var secondVariant: String?
@@ -28,16 +31,17 @@ class QuizViewController: UIViewController {
         pingYingView.layer.masksToBounds = true
         pingYingView.layer.cornerRadius = CGFloat(25)
         pingYingView.textAlignment = .center
+        pingYingView.font = pingYingView.font.withSize(40)
         
         pingYingRandomElement = characters.randomElement()
         pingYingView.text = pingYingRandomElement?.pingYing
         parent.addSubview(pingYingView)
         
         pingYingView.translatesAutoresizingMaskIntoConstraints = false
-        pingYingView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        pingYingView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        pingYingView.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        pingYingView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         pingYingView.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: 0).isActive = true
-        pingYingView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: -150).isActive = true
+        pingYingView.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: -200).isActive = true
         
         firstVariantButton = createAnswerVariant(text: characters[0].name)
         parent.addSubview(firstVariantButton)
@@ -54,11 +58,24 @@ class QuizViewController: UIViewController {
         thirdVariantButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
         thirdVariantButton.topAnchor.constraint(equalTo: secondVariantButton.bottomAnchor, constant: 10).isActive = true
         
+        nextQuestionButton = createAnswerVariant(text: "Next")
+        parent.addSubview(nextQuestionButton)
+        nextQuestionButton.centerXAnchor.constraint(equalTo: parent.centerXAnchor).isActive = true
+        nextQuestionButton.topAnchor.constraint(equalTo: thirdVariantButton.bottomAnchor, constant: 50).isActive = true
+        
+        
         firstVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
         secondVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
         thirdVariantButton.addTarget(self, action: #selector(rightOrWrongVariant), for: .touchDown)
+        nextQuestionButton.addTarget(self, action: #selector(clearView), for: .touchDown)
+        
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
 
     @objc func rightOrWrongVariant(sender: UIButton) {
         var _: UIButton = sender
@@ -67,6 +84,14 @@ class QuizViewController: UIViewController {
         } else {
             sender.backgroundColor = .red
         }
+    }
+    
+    @objc func clearView(sender: UIButton) {
+        var _ : UIButton = sender
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        var quizVC = storyboard.instantiateViewController(withIdentifier: "quizVC") as! QuizViewController
+        let segue = UIStoryboardSegue.init(identifier: "trainSegue", source: self, destination: quizVC)
+        self.present(quizVC, animated: true)
     }
     
     func createAnswerVariant(text: String) -> UIButton {
@@ -78,7 +103,7 @@ class QuizViewController: UIViewController {
         variant.titleLabel?.layer.masksToBounds = true
         variant.titleLabel?.textColor = UIColor.black
         variant.translatesAutoresizingMaskIntoConstraints = false
-        variant.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        variant.widthAnchor.constraint(equalToConstant: 225).isActive = true
         variant.heightAnchor.constraint(equalToConstant: 50).isActive = true
         return variant
     }
