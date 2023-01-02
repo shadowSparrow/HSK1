@@ -25,26 +25,22 @@ class CardCollectionViewCell: UICollectionViewCell {
     var character: Character?
     
     func setCharacter(character: Character) {
-        self.character = character
-        self.characterLabel.text = character.name
-        self.characterViewImage.image = UIImage(named: character.imageName)
-        self.characterDetailViewImage.image = UIImage(named: character.imageName)
-        self.characterDetailViewImage.layer.cornerRadius = 20
-        self.detailCharacterLabel.text = character.name
-        self.playButton.setTitle(character.pingYing, for: .normal)
-        self.detailCharacterLabel.layer.cornerRadius = 20
-        self.detailTranslationLabel.layer.cornerRadius = 20
-        self.detailTranslationLabel.text = character.translation
-        self.exampleSoundButton.setTitle(character.examples[0].chinese, for: .normal)
-        self.exampleSoundbuttonOne.setTitle(character.examples[1].chinese, for: .normal)
         
-//      Quantity of example buttons
-        if character.examples.count <= 2 {
-            self.exampleSoundbuttonTwo.isHidden = true
-        } else {
-            self.exampleSoundbuttonTwo.isHidden = false
-            self.exampleSoundbuttonTwo.setTitle(character.examples[2].chinese, for: .normal)
-        }
+        self.character = character
+        //CharacterViewSettings
+        
+        self.characterLabel.text = character.name
+        self.characterView.layer.cornerRadius = 5
+        
+        //DetailViewSettings
+        self.detailCharacterLabel.text = character.name
+        self.detailView.layer.cornerRadius = 5
+        self.playButton.setTitle(character.pingYing, for: .normal)
+        self.detailCharacterLabel.layer.cornerRadius = 0
+        self.detailTranslationLabel.layer.cornerRadius = 0
+        self.detailTranslationLabel.text = character.translation
+        
+        
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)

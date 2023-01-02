@@ -20,6 +20,8 @@
 		043CC408289855BB00303CD4 /* 爸爸比妈妈大.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */; };
 		043CC409289855BB00303CD4 /* 这是我爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */; };
 		043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */; };
+		0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* LauchVC.swift */; };
+		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
 		04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1CF2867705A00A3FC68 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸比妈妈大.mp3"; path = "sounds/爸爸比妈妈大.mp3"; sourceTree = SOURCE_ROOT; };
 		043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "这是我爸爸.mp3"; path = "sounds/这是我爸爸.mp3"; sourceTree = SOURCE_ROOT; };
 		043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "他爸爸很高.mp3"; path = "sounds/他爸爸很高.mp3"; sourceTree = SOURCE_ROOT; };
+		0450A3A8291188C900E4C60E /* LauchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchVC.swift; sourceTree = "<group>"; };
+		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		041113A1286DE11E008B5DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0450A3A8291188C900E4C60E /* LauchVC.swift */,
+				0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */,
 				04111395286B17F0008B5DD9 /* MainMenuViewController.swift */,
 				0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */,
 				04F6737228F33DFF004DCD76 /* QuizViewController.swift */,
@@ -272,6 +278,7 @@
 			files = (
 				04FF527B2875A59A00FE2F65 /* Character.swift in Sources */,
 				041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */,
+				0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */,
 				04111396286B17F0008B5DD9 /* MainMenuViewController.swift in Sources */,
 				04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */,
 				0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */,
@@ -280,6 +287,7 @@
 				04F6737328F33DFF004DCD76 /* QuizViewController.swift in Sources */,
 				04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */,
 				0411139A286B6647008B5DD9 /* MenuItem.swift in Sources */,
+				0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */,
 				0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

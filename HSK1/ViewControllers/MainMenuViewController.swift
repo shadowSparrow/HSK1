@@ -21,7 +21,6 @@ class MainMenuViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
@@ -40,14 +39,7 @@ class MainMenuViewController: UICollectionViewController {
         cell.cellLabel.layer.cornerRadius = 20
         return cell
     }
- /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        var quizVC = storyboard.instantiateViewController(withIdentifier: "quizVC") as! QuizViewController
-        let segue = UIStoryboardSegue.init(identifier: "trainSegue", source: self, destination: quizVC)
-            self.present(quizVC, animated: true)
-    }
-*/
+ 
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell

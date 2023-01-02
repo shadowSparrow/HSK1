@@ -21,12 +21,10 @@ class CardsDeckCollectionVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //collectionView.showsHorizontalScrollIndicator = true
-        collectionView.contentInset =  UIEdgeInsets(top: 0, left: 00, bottom: 0, right: 0)
+        collectionView.contentInset =  UIEdgeInsets(top: 0, left:0, bottom: 0, right: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //collectionView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        //collectionView.transform = CGAffineTransform(scaleX: 1, y: 1)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,7 +42,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        cell.layer.cornerRadius = 20
+        cell.layer.cornerRadius = 5
         cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
@@ -67,7 +65,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
+        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width / 2
         for cell in collectionView.visibleCells {
             var offsetX = centerX - cell.center.x
             if offsetX < 0 {
@@ -97,7 +95,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
 }
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: screenWindh, height: screenHeight - 175)
+        return CGSize(width: screenWindh, height: screenHeight/2)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interLineSpacing)
