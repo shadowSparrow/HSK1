@@ -32,6 +32,11 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.characterLabel.text = character.name
         self.characterView.layer.cornerRadius = 5
         
+        self.characterView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        self.characterView.layer.shadowOpacity = 1.0
+        self.characterView.layer.shadowRadius = 5
+        self.characterView.layer.shadowColor = CGColor(red: 0, green: 1, blue: 0, alpha: 1)
+        
         //DetailViewSettings
         self.detailCharacterLabel.text = character.name
         self.detailView.layer.cornerRadius = 5
@@ -39,8 +44,6 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailCharacterLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.text = character.translation
-        
-        
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
