@@ -18,7 +18,6 @@ class DataManager {
             Example(chinese: "我家有四口人", pingYing: " jiā yǒu sì kǒu rén", translation: " В моей семье 4 человека")
         ]),
         CharacterData(character: "医院", imageName: "hospital", pingYing: "yīyuàn", translation: "больница, госпиталь", examples: [
-         
              Example(chinese: "他在医院住了一个月", pingYing: " tā zài yīyuàn zhùle yīge yuè", translation: " он пролежал в больнице один месяц"),
              Example(chinese: "医生在医院工作", pingYing: " yīshēng zài yīyuàn gōngzuò ", translation: " врач работает в госпитале"),
              //Example(chinese: "", pingYing: " bāzhāng túpiàn", translation: " восемь картинок")

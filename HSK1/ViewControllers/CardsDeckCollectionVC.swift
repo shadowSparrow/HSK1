@@ -10,14 +10,12 @@ import AVFoundation
 
 private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
-    
     @IBOutlet weak var pageControl: UIPageControl!
     var characters: [Character] = Character.getCharacters()
     private let edgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     private let interLineSpacing = 0
     private let screenWindh = UIScreen.main.bounds.width
     private let screenHeight = UIScreen.main.bounds.height
-
     override func viewDidLoad() {
         super.viewDidLoad()
         //collectionView.showsHorizontalScrollIndicator = true

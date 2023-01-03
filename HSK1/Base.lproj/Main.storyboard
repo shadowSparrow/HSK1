@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -81,7 +82,7 @@
                     <collectionView key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" springLoaded="YES" id="Qzb-Bm-JOq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                         <viewLayoutGuide key="contentLayoutGuide" id="DKA-GC-Jza"/>
                         <viewLayoutGuide key="frameLayoutGuide" id="YuF-JY-BeG"/>
@@ -103,13 +104,13 @@
                                             <rect key="frame" x="10" y="0.0" width="351" height="507"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-vs-5O5">
-                                                    <rect key="frame" x="10" y="10" width="331" height="297"/>
+                                                    <rect key="frame" x="10" y="10" width="331" height="317"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xOQ-pS-19p">
-                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="297"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="317"/>
                                                             <subviews>
                                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="70" preferredMaxLayoutWidth="251" id="df2-lz-YyY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="144.66666666666666" height="228"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="144.66666666666666" height="181"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="零">
@@ -122,19 +123,49 @@
                                                                     </attributedString>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wim-Lq-Bbr">
-                                                                    <rect key="frame" x="57.333333333333329" y="238" width="30" height="59"/>
+                                                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wim-Lq-Bbr">
+                                                                    <rect key="frame" x="0.0" y="191" width="331" height="126"/>
                                                                     <accessibility key="accessibilityConfiguration">
                                                                         <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                                                     </accessibility>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" title=""/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="47" maxY="0.0"/>
+                                                                    <state key="normal" title="">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Text">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <font key="NSFont" metaFont="system" size="44"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <color key="titleColor" red="0.99796301126480103" green="0.99810236692428589" blue="0.99791902303695679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                                    </state>
+                                                                    <buttonConfiguration key="configuration" style="plain" imagePlacement="bottom" imagePadding="20">
+                                                                        <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Text">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <font key="NSFont" metaFont="system" size="44"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <color key="baseForegroundColor" red="0.99796301126480103" green="0.99810236692428589" blue="0.99791902303695679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </buttonConfiguration>
                                                                     <connections>
                                                                         <action selector="playButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="INO-Xd-5IV"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Wim-Lq-Bbr" firstAttribute="leading" secondItem="xOQ-pS-19p" secondAttribute="leading" id="LtJ-Ou-BWt"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Wim-Lq-Bbr" secondAttribute="trailing" id="pVa-3b-E0F"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -142,16 +173,15 @@
                                                         <constraint firstItem="xOQ-pS-19p" firstAttribute="leading" secondItem="UhI-vs-5O5" secondAttribute="leading" id="vyZ-6I-KXw"/>
                                                     </constraints>
                                                 </stackView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="topRight" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
-                                                    <rect key="frame" x="0.0" y="467" width="351" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gnb-ld-1Xn"/>
-                                                    </constraints>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
+                                                    <rect key="frame" x="0.0" y="447" width="351" height="60"/>
+                                                    <color key="backgroundColor" red="0.99991601705551147" green="1" blue="0.99987190961837769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="ноль">
                                                             <attributes>
-                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                                <color key="NSBackgroundColor" red="0.99796301126480103" green="0.99810236692428589" blue="0.99791902303695679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.024972423911094666" green="0.014211989939212799" blue="0.035271488130092621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" metaFont="system" size="24"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -163,7 +193,8 @@
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             <constraints>
                                                 <constraint firstItem="CN6-hH-add" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" id="0z7-YN-uMw"/>
-                                                <constraint firstAttribute="bottom" secondItem="UhI-vs-5O5" secondAttribute="bottom" constant="200" id="PtZ-Qv-YBo"/>
+                                                <constraint firstItem="CN6-hH-add" firstAttribute="top" secondItem="UhI-vs-5O5" secondAttribute="bottom" constant="120" id="1FB-wO-fF3"/>
+                                                <constraint firstAttribute="bottom" secondItem="UhI-vs-5O5" secondAttribute="bottom" constant="180" id="PtZ-Qv-YBo"/>
                                                 <constraint firstAttribute="trailing" secondItem="UhI-vs-5O5" secondAttribute="trailing" constant="10" id="WED-SK-ybC"/>
                                                 <constraint firstItem="UhI-vs-5O5" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="10" id="Y6b-Gx-Qom"/>
                                                 <constraint firstItem="UhI-vs-5O5" firstAttribute="top" secondItem="DB2-10-mdn" secondAttribute="top" constant="10" id="d4i-ka-qgn"/>
@@ -302,6 +333,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -310,6 +342,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

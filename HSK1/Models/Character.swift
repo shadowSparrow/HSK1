@@ -23,7 +23,6 @@ class Character {
         self.examples = examples
     }
 }
-
 extension Character {
     static func getCharacters() -> [Character] {
         let charactersName = DataManager.shared.characters
