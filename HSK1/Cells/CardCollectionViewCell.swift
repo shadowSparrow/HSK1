@@ -57,13 +57,13 @@ class CardCollectionViewCell: UICollectionViewCell {
         playsound(name: character?.name ?? "")
     }
     @IBAction func exampleSoundAction(_ sender: UIButton) {
-        playsound(name: character?.examples[0].chinese ?? "")
+        
     }
     @IBAction func exampleSoundOneAction(_ sender: Any) {
-        playsound(name: character?.examples[1].chinese ?? "")
+        
     }
     @IBAction func exampleSoundTwoAction(_ sender: Any) {
-        playsound(name: character?.examples[2].chinese ?? "")
+        
     }
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)

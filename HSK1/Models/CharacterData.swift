@@ -12,13 +12,13 @@ class CharacterData {
     var imageName: String
     var pingYing: String
     var translation: String
-    var examples: [Example]
-    init(character: String, imageName: String, pingYing: String, translation: String, examples: [Example]) {
+    
+    init(character: String, imageName: String, pingYing: String, translation: String) {
         self.character = character
         self.imageName = imageName
         self.pingYing = pingYing
         self.translation = translation
-        self.examples = examples
+        
  }
 }
 struct Example {

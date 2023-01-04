@@ -8,12 +8,10 @@
 import UIKit
 
 class MainMenuViewController: UICollectionViewController {
-
     let menuItems = MenuItem.getItems()
     private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 35)
     private let interLineSpacing = 40
     private let screenWindh = UIScreen.main.bounds.width
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Menu"

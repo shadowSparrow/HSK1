@@ -12,15 +12,14 @@ class Character {
     let imageName: String
     let pingYing: String
     let translation: String
-    let examples: [Example]
     var isFlipped: Bool = false
     
-    init(name: String, imageName: String, pingYing: String, translation: String, examples: [Example]) {
+    init(name: String, imageName: String, pingYing: String, translation: String) {
         self.name = name
         self.imageName = imageName
         self.pingYing = pingYing
         self.translation = translation
-        self.examples = examples
+        
     }
 }
 extension Character {
@@ -30,18 +29,19 @@ extension Character {
         [Character(name: charactersName[0].character,
                    imageName: charactersName[0].imageName,
                    pingYing: charactersName[0].pingYing,
-                   translation: charactersName[0].translation,
-                   examples: charactersName[0].examples),
+                   translation:charactersName[0].translation),
          Character(name: charactersName[1].character,
                    imageName: charactersName[1].imageName,
                    pingYing: charactersName[1].pingYing,
-                   translation: charactersName[1].translation,
-                   examples: charactersName[1].examples),
+                   translation: charactersName[1].translation),
          Character(name: charactersName[2].character,
                    imageName: charactersName[2].imageName,
                    pingYing: charactersName[2].pingYing,
-                   translation: charactersName[2].translation,
-                   examples: charactersName[2].examples),
+                   translation: charactersName[2].translation),
+         Character(name: charactersName[3].character,
+                   imageName: charactersName[3].imageName,
+                   pingYing: charactersName[3].pingYing,
+                   translation: charactersName[3].translation)
         ]
          return characters
     }
