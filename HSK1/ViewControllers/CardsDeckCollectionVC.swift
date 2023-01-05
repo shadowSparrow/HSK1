@@ -28,7 +28,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     override func viewDidAppear(_ animated: Bool) {
         pageControl.isHidden = true 
     }
-    
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -46,22 +45,19 @@ class CardsDeckCollectionVC: UICollectionViewController {
         cell.setCharacter(character: character)
         return cell
     }
-    
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
         let character = characters[indexPath.row]
         if character.isFlipped == false {
             cell.flipCard()
-            //cell.playsound()
+            //cell.playsound(name: character.name)
             character.isFlipped = true
         } else {
             cell.flipBack()
             character.isFlipped = false
         }
     }
-    
-    
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let centerX = scrollView.contentOffset.x + scrollView.frame.size.width / 2
         for cell in collectionView.visibleCells {
@@ -69,7 +65,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
             if offsetX < 0 {
                     offsetX *= -1
        }
-            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseInOut,.allowUserInteraction], animations: {
+            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn,.allowUserInteraction], animations: {
                 cell.transform = CGAffineTransform(scaleX: 1, y: 1)
                 if offsetX > 50 {
         let offsetPercentage = (offsetX - 50) / self.view.bounds.width
@@ -82,8 +78,7 @@ class CardsDeckCollectionVC: UICollectionViewController {
             }, completion: nil)
             }
         pageControl.currentPage = Int(
-                (collectionView.contentOffset.x / collectionView.frame.width)
-                    .rounded(.toNearestOrAwayFromZero)
+            (collectionView.contentOffset.x / collectionView.frame.width).rounded(.toNearestOrAwayFromZero)
                 )
     }
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {

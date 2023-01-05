@@ -14,7 +14,7 @@ class MainMenuViewController: UICollectionViewController {
     private let screenWindh = UIScreen.main.bounds.width
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Menu"
+        //self.title = "Menu"
     }
 
     // MARK: UICollectionViewDataSource
@@ -31,10 +31,11 @@ class MainMenuViewController: UICollectionViewController {
         let item = menuItems[indexPath.row]
         cell.imageView.image = UIImage(named: item.imageName)
         cell.cellLabel.text = item.labelText
+        cell.imageCharacter.text = item.imageCharacter
         cell.imageView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
-        cell.imageView.layer.cornerRadius = 20
-        cell.layer.cornerRadius = 20
-        cell.cellLabel.layer.cornerRadius = 20
+        cell.imageView.layer.cornerRadius = 5
+        cell.layer.cornerRadius = 5
+        cell.cellLabel.layer.cornerRadius = 5
         return cell
     }
  
