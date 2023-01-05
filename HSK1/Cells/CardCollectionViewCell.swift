@@ -16,6 +16,9 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterLabel: UILabel!
     @IBOutlet weak var characterViewImage: UIImageView!
     @IBOutlet weak var characterDetailViewImage: UIImageView!
+    
+    @IBOutlet weak var PingYingLabel: UILabel!
+    
     @IBOutlet weak var playButton: UIButton!
     
     
@@ -37,7 +40,8 @@ class CardCollectionViewCell: UICollectionViewCell {
         //DetailViewSettings
         self.detailCharacterLabel.text = character.name
         self.detailView.layer.cornerRadius = 5
-        //self.playButton.setTitle(character.pingYing, for: .normal)
+        self.PingYingLabel.text = character.pingYing
+        
         self.detailCharacterLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.text = character.translation
@@ -50,7 +54,20 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
     }
     @IBAction func playButtonAction(_ sender: Any) {
-       playsound(name: character?.name ?? "")
+       
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: .beginFromCurrentState) {
+            
+            self.playButton.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.playButton.transform = CGAffineTransform(rotationAngle: -2)
+        } completion: { bool in
+            UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
+                self.playButton.transform = CGAffineTransform(rotationAngle: 0)
+                self.playButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: nil)
+            
+        }
+        playsound(name: character?.name ?? "")
     }
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)

@@ -135,11 +135,23 @@
                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-10-mdn">
                                             <rect key="frame" x="10" y="0.0" width="351" height="507"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-fb-PxY">
+                                                    <rect key="frame" x="20" y="327" width="311" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Lhb-eh-jk9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wim-Lq-Bbr">
-                                                    <rect key="frame" x="40" y="256.33333333333331" width="271" height="50"/>
+                                                    <rect key="frame" x="40" y="387" width="271" height="50"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                                     </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Uzx-rs-nnY"/>
+                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="47" maxY="0.0"/>
                                                     <state key="normal" title="">
                                                         <attributedString key="attributedTitle">
@@ -195,9 +207,12 @@
                                                 <constraint firstItem="CN6-hH-add" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" id="0z7-YN-uMw"/>
                                                 <constraint firstAttribute="bottom" secondItem="CN6-hH-add" secondAttribute="bottom" id="DcR-St-zUb"/>
                                                 <constraint firstItem="Wim-Lq-Bbr" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="40" id="RoA-1Y-CJG"/>
-                                                <constraint firstItem="Wim-Lq-Bbr" firstAttribute="top" secondItem="df2-lz-YyY" secondAttribute="bottom" constant="25" id="Ros-dh-NZk"/>
+                                                <constraint firstItem="CN6-hH-add" firstAttribute="top" secondItem="Wim-Lq-Bbr" secondAttribute="bottom" constant="10" id="TIk-YI-GI8"/>
                                                 <constraint firstAttribute="trailing" secondItem="Wim-Lq-Bbr" secondAttribute="trailing" constant="40" id="TJu-O9-QwF"/>
+                                                <constraint firstItem="Wim-Lq-Bbr" firstAttribute="top" secondItem="BiI-fb-PxY" secondAttribute="bottom" constant="20" id="V1r-dV-waD"/>
                                                 <constraint firstItem="CN6-hH-add" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" id="VQu-nd-6Ej"/>
+                                                <constraint firstAttribute="trailing" secondItem="BiI-fb-PxY" secondAttribute="trailing" constant="20" id="jnP-KY-ZNL"/>
+                                                <constraint firstItem="BiI-fb-PxY" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="20" id="nhp-jf-4cI"/>
                                                 <constraint firstAttribute="trailing" secondItem="CN6-hH-add" secondAttribute="trailing" id="qYg-BR-sfj"/>
                                                 <constraint firstAttribute="trailing" secondItem="CN6-hH-add" secondAttribute="trailing" id="uya-3I-1ye"/>
                                                 <constraint firstAttribute="bottom" secondItem="CN6-hH-add" secondAttribute="bottom" id="yOQ-Co-gvX"/>
@@ -246,6 +261,7 @@
                                     <constraint firstAttribute="trailing" secondItem="DB2-10-mdn" secondAttribute="trailing" constant="10" id="oi8-ws-nQk"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="PingYingLabel" destination="BiI-fb-PxY" id="Nzu-bm-4rd"/>
                                     <outlet property="characterLabel" destination="JxG-wL-Edo" id="Mk1-wV-B97"/>
                                     <outlet property="characterView" destination="OCc-vl-wb0" id="5xI-CO-8WV"/>
                                     <outlet property="detailCharacterLabel" destination="df2-lz-YyY" id="sdU-Nj-KzW"/>
