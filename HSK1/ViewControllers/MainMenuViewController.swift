@@ -9,8 +9,8 @@ import UIKit
 
 class MainMenuViewController: UICollectionViewController {
     let menuItems = MenuItem.getItems()
-    private let edgeInsets = UIEdgeInsets(top: 56, left: 35, bottom: 56, right: 35)
-    private let interLineSpacing = 40
+    private let edgeInsets = UIEdgeInsets(top: 20, left: 30, bottom: 20, right: 30)
+    private let interLineSpacing = 5
     private let screenWindh = UIScreen.main.bounds.width
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
         CGFloat(interLineSpacing)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        _ = screenWindh - 2 * CGFloat(edgeInsets.right)
-        return CGSize(width: 200, height: 200)
+        var itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
+        return CGSize(width: itemWindth, height: 200)
     }
 }
