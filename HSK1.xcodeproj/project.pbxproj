@@ -24,6 +24,7 @@
 		043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */; };
 		0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* LauchVC.swift */; };
 		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
+		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
 		04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AFC1CF2867705A00A3FC68 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "他爸爸很高.mp3"; path = "sounds/他爸爸很高.mp3"; sourceTree = SOURCE_ROOT; };
 		0450A3A8291188C900E4C60E /* LauchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchVC.swift; sourceTree = "<group>"; };
 		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
+		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				04C58C9C288987FF004DFA47 /* Cells */,
 				041113A1286DE11E008B5DD9 /* ViewControllers */,
 				04AFC1CF2867705A00A3FC68 /* Main.storyboard */,
+				045C7EB42969A09C00732746 /* graduationcap@2x.png */,
 				04AFC1D22867705B00A3FC68 /* Assets.xcassets */,
 				042E437229649B35007EBBCA /* note.png */,
 				04AFC1D42867705B00A3FC68 /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */,
 				04C58C9B288987AA004DFA47 /* 爸爸.mp3 in Resources */,
 				042E437329649B35007EBBCA /* note.png in Resources */,
+				045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */,
 				043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */,
 				04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */,
 				043CC409289855BB00303CD4 /* 这是我爸爸.mp3 in Resources */,
