@@ -16,9 +16,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterLabel: UILabel!
     @IBOutlet weak var characterViewImage: UIImageView!
     @IBOutlet weak var characterDetailViewImage: UIImageView!
-    
     @IBOutlet weak var PingYingLabel: UILabel!
-    
     @IBOutlet weak var playButton: UIButton!
     
     
@@ -46,6 +44,10 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailTranslationLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.text = character.translation
         
+        self.playButton.layer.borderWidth = 0.5
+        self.playButton.layer.borderColor = UIColor.white.cgColor
+        self.playButton.layer.cornerRadius = 2
+        
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
              }
@@ -54,15 +56,14 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
     }
     @IBAction func playButtonAction(_ sender: Any) {
-       
-        
-        UIView.animate(withDuration: 0.5, delay: 0, options: .beginFromCurrentState) {
+    
+        UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             
-            self.playButton.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.playButton.transform = CGAffineTransform(rotationAngle: -2)
+        self.playButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            //self.playButton.transform = CGAffineTransform(rotationAngle: -2)
         } completion: { bool in
-            UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
-                self.playButton.transform = CGAffineTransform(rotationAngle: 0)
+            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
+                //self.playButton.transform = CGAffineTransform(rotationAngle: 0)
                 self.playButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
             

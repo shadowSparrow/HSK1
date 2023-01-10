@@ -12,10 +12,27 @@ class MainMenuViewController: UICollectionViewController {
     private let edgeInsets = UIEdgeInsets(top: 20, left: 30, bottom: 20, right: 30)
     private let interLineSpacing = 5
     private let screenWindh = UIScreen.main.bounds.width
+    private let screeHeight = UIScreen.main.bounds.height
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.title = "Menu"
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
+            
+            for cell in self.collectionView.visibleCells {
+                cell.transform = CGAffineTransform(scaleX: 0.9 , y: 0.9)
+            }
+        } completion: { bool in
+            UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
+                for cell in self.collectionView.visibleCells {
+                    cell.transform = CGAffineTransform(scaleX: 1 , y: 1)
+                }
+            }
+        }
+
+    }
+   
 
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -42,9 +59,10 @@ class MainMenuViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
-        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
-            cell.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
+            
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
+            cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         }) { bool in
             if cell.cellLabel.text == "练习" {
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -66,6 +84,7 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
-        return CGSize(width: itemWindth, height: 200)
+        var itemHeight = screeHeight/4
+        return CGSize(width: itemWindth, height: itemHeight)
     }
 }

@@ -48,16 +48,32 @@ class CardsDeckCollectionVC: UICollectionViewController {
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
-        let character = characters[indexPath.row]
-        if character.isFlipped == false {
-            cell.flipCard()
-            //cell.playsound(name: character.name)
-            character.isFlipped = true
-        } else {
-            cell.flipBack()
-            character.isFlipped = false
-        }
+        
+        UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
+            cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
+            
+        } completion: { bool in
+            UIView.animate(withDuration: 0.5, delay: 0, options: .beginFromCurrentState) {
+                let character = self.characters[indexPath.row]
+                if character.isFlipped == false {
+                    cell.flipCard()
+                    //cell.playsound(name: character.name)
+                    character.isFlipped = true
+                } else {
+                    cell.flipBack()
+                    character.isFlipped = false
+                }
+            } completion: { bool in
+                UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
+                cell.transform = CGAffineTransform.init(scaleX: 1, y: 1)
+                }
     }
+}
+
+        
+        
+    }
+ /*
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let centerX = scrollView.contentOffset.x + scrollView.frame.size.width / 2
         for cell in collectionView.visibleCells {
@@ -81,10 +97,13 @@ class CardsDeckCollectionVC: UICollectionViewController {
             (collectionView.contentOffset.x / collectionView.frame.width).rounded(.toNearestOrAwayFromZero)
                 )
     }
+*/
+    /*
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let systemSoundID: SystemSoundID = 1104
         AudioServicesPlaySystemSound(systemSoundID)
     }
+    */
 }
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
