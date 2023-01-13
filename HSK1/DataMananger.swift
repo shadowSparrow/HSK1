@@ -11,7 +11,8 @@ class DataManager {
     static let shared = DataManager()
     var imageNames = ["graduationcap","brain", "gamecontroller"]
     var labelNames = ["learn", "train", "play"]
-    var charactersNames = ["学习","练习","游戏"]
+    var characterNames = ["学习","练习","游戏"]
+    var headersNames = ["Family and  travel", "Food and Education"]
     
     var characters = [
         CharacterData(character: "家", imageName: "family", pingYing: "jiā", translation: "дом, семья" ),

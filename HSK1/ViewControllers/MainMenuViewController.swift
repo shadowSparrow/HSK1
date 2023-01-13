@@ -60,17 +60,16 @@ class MainMenuViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
-            
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         }) { bool in
             if cell.cellLabel.text == "练习" {
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            var quizVC = storyboard.instantiateViewController(withIdentifier: "quizVC") as! QuizViewController
-            let segue = UIStoryboardSegue.init(identifier: "trainSegue", source: self, destination: quizVC)
+            var quizVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
+            let segue = UIStoryboardSegue.init(identifier: "topicSegue", source: self, destination: quizVC)
             self.present(quizVC, animated: true)
             } else {
-                self.performSegue(withIdentifier: "segue", sender: nil)
+                self.performSegue(withIdentifier: "topicSegue", sender: nil)
             }
         }
     }
