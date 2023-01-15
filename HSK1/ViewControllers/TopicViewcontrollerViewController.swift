@@ -11,6 +11,8 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
     
     @IBOutlet weak var topicCollectionView: UICollectionView!
     
+    let topics = Topic.getTopics()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         topicCollectionView.dataSource = self
@@ -55,12 +57,13 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        topics.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCellCollectionViewCell
         cell.layer.cornerRadius = 5
-        cell.cellLabel.text = "Family"
+        cell.cellLabel.text = topics[indexPath.row]
+        cell.topicImageView.image = UIImage(named: topics[indexPath.row])
         return cell
     }
     

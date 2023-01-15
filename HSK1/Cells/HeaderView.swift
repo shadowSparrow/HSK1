@@ -12,10 +12,5 @@ class HeaderView: UICollectionReusableView {
     @IBOutlet weak var headerViewLabel: UILabel!
     
         }
-extension UICollectionReusableView {
-    static func getHeaders() -> [String] {
-        let headerNames = DataManager.shared.headersNames
-        return headerNames
-    }
-}
+
 

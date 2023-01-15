@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "education.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "graduationcap@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

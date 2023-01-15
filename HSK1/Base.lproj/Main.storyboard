@@ -119,7 +119,7 @@
         <scene sceneID="Rta-0N-C8i">
             <objects>
                 <collectionViewController storyboardIdentifier="learnVC" modalTransitionStyle="flipHorizontal" id="ha5-Wf-Okz" customClass="CardsDeckCollectionVC" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" springLoaded="YES" id="Qzb-Bm-JOq">
+                    <collectionView key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" springLoaded="YES" id="Qzb-Bm-JOq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -327,17 +327,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-j8-vxB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.99601012468338013" green="0.99614912271499634" blue="0.99596625566482544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-j8-vxB">
+                                                    <rect key="frame" x="0.0" y="120" width="128" height="8"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99601012468338013" green="0.99614912271499634" blue="0.99596625566482544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="25" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Objects" translatesAutoresizingMaskIntoConstraints="NO" id="nj1-G7-yHq">
+                                                    <rect key="frame" x="30" y="30" width="68" height="90"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1T0-j8-vxB" firstAttribute="top" secondItem="PSR-gY-e2G" secondAttribute="top" id="2b3-c4-6V3"/>
+                                                <constraint firstAttribute="trailing" secondItem="nj1-G7-yHq" secondAttribute="trailing" constant="30" id="72Y-6g-60w"/>
+                                                <constraint firstItem="1T0-j8-vxB" firstAttribute="top" secondItem="nj1-G7-yHq" secondAttribute="bottom" id="7rF-ur-wif"/>
                                                 <constraint firstAttribute="bottom" secondItem="1T0-j8-vxB" secondAttribute="bottom" id="7ww-n6-WzZ"/>
                                                 <constraint firstItem="1T0-j8-vxB" firstAttribute="leading" secondItem="PSR-gY-e2G" secondAttribute="leading" id="Ae3-HR-2Rd"/>
+                                                <constraint firstAttribute="bottom" secondItem="1T0-j8-vxB" secondAttribute="bottom" id="C06-Ci-s0m"/>
+                                                <constraint firstItem="1T0-j8-vxB" firstAttribute="top" secondItem="PSR-gY-e2G" secondAttribute="top" constant="120" id="RMF-eS-Edm"/>
+                                                <constraint firstItem="nj1-G7-yHq" firstAttribute="leading" secondItem="PSR-gY-e2G" secondAttribute="leading" constant="30" id="ll5-RN-4NH"/>
+                                                <constraint firstItem="nj1-G7-yHq" firstAttribute="top" secondItem="PSR-gY-e2G" secondAttribute="top" constant="30" id="o5f-xm-jEg"/>
                                                 <constraint firstAttribute="trailing" secondItem="1T0-j8-vxB" secondAttribute="trailing" id="vPO-tD-YTc"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -345,6 +360,7 @@
                                         <size key="customSize" width="128" height="128"/>
                                         <connections>
                                             <outlet property="cellLabel" destination="1T0-j8-vxB" id="rnz-dL-ro6"/>
+                                            <outlet property="topicImageView" destination="nj1-G7-yHq" id="hCK-05-vQN"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -367,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOY-Mo-5I8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2250" y="95"/>
+            <point key="canvasLocation" x="2248.8000000000002" y="94.581280788177338"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="dLk-vc-8IM">
@@ -433,6 +449,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Objects" width="466" height="443"/>
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <namedColor name="AccentColor">

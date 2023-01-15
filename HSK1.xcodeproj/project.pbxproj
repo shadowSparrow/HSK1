@@ -26,6 +26,7 @@
 		0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* LauchVC.swift */; };
 		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
 		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
+		045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C9DFC2974032C00AE2C97 /* TopicData.swift */; };
 		0498A326296DA651003D5082 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498A325296DA651003D5082 /* HeaderView.swift */; };
 		0498A32C296F47E3003D5082 /* TopicViewcontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
@@ -64,6 +65,7 @@
 		0450A3A8291188C900E4C60E /* LauchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchVC.swift; sourceTree = "<group>"; };
 		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
 		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
+		045C9DFC2974032C00AE2C97 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
 		0498A325296DA651003D5082 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewcontrollerViewController.swift; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 				04FF527A2875A59A00FE2F65 /* Character.swift */,
 				04111399286B6647008B5DD9 /* MenuItem.swift */,
 				04C58C9E2889A361004DFA47 /* CharacterData.swift */,
+				045C9DFC2974032C00AE2C97 /* TopicData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FF527B2875A59A00FE2F65 /* Character.swift in Sources */,
+				045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */,
 				041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */,
 				0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */,
 				04111396286B17F0008B5DD9 /* MainMenuViewController.swift in Sources */,

@@ -10,9 +10,9 @@ import Foundation
 class DataManager {
     static let shared = DataManager()
     var imageNames = ["graduationcap","brain", "gamecontroller"]
-    var labelNames = ["learn", "train", "play"]
+    var labelNames = ["Learn", "Train", "Play"]
     var characterNames = ["学习","练习","游戏"]
-    var headersNames = ["Family and  travel", "Food and Education"]
+    var topicNames = ["Family",  "Travel", "Education","Objects", "Food", "Persons","Count","Numbers","Time","Locations","Adjectives","Phrazes","Actions","Particles"]
     
     var characters = [
         CharacterData(character: "家", imageName: "family", pingYing: "jiā", translation: "дом, семья" ),
