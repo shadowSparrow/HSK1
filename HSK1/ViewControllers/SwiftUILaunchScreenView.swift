@@ -25,7 +25,8 @@ struct SwiftUILaunchScreenView: View {
     }
 }
 
-struct SwiftUILaunchScreenView_Previews: PreviewProvider {
+struct SwiftUILaunchScreenView_Previews:
+    PreviewProvider {
     static var previews: some View {
         SwiftUILaunchScreenView()
 .previewInterfaceOrientation(.portrait)

@@ -12,7 +12,6 @@ class QuizViewController: UIViewController {
     var characters: [Character] = Character.getCharacters()
     let pingYingView = UILabel()
     var variantIndex = 0
-    
     var firstVariantButton: UIButton!
     var secondVariantButton: UIButton!
     var thirdVariantButton: UIButton!

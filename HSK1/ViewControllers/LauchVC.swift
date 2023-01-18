@@ -9,7 +9,8 @@ import UIKit
 import SwiftUI
 
 class LauchVC: UIViewController {
- fileprivate let contentViewInHC = UIHostingController(rootView: SwiftUILaunchScreenView())
+ fileprivate let contentViewInHC =
+    UIHostingController(rootView: SwiftUILaunchScreenView())
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -65,6 +65,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         cell.cellLabel.text = topics[indexPath.row]
         cell.topicImageView.image = UIImage(named: topics[indexPath.row])
         return cell
+    
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
