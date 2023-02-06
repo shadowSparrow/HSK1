@@ -10,11 +10,13 @@ import UIKit
 class MainMenuViewController: UICollectionViewController {
     let menuItems = MenuItem.getItems()
     private let edgeInsets = UIEdgeInsets(top: 20, left: 30, bottom: 20, right: 30)
-    private let interLineSpacing = 5
+    private var interLineSpacing = 5
     private let screenWindh = UIScreen.main.bounds.width
     private let screeHeight = UIScreen.main.bounds.height
+    //private var isHidded:Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.collectionView.isHidden = isHidded
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,6 +33,26 @@ class MainMenuViewController: UICollectionViewController {
             }
         }
 
+    }
+   
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        var isLandskaped = UIDevice.current.orientation.isLandscape
+        
+        if isLandskaped {
+            for cell in collectionView.visibleCells {
+                cell.contentView.layer.backgroundColor = UIColor.blue.cgColor
+                interLineSpacing = 0
+                
+                
+            }
+        } else {
+            for cell in collectionView.visibleCells {
+                cell.contentView.layer.backgroundColor = UIColor.purple.cgColor
+                interLineSpacing = 5
+                
+            }
+        }
+        
     }
    
 
@@ -65,8 +87,8 @@ class MainMenuViewController: UICollectionViewController {
         }) { bool in
             if cell.cellLabel.text == "练习" {
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            var quizVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
-            let segue = UIStoryboardSegue.init(identifier: "topicSegue", source: self, destination: quizVC)
+            let quizVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
+                _ = UIStoryboardSegue.init(identifier: "topicSegue", source: self, destination: quizVC)
             self.present(quizVC, animated: true)
             } else {
                 self.performSegue(withIdentifier: "topicSegue", sender: nil)
@@ -82,8 +104,17 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
         CGFloat(interLineSpacing)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
-        var itemHeight = screeHeight/4
+        var itemWindth: CGFloat = 0
+        var itemHeight: CGFloat = 0
+        
+        if UIDevice.current.orientation.isLandscape {
+            itemWindth = screenWindh/2
+            itemHeight = screeHeight/2
+        } else {
+            itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
+            itemHeight = screeHeight/4
+        }
         return CGSize(width: itemWindth, height: itemHeight)
+        
     }
 }

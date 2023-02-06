@@ -64,6 +64,11 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         cell.layer.cornerRadius = 5
         cell.cellLabel.text = topics[indexPath.row]
         cell.topicImageView.image = UIImage(named: topics[indexPath.row])
+        if UIDevice.current.orientation.isLandscape {
+            
+        } else {
+            
+        }
         return cell
     
     }
@@ -79,7 +84,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             
             
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            var quizVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
+            _ = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
             //let segue = UIStoryboardSegue.init(identifier: "learnSegue", source: self, destination: quizVC)
             self.performSegue(withIdentifier: "learnSegue", sender: nil)
             //self.present(quizVC, animated: true)
