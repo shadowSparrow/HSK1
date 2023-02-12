@@ -18,15 +18,20 @@ class CardsDeckCollectionVC: UICollectionViewController {
     private let screenHeight = UIScreen.main.bounds.height
     override func viewDidLoad() {
         super.viewDidLoad()
-        //collectionView.showsHorizontalScrollIndicator = true
+        
         collectionView.contentInset =  UIEdgeInsets(top: 0, left:0, bottom: 0, right: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        let layout = createLayout()
+        layout.configuration.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = layout
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        pageControl.isHidden = true 
+        //pageControl.isHidden = true
     }
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -69,42 +74,28 @@ class CardsDeckCollectionVC: UICollectionViewController {
                 }
     }
 }
-
-        
-        
     }
- /*
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let centerX = scrollView.contentOffset.x + scrollView.frame.size.width / 2
-        for cell in collectionView.visibleCells {
-            var offsetX = centerX - cell.center.x
-            if offsetX < 0 {
-                    offsetX *= -1
-       }
-            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn,.allowUserInteraction], animations: {
-                cell.transform = CGAffineTransform(scaleX: 1, y: 1)
-                if offsetX > 50 {
-        let offsetPercentage = (offsetX - 50) / self.view.bounds.width
-        var scaleX = 1-offsetPercentage
-                            if scaleX < 0.6 {
-                                    scaleX = 0.6
-                        }
-                        cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
-                    }
-            }, completion: nil)
-            }
-        pageControl.currentPage = Int(
-            (collectionView.contentOffset.x / collectionView.frame.width).rounded(.toNearestOrAwayFromZero)
-                )
-    }
-*/
-    /*
-    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        let systemSoundID: SystemSoundID = 1104
-        AudioServicesPlaySystemSound(systemSoundID)
-    }
-    */
+ 
 }
+
+
+func createLayout() -> UICollectionViewCompositionalLayout {
+    
+    let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.8)))
+    
+    let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.8)), subitems: [item,item])
+    
+    let section = NSCollectionLayoutSection(group: horizontalGroup)
+    section.orthogonalScrollingBehavior = .paging
+    section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+    
+    let layout = UICollectionViewCompositionalLayout(section: section)
+    
+    
+    return layout
+}
+
+
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: screenWindh, height: screenHeight/2)
@@ -116,7 +107,38 @@ extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
         edgeInsets
     }
 }
+ 
 
-
+/*
+   override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+       let centerX = scrollView.contentOffset.x + scrollView.frame.size.width / 2
+       for cell in collectionView.visibleCells {
+           var offsetX = centerX - cell.center.x
+           if offsetX < 0 {
+                   offsetX *= -1
+       }
+           UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn,.allowUserInteraction], animations: {
+               cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+               if offsetX > 50 {
+       let offsetPercentage = (offsetX - 50) / self.view.bounds.width
+       var scaleX = 1-offsetPercentage
+                           if scaleX < 0.6 {
+                                   scaleX = 0.6
+                       }
+                       cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
+                   }
+           }, completion: nil)
+           }
+       pageControl.currentPage = Int(
+           (collectionView.contentOffset.x / collectionView.frame.width).rounded(.toNearestOrAwayFromZero)
+               )
+   }
+*/
+   /*
+   override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+       let systemSoundID: SystemSoundID = 1104
+       AudioServicesPlaySystemSound(systemSoundID)
+   }
+   */
 
 

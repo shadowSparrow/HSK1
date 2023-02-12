@@ -13,15 +13,22 @@ class MainMenuViewController: UICollectionViewController {
     private var interLineSpacing = 5
     private let screenWindh = UIScreen.main.bounds.width
     private let screeHeight = UIScreen.main.bounds.height
-    //private var isHidded:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.collectionView.isHidden = isHidded
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            if UIDevice.current.orientation.isLandscape {
+                collectionView.collectionViewLayout = createLandscapeLayout()
+            } else {
+                collectionView.collectionViewLayout = createLayout()
+            }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
-            
             for cell in self.collectionView.visibleCells {
                 cell.transform = CGAffineTransform(scaleX: 0.9 , y: 0.9)
             }
@@ -32,30 +39,36 @@ class MainMenuViewController: UICollectionViewController {
                 }
             }
         }
-
     }
-   
+
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        var isLandskaped = UIDevice.current.orientation.isLandscape
-        
-        if isLandskaped {
-            for cell in collectionView.visibleCells {
-                cell.contentView.layer.backgroundColor = UIColor.blue.cgColor
-                interLineSpacing = 0
-                
-                
-            }
+        if UIDevice.current.orientation.isLandscape {
+            collectionView.collectionViewLayout = createLandscapeLayout()
         } else {
-            for cell in collectionView.visibleCells {
-                cell.contentView.layer.backgroundColor = UIColor.purple.cgColor
-                interLineSpacing = 5
-                
-            }
+            collectionView.collectionViewLayout = createLayout()
         }
-        
     }
-   
-
+    
+    
+    
+    func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+        let section = NSCollectionLayoutSection(group: group)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
+    
+    
+    func createLayout() -> UICollectionViewCompositionalLayout {
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)))
+        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 50, bottom: 2, trailing: 50)
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+        let section = NSCollectionLayoutSection(group: group)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -96,6 +109,8 @@ class MainMenuViewController: UICollectionViewController {
         }
     }
 }
+
+/*
 extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         edgeInsets
@@ -103,18 +118,17 @@ extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interLineSpacing)
     }
+    
+    /*
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var itemWindth: CGFloat = 0
-        var itemHeight: CGFloat = 0
-        
-        if UIDevice.current.orientation.isLandscape {
-            itemWindth = screenWindh/2
-            itemHeight = screeHeight/2
-        } else {
-            itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
-            itemHeight = screeHeight/4
-        }
+     
+             let itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
+             let itemHeight = screeHeight/4
+    
         return CGSize(width: itemWindth, height: itemHeight)
-        
     }
+     */
+     
 }
+ 
+ */
