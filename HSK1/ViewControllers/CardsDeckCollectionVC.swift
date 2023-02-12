@@ -12,14 +12,15 @@ private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     var characters: [Character] = Character.getCharacters()
-    private let edgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    private let edgeInsets = UIEdgeInsets(top: 100, left: 0, bottom: 50, right: 0)
     private let interLineSpacing = 0
     private let screenWindh = UIScreen.main.bounds.width
     private let screenHeight = UIScreen.main.bounds.height
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.contentInset =  UIEdgeInsets(top: 0, left:0, bottom: 0, right: 0)
+        collectionView.contentInset =  edgeInsets
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,7 +91,7 @@ func createLayout() -> UICollectionViewCompositionalLayout {
     section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
     
     let layout = UICollectionViewCompositionalLayout(section: section)
-    
+    //layout.configuration.
     
     return layout
 }
