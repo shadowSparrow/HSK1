@@ -26,7 +26,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     func setCharacter(character: Character) {
         
         self.character = character
-        
+        self.layer.cornerRadius = 5
         //CharacterViewSettings
         self.characterLabel.text = character.name
         self.characterView.layer.cornerRadius = 5

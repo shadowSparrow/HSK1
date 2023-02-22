@@ -23,11 +23,10 @@
 		043CC408289855BB00303CD4 /* 爸爸比妈妈大.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */; };
 		043CC409289855BB00303CD4 /* 这是我爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */; };
 		043CC40A289855BB00303CD4 /* 他爸爸很高.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */; };
-		0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* LauchVC.swift */; };
+		0450A3A9291188C900E4C60E /* CardsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* CardsVc.swift */; };
 		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
 		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
 		045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C9DFC2974032C00AE2C97 /* TopicData.swift */; };
-		0498A326296DA651003D5082 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498A325296DA651003D5082 /* HeaderView.swift */; };
 		0498A32C296F47E3003D5082 /* TopicViewcontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
@@ -41,7 +40,6 @@
 		04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C93288987AA004DFA47 /* 爱.mp3 */; };
 		04C58C9B288987AA004DFA47 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C58C94288987AA004DFA47 /* 爸爸.mp3 */; };
 		04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C58C9E2889A361004DFA47 /* CharacterData.swift */; };
-		04F6737328F33DFF004DCD76 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6737228F33DFF004DCD76 /* QuizViewController.swift */; };
 		04FF527B2875A59A00FE2F65 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF527A2875A59A00FE2F65 /* Character.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +60,10 @@
 		043CC405289855BB00303CD4 /* 爸爸比妈妈大.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸比妈妈大.mp3"; path = "sounds/爸爸比妈妈大.mp3"; sourceTree = SOURCE_ROOT; };
 		043CC406289855BB00303CD4 /* 这是我爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "这是我爸爸.mp3"; path = "sounds/这是我爸爸.mp3"; sourceTree = SOURCE_ROOT; };
 		043CC407289855BB00303CD4 /* 他爸爸很高.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "他爸爸很高.mp3"; path = "sounds/他爸爸很高.mp3"; sourceTree = SOURCE_ROOT; };
-		0450A3A8291188C900E4C60E /* LauchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchVC.swift; sourceTree = "<group>"; };
+		0450A3A8291188C900E4C60E /* CardsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVc.swift; sourceTree = "<group>"; };
 		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
 		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
 		045C9DFC2974032C00AE2C97 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
-		0498A325296DA651003D5082 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewcontrollerViewController.swift; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "HSK1/sounds/ai/爱.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C94288987AA004DFA47 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爸爸.mp3"; path = "HSK1/sounds/baba/爸爸.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C9E2889A361004DFA47 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
-		04F6737228F33DFF004DCD76 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		04FF527A2875A59A00FE2F65 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,12 +96,11 @@
 		041113A1286DE11E008B5DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0450A3A8291188C900E4C60E /* LauchVC.swift */,
+				0450A3A8291188C900E4C60E /* CardsVc.swift */,
 				0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */,
 				0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */,
 				04111395286B17F0008B5DD9 /* MainMenuViewController.swift */,
 				0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */,
-				04F6737228F33DFF004DCD76 /* QuizViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,7 +192,6 @@
 				0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */,
 				041B4A732970C6D500607643 /* TopicCellCollectionViewCell.swift */,
 				04111397286B19A9008B5DD9 /* CollectionViewCell.swift */,
-				0498A325296DA651003D5082 /* HeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -310,12 +304,10 @@
 				041B4A742970C6D500607643 /* TopicCellCollectionViewCell.swift in Sources */,
 				04111398286B19A9008B5DD9 /* CollectionViewCell.swift in Sources */,
 				04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */,
-				04F6737328F33DFF004DCD76 /* QuizViewController.swift in Sources */,
 				04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */,
 				0411139A286B6647008B5DD9 /* MenuItem.swift in Sources */,
-				0450A3A9291188C900E4C60E /* LauchVC.swift in Sources */,
+				0450A3A9291188C900E4C60E /* CardsVc.swift in Sources */,
 				0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */,
-				0498A326296DA651003D5082 /* HeaderView.swift in Sources */,
 				0498A32C296F47E3003D5082 /* TopicViewcontrollerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

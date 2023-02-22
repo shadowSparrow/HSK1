@@ -8,13 +8,14 @@
 import UIKit
 import SwiftUI
 
-class LauchVC: UIViewController {
+class CardsVc: UIViewController {
  fileprivate let contentViewInHC =
     UIHostingController(rootView: SwiftUILaunchScreenView())
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addChild(contentViewInHC)
+        
         contentViewInHC.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         contentViewInHC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         contentViewInHC.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true

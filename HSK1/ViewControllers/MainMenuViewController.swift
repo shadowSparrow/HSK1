@@ -9,23 +9,16 @@ import UIKit
 
 class MainMenuViewController: UICollectionViewController {
     let menuItems = MenuItem.getItems()
-    private let edgeInsets = UIEdgeInsets(top: 20, left: 30, bottom: 20, right: 30)
-    private var interLineSpacing = 5
-    private let screenWindh = UIScreen.main.bounds.width
-    private let screeHeight = UIScreen.main.bounds.height
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if UIDevice.current.orientation.isLandscape {
+            collectionView.collectionViewLayout = createLandscapeLayout()
+        } else {
+            collectionView.collectionViewLayout = createLayout()
+        }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-            if UIDevice.current.orientation.isLandscape {
-                collectionView.collectionViewLayout = createLandscapeLayout()
-            } else {
-                collectionView.collectionViewLayout = createLayout()
-            }
-    }
+   
     
     override func viewDidAppear(_ animated: Bool) {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
@@ -51,7 +44,7 @@ class MainMenuViewController: UICollectionViewController {
     
     
     
-    func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+     private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)
         let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
@@ -61,7 +54,7 @@ class MainMenuViewController: UICollectionViewController {
     }
     
     
-    func createLayout() -> UICollectionViewCompositionalLayout {
+    private func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 50, bottom: 2, trailing: 50)
         let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
@@ -70,10 +63,6 @@ class MainMenuViewController: UICollectionViewController {
         return layout
     }
     // MARK: UICollectionViewDataSource
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuItems.count
     }
@@ -81,13 +70,8 @@ class MainMenuViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         let item = menuItems[indexPath.row]
-        cell.imageView.image = UIImage(named: item.imageName)
-        cell.cellLabel.text = item.labelText
-        cell.imageCharacter.text = item.imageCharacter
-        cell.imageView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
-        cell.imageView.layer.cornerRadius = 5
-        cell.layer.cornerRadius = 5
-        cell.cellLabel.layer.cornerRadius = 5
+        
+        cell.setCell(image: UIImage(named: item.imageName)!, label: item.labelText)
         return cell
     }
  
@@ -110,25 +94,3 @@ class MainMenuViewController: UICollectionViewController {
     }
 }
 
-/*
-extension MainMenuViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        edgeInsets
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        CGFloat(interLineSpacing)
-    }
-    
-    /*
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-     
-             let itemWindth = screenWindh - CGFloat(2*edgeInsets.right)
-             let itemHeight = screeHeight/4
-    
-        return CGSize(width: itemWindth, height: itemHeight)
-    }
-     */
-     
-}
- 
- */

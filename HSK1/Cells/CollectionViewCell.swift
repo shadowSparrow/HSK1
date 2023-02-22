@@ -13,6 +13,15 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellLabel: UILabel!
 }
 
+extension CollectionViewCell {
+    
+    func setCell(image: UIImage,label:String){
+        self.layer.cornerRadius = 5
+        self.imageView.image = image
+        self.cellLabel.text = label
+    }
+}
+
 
 
 
