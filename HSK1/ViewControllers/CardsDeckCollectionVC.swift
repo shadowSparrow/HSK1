@@ -14,8 +14,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     var characters: [Character] = Character.getCharacters()
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    override func viewWillAppear(_ animated: Bool) {
         if UIDevice.current.orientation.isLandscape {
             let layout = createHorizontalLayout()
             collectionView.collectionViewLayout = layout
@@ -23,8 +21,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
             let layout = createLayout()
             collectionView.collectionViewLayout = layout
         }
-    }
-    override func viewDidAppear(_ animated: Bool) {
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
@@ -42,8 +38,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CardCollectionViewCell
-        //cell.layer.cornerRadius = 5
-        //cell.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         let character = characters[indexPath.row]
         cell.setCharacter(character: character)
         return cell
@@ -60,7 +54,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
                 let character = self.characters[indexPath.row]
                 if character.isFlipped == false {
                     cell.flipCard()
-                    //cell.playsound(name: character.name)
                     character.isFlipped = true
                 } else {
                     cell.flipBack()
@@ -79,11 +72,12 @@ private func createHorizontalLayout() -> UICollectionViewCompositionalLayout {
     item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
     let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
     
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
-    horizontalGroup.interItemSpacing = .flexible(24)
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
+    horizontalGroup.interItemSpacing = .none
+    
     let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.orthogonalScrollingBehavior = .groupPaging
-    //section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 5)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
+    section.orthogonalScrollingBehavior = .continuous
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
