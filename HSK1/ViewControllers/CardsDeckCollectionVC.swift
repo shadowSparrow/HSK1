@@ -85,10 +85,10 @@ private func createLayout() -> UICollectionViewCompositionalLayout {
     let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
     let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
     
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 40, leading: 5, bottom: 40, trailing: 5)
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 80, leading: 5, bottom: 80, trailing: 5)
     let section = NSCollectionLayoutSection(group: horizontalGroup)
     section.orthogonalScrollingBehavior = .paging
-    section.contentInsets = NSDirectionalEdgeInsets(top: 40, leading: 5, bottom: 40, trailing: 5)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 80, leading: 5, bottom: 80, trailing: 5)
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
