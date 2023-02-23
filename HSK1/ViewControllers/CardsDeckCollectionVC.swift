@@ -72,21 +72,23 @@ private func createHorizontalLayout() -> UICollectionViewCompositionalLayout {
     item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
     let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
     
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20)
     horizontalGroup.interItemSpacing = .none
     
     let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
-    section.orthogonalScrollingBehavior = .continuous
+    section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20)
+    section.orthogonalScrollingBehavior = .groupPaging
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
 private func createLayout() -> UICollectionViewCompositionalLayout {
     let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
     let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+    
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 40, leading: 5, bottom: 40, trailing: 5)
     let section = NSCollectionLayoutSection(group: horizontalGroup)
     section.orthogonalScrollingBehavior = .paging
-    section.contentInsets = NSDirectionalEdgeInsets(top: 170, leading: 5, bottom: 170, trailing: 5)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 40, leading: 5, bottom: 40, trailing: 5)
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
