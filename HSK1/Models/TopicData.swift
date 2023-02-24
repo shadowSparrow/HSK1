@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class Topic {
     static func getTopics() -> [String] {
         let topicNames = DataManager.shared.topicNames

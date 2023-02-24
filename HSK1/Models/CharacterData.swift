@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 class CharacterData {
     var character: String
     var imageName: String
@@ -18,11 +17,6 @@ class CharacterData {
         self.imageName = imageName
         self.pingYing = pingYing
         self.translation = translation
-        
  }
 }
-struct Example {
-    var chinese: String
-    var pingYing: String
-    var translation: String
-}
+

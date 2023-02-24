@@ -31,4 +31,35 @@ extension Character {
         }
         return characters
              }
+    
+    static func getFamilyCharacters() -> [Character] {
+        let charactersName = DataManager.shared.familyCharacters
+        var characters:[Character] = []
+        for character in charactersName {
+        let currentCharacter = Character(name: character.character, imageName: character.imageName, pingYing: character.pingYing, translation: character.translation)
+            characters.append(currentCharacter)
+        }
+        return characters
+             }
+    
+    static func getTravelCharacters() -> [Character] {
+        let charactersName = DataManager.shared.travelCharacters
+        var characters:[Character] = []
+        for character in charactersName {
+        let currentCharacter = Character(name: character.character, imageName: character.imageName, pingYing: character.pingYing, translation: character.translation)
+            characters.append(currentCharacter)
+        }
+        return characters
+             }
+    
+    static func getEducationCharacters() -> [Character] {
+        let charactersName = DataManager.shared.educationCharacters
+        var characters:[Character] = []
+        for character in charactersName {
+        let currentCharacter = Character(name: character.character, imageName: character.imageName, pingYing: character.pingYing, translation: character.translation)
+            characters.append(currentCharacter)
+        }
+        return characters
+        //static
+}
 }

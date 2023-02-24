@@ -11,7 +11,7 @@ import AVFoundation
 private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
     @IBOutlet weak var pageControl: UIPageControl!
-    var characters: [Character] = Character.getCharacters()
+    var characters: [Character] = []//Character.getCharacters()
     override func viewDidLoad() {
         super.viewDidLoad()
         if UIDevice.current.orientation.isLandscape {

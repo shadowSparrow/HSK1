@@ -13,7 +13,6 @@ class CardsVc: UIViewController {
     UIHostingController(rootView: SwiftUILaunchScreenView())
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addChild(contentViewInHC)
         
         contentViewInHC.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true

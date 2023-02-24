@@ -12,17 +12,16 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
     let topics = Topic.getTopics()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        topicCollectionView.dataSource = self
+        topicCollectionView.delegate = self
+    }
+    override func viewWillLayoutSubviews() {
         if UIDevice.current.orientation.isLandscape {
             topicCollectionView.collectionViewLayout = createLandscapeLayout()
         } else {
             topicCollectionView.collectionViewLayout = createLayout()
         }
-        
-        topicCollectionView.dataSource = self
-        topicCollectionView.delegate = self
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             for cell in self.topicCollectionView.visibleCells {
@@ -43,8 +42,15 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             topicCollectionView.collectionViewLayout = createLayout()
         }
     }
-    
-     private func createLayout() -> UICollectionViewCompositionalLayout {
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "learnSegue" else { return }
+        guard let destination = segue.destination as? CardsDeckCollectionVC else { return }
+        
+            destination.characters = Character.getFamilyCharacters()
+    }
+    */
+     public func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
         let itemTwo = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
@@ -56,9 +62,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
        let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
-    
-    
-   private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+   public func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 20, bottom: 2, trailing: 20)
         let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
@@ -68,8 +72,6 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
-
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         topics.count
     }
@@ -86,9 +88,21 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         } completion: { Bool in
+            
+
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            _ = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
-            self.performSegue(withIdentifier: "learnSegue", sender: nil)
+            let lernVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
+            
+            if cell.cellLabel.text == "Family"{
+                 lernVC.characters = Character.getFamilyCharacters()
+            } else if cell.cellLabel.text == "Travel"  {
+                lernVC.characters = Character.getTravelCharacters()
+            } else if cell.cellLabel.text == "Education" {
+                lernVC.characters = Character.getEducationCharacters()
+            } else {
+                lernVC.characters = Character.getCharacters()
+            }
+            self.show(lernVC, sender: nil)
         }
     }
 }

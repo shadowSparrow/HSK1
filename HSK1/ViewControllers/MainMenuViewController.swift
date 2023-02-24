@@ -17,9 +17,6 @@ class MainMenuViewController: UICollectionViewController {
             collectionView.collectionViewLayout = createLayout()
         }
     }
-    
-   
-    
     override func viewDidAppear(_ animated: Bool) {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             for cell in self.collectionView.visibleCells {
@@ -33,7 +30,6 @@ class MainMenuViewController: UICollectionViewController {
             }
         }
     }
-
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
             collectionView.collectionViewLayout = createLandscapeLayout()
@@ -41,9 +37,17 @@ class MainMenuViewController: UICollectionViewController {
             collectionView.collectionViewLayout = createLayout()
         }
     }
-    
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let topicVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
+        if UIDevice.current.orientation.isLandscape {
+            topicVC.layout = topicVC.createLandscapeLayout()
+        } else {
+            topicVC.layout = topicVC.createLayout()
+        }
+         */
+    }
      private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)
@@ -52,8 +56,6 @@ class MainMenuViewController: UICollectionViewController {
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
-    
-    
     private func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 50, bottom: 2, trailing: 50)
@@ -66,7 +68,6 @@ class MainMenuViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuItems.count
     }
-
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         let item = menuItems[indexPath.row]
@@ -74,7 +75,6 @@ class MainMenuViewController: UICollectionViewController {
         cell.setCell(image: UIImage(named: item.imageName)!, label: item.labelText)
         return cell
     }
- 
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
@@ -82,15 +82,8 @@ class MainMenuViewController: UICollectionViewController {
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         }) { bool in
-            if cell.cellLabel.text == "练习" {
-            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            let quizVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
-                _ = UIStoryboardSegue.init(identifier: "topicSegue", source: self, destination: quizVC)
-            self.present(quizVC, animated: true)
-            } else {
                 self.performSegue(withIdentifier: "topicSegue", sender: nil)
             }
         }
     }
-}
 
