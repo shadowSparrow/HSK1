@@ -34,7 +34,6 @@ class DataManager {
         CharacterData(character: "下午", imageName: "love", pingYing: "xià wǔ", translation: "вторая половина дня"),
         CharacterData(character: "中午", imageName: "shop", pingYing: "zhōngwǔ", translation: "полдень"),
         CharacterData(character: "中国", imageName: "love", pingYing: "Zhōngguó", translation: "Китай")
-        
     ]
     var educationCharacters = [
         CharacterData(character: "学习", imageName: "family", pingYing: "xuéxí", translation: "учиться" ),
@@ -47,9 +46,7 @@ class DataManager {
         CharacterData(character: "字", imageName: "love", pingYing: "zì", translation: "иероглиф"),
         CharacterData(character: "汉语", imageName: "shop", pingYing: "Hànyǔ", translation: "китайский язык"),
         CharacterData(character: "学校", imageName: "love", pingYing: "xuéxiào", translation: "школа")
-        
     ]
-    
     var objectCharacters = [
         CharacterData(character: "电脑", imageName: "family", pingYing: "diànnǎo", translation: "компьютер" ),
         CharacterData(character: "电视", imageName: "hospital", pingYing: "diànshì", translation: "телевизор"),
@@ -62,7 +59,6 @@ class DataManager {
         CharacterData(character: "椅子", imageName: "shop", pingYing: "yǐzi", translation: "стул"),
         CharacterData(character: "桌子", imageName: "love", pingYing: "zhuōzi", translation: "стол"),
     ]
-    
     var foodCharacters = [
         CharacterData(character: "吃", imageName: "family", pingYing: "chī", translation: "кушать" ),
         CharacterData(character: "喝", imageName: "hospital", pingYing: "hē", translation: "пить"),
@@ -87,7 +83,6 @@ class DataManager {
         CharacterData(character: "那", imageName: "shop", pingYing: "nà", translation: "то (тот, та, те)"),
         CharacterData(character: "这", imageName: "love", pingYing: "zhè", translation: "это (этот, эта, эти)"),
     ]
-    
     var countCharacters = [
         CharacterData(character: "一", imageName: "family", pingYing: "yī", translation: "один" ),
         CharacterData(character: "号", imageName: "hospital", pingYing: "hào", translation: "число (месяца)"),
@@ -126,7 +121,6 @@ class DataManager {
         CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
         CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута"),
     ]
-    
     var placeCharacters = [
         CharacterData(character: "哪儿", imageName: "family", pingYing: "nǎr", translation: "где"),
         CharacterData(character: "那儿", imageName: "hospital", pingYing: "nàr", translation: "там"),
@@ -141,7 +135,6 @@ class DataManager {
         CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
         CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута")
     ]
-    
     var adjectivesCharacters = [
         CharacterData(character: "大", imageName: "family", pingYing: "dà", translation: "большой"),
         CharacterData(character: "小", imageName: "hospital", pingYing: "xiǎo", translation: "маленький"),
@@ -154,63 +147,58 @@ class DataManager {
         CharacterData(character: "很", imageName: "shop", pingYing: "hěn" , translation: "очень"),
         CharacterData(character: "哪", imageName:"", pingYing: "nǎ" , translation: "какой (который)")
     ]
+    var phrazesCharacters = [
+        CharacterData(character: "喂", imageName: "family", pingYing: "wèi", translation: "алло, привет"),
+        CharacterData(character: "是", imageName: "hospital", pingYing: "shì", translation: "да (тж. - глагол быть)"),
+        CharacterData(character: "不", imageName: "shop", pingYing: "bù", translation: "нет (не)"),
+        CharacterData(character: "怎么", imageName: "love", pingYing: "zěnme", translation: "каким образом (как, в каком состоянии, почему)"),
+        CharacterData(character: "谢谢", imageName: "family", pingYing: "xièxie", translation: "спасибо (благодарить)" ),
+        CharacterData(character: "不客气", imageName: "hospital", pingYing: "bú kèqi", translation: "не стоит"),
+        CharacterData(character: "对不起", imageName: "shop", pingYing: "duìbuqǐ", translation: "извините"),
+        CharacterData(character: "没关系", imageName:"", pingYing: "méi guānxi" , translation: "ничего не случилось (не бойтесь)"),
+        CharacterData(character: "再见", imageName: "shop", pingYing: "zàijiàn" , translation: "до свидания")
+    ]
+    var verbsCharacters = [
+        CharacterData(character: "说话", imageName: "family", pingYing: "shuōhuà", translation: "разговаривать (говорить)"),
+        CharacterData(character: "打电话", imageName: "hospital", pingYing: "dǎdiànhuà", translation: "звонить (говорить) по телефону"),
+        CharacterData(character: "叫", imageName: "shop", pingYing: "jiào", translation: "звать (именем)"),
+        CharacterData(character: "认识", imageName: "love", pingYing: "rènshi", translation: "быть знакомыми (знакомиться)"),
+        CharacterData(character: "请", imageName: "family", pingYing: "qǐng", translation: "просить" ),
+        CharacterData(character: "想", imageName: "hospital", pingYing: "xiǎng", translation: "собираться что-то сделать (думать)"),
+        CharacterData(character: "听", imageName: "shop", pingYing: "tīng", translation: "слышать, слушать"),
+        CharacterData(character: "看", imageName:"", pingYing: "kàn" , translation: "смотреть, читать (глядеть)"),
+        CharacterData(character: "看见", imageName: "shop", pingYing: "kànjiàn" , translation: "увидеть"),
+        CharacterData(character: "喜欢", imageName:"", pingYing: "xǐhuan" , translation: "нравится"),
+        CharacterData(character: "能", imageName: "family", pingYing: "néng", translation: "можно"),
+        CharacterData(character: "去", imageName: "hospital", pingYing: "qù", translation: "уйти, , уехать (поехать, пойти куда-либо)"),
+        CharacterData(character: "叫", imageName: "shop", pingYing: "jiào", translation: "звать (именем)"),
+        CharacterData(character: "来", imageName: "love", pingYing: "lái", translation: "прийти, приехать"),
+        CharacterData(character: "会", imageName: "family", pingYing: "huì", translation: "уметь" ),
+        CharacterData(character: "爱", imageName: "hospital", pingYing: "ài", translation: "любить (любить делать что-либо)"),
+        CharacterData(character: "回", imageName: "shop", pingYing: "huí", translation: "вернуться"),
+        CharacterData(character: "开", imageName:"", pingYing: "kāi" , translation: "водить машину"),
+        CharacterData(character: "买", imageName: "shop", pingYing: "mǎi" , translation: "покупать"),
+        CharacterData(character: "在", imageName:"", pingYing: "zài" , translation: "находиться (тж. обозначает, что действие находится в процессе)"),
+        CharacterData(character: "住", imageName:"", pingYing: "zhù" , translation: "жить где-либо")
+    ]
+        var particlesCharacters = [
+            CharacterData(character: "做", imageName: "family", pingYing: "zuò", translation: "заниматься, делать (изготавливать)"),
+            CharacterData(character: "坐", imageName: "hospital", pingYing: "zuò", translation: "сидеть, ехать (на транспортном средстве)"),
+            CharacterData(character: "睡觉", imageName: "shop", pingYing: "shuìjiào", translation: "спать, ложиться спать"),
+            CharacterData(character: "工作", imageName: "love", pingYing: "gōngzuò", translation: "работать (работа)"),
+            CharacterData(character: "钱", imageName: "family", pingYing: "qián", translation: "деньги" ),
+            CharacterData(character: "本", imageName: "hospital", pingYing: "běn", translation: "том(счетное слово для книг)"),
+            CharacterData(character: "医生", imageName: "shop", pingYing: "yīshēng", translation: "врач"),
+            CharacterData(character: "医院", imageName:"", pingYing: "yīyuàn" , translation: "больница"),
+            CharacterData(character: "吗", imageName: "shop", pingYing: "ma" , translation: "вопросительная частица в конце предложения"),
+            CharacterData(character: "的", imageName: "shop", pingYing: "de", translation: "притяжательная частица (присоединяет определение;также употребляется для усиления)"),
+            CharacterData(character: "了", imageName:"", pingYing: "le" , translation: "употребляется в конце предложения для обозначения происшедших изменений"),
+            CharacterData(character: "呢", imageName: "shop", pingYing: "ne" , translation: "вопросительная частица, ставится в конце предложения")
+        ]
     private init(){}
 }
 
 /*
- 10. Прилагательные
- 
- 漂亮 piàoliɑng красивый高兴 gāoxìng веселый (радостный, счастливый)热 rè горячий冷 lěng холодный太 tài чрезвычайно很 hěn очень哪 nǎ какой (который)
-
- 12. Фразы
- 喂 wèi алло, привет
- 是 shì да (тж. - глагол "быть")
- 不 bù нет (не)
- 怎么样 zěnmeyàng как ты считаешь (как по твоему мнению)
- 怎么 zěnme каким образом (как, в каком состоянии, почему)
- 谢谢 xièxie спасибо (благодарить)
- 不客气 bú kèqi не стоит
- 对不起 duìbuqǐ извините
- 没关系 méi guānxi ничего не случилось (не бойтесь)
- 再见 zàijiàn до свидания
-
- 13. Глаголы 1
- 说话 shuōhuà разговаривать (говорить)
- 打电话 dǎdiànhuà звонить (говорить) по телефону
- 叫 jiào звать (именем)
- 认识 rènshi быть знакомыми (знакомиться)
- 请 qǐng просить
- 想 xiǎng собираться что-то сделать (думать)
- 听 tīng слышать. слушать
- 看 kàn смотреть, читать (глядеть)
- 看见 kànjiàn увидеть
- 喜欢 xǐhuan нравится
-
- 14. Глаголы 2
- 能 néng можно
- 去 qù уйти, уехать (поехать, пойти куда-либо)
- 来 lái прийти, приехать
- 会 huì уметь
- 爱 ài любить (любить делать что-либо)
- 回 huí вернуться
- 开 kāi водить машину
- 买 mǎi покупать
- 在 zài находиться (тж. обозначает, что действие находится в процессе)
- 住 zhù жить где-либо
-
- 15 .Все остальное
- 做 zuò заниматься, делать (изготавливать)
- 坐 zuò сидеть, ехать (на транспортном средстве)
- 睡觉 shuìjiào спать, ложиться спать
- 工作 gōngzuò работать (работа)
- 钱 qián деньги
- 本 běn том (счетное слово для книг)
- 医生 yīshēng врач
- 医院 yīyuàn больница
- 吗 ma вопросительная частица в конце предложения
- 的 de притяжательная частица (присоединяет определение;
- также употребляется для усиления)
- 了 le - употребляется в конце предложения для обозначения происшедших изменений
- 呢 ne - вопросительная частица, ставится в конце предложения;
- также ставится в конце повествовательного предложения
+ 做 zuò заниматься, делать (изготавливать)坐 zuò сидеть, ехать (на транспортном средстве)
+ 睡觉 shuìjiào спать, ложиться спать工作 gōngzuò работать (работа)钱 qián деньги本 běnтом(счетное слово для книг)医生 yīshēng врач医院 yīyuàn больница吗 ma вопросительная частица в конце предложения的 de притяжательная частица (присоединяет определение;также употребляется для усиления)了 le - употребляется в конце предложения для обозначения происшедших изменений呢 ne - вопросительная частица, ставится в конце предложения;также ставится в конце повествовательного предложения
  */

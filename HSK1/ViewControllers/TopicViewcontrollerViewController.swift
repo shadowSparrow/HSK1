@@ -103,7 +103,12 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.placeCharacters)
             case "Adjectives":
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.adjectivesCharacters)
-                
+            case "Actions":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.verbsCharacters)
+            case "Phrazes":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.phrazesCharacters)
+            case "Particles":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.particlesCharacters)
             default:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.nounsCharacters)
             }

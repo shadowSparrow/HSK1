@@ -60,15 +60,15 @@ class CardCollectionViewCell: UICollectionViewCell {
         UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             
         self.playButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            //self.playButton.transform = CGAffineTransform(rotationAngle: -2)
+            
         } completion: { bool in
             UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
-                //self.playButton.transform = CGAffineTransform(rotationAngle: 0)
+            
                 self.playButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
             
         }
-        playsound(name: character?.name ?? "")
+        playsound(name: "爸爸" ?? "")
     }
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
