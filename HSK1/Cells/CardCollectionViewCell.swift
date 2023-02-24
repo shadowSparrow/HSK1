@@ -68,7 +68,7 @@ class CardCollectionViewCell: UICollectionViewCell {
             }, completion: nil)
             
         }
-        playsound(name: "爸爸" ?? "")
+        playsound(name: character?.name ?? "")
     }
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)

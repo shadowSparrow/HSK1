@@ -14,12 +14,162 @@
 		0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */; };
 		041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */; };
 		041B4A742970C6D500607643 /* TopicCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4A732970C6D500607643 /* TopicCellCollectionViewCell.swift */; };
+		042AF1AD29A978A20073908C /* 打电话.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19A29A978A10073908C /* 打电话.mp3 */; };
+		042AF1AE29A978A20073908C /* 会.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19B29A978A10073908C /* 会.mp3 */; };
+		042AF1AF29A978A20073908C /* 在.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19C29A978A10073908C /* 在.mp3 */; };
+		042AF1B029A978A20073908C /* 认识.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19D29A978A10073908C /* 认识.mp3 */; };
+		042AF1B129A978A20073908C /* 喜欢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19E29A978A10073908C /* 喜欢.mp3 */; };
+		042AF1B229A978A20073908C /* 去.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF19F29A978A20073908C /* 去.mp3 */; };
+		042AF1B329A978A20073908C /* 想.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A029A978A20073908C /* 想.mp3 */; };
+		042AF1B429A978A20073908C /* 能.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A129A978A20073908C /* 能.mp3 */; };
+		042AF1B529A978A20073908C /* 来.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A229A978A20073908C /* 来.mp3 */; };
+		042AF1B629A978A20073908C /* 买.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A329A978A20073908C /* 买.mp3 */; };
+		042AF1B729A978A20073908C /* 请.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A429A978A20073908C /* 请.mp3 */; };
+		042AF1B829A978A20073908C /* 开.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A529A978A20073908C /* 开.mp3 */; };
+		042AF1B929A978A20073908C /* 叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A629A978A20073908C /* 叫.mp3 */; };
+		042AF1BA29A978A20073908C /* 回.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A729A978A20073908C /* 回.mp3 */; };
+		042AF1BB29A978A20073908C /* 说话.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A829A978A20073908C /* 说话.mp3 */; };
+		042AF1BC29A978A20073908C /* 听.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1A929A978A20073908C /* 听.mp3 */; };
+		042AF1BD29A978A20073908C /* 看.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1AA29A978A20073908C /* 看.mp3 */; };
+		042AF1BE29A978A20073908C /* 看见.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1AB29A978A20073908C /* 看见.mp3 */; };
+		042AF1BF29A978A20073908C /* 住.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1AC29A978A20073908C /* 住.mp3 */; };
+		042AF1C829A978FD0073908C /* 喂.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C029A978FD0073908C /* 喂.mp3 */; };
+		042AF1C929A978FD0073908C /* 对不起.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C129A978FD0073908C /* 对不起.mp3 */; };
+		042AF1CA29A978FD0073908C /* 再见.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C229A978FD0073908C /* 再见.mp3 */; };
+		042AF1CB29A978FD0073908C /* 怎么.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C329A978FD0073908C /* 怎么.mp3 */; };
+		042AF1CC29A978FD0073908C /* 不.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C429A978FD0073908C /* 不.mp3 */; };
+		042AF1CD29A978FD0073908C /* 怎么样.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C529A978FD0073908C /* 怎么样.mp3 */; };
+		042AF1CE29A978FD0073908C /* 没关系.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C629A978FD0073908C /* 没关系.mp3 */; };
+		042AF1CF29A978FD0073908C /* 不客气.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1C729A978FD0073908C /* 不客气.mp3 */; };
+		042AF1D129A979450073908C /* 是.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D029A979450073908C /* 是.mp3 */; };
+		042AF1DE29A97ACA0073908C /* 工作.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D229A97AC90073908C /* 工作.mp3 */; };
+		042AF1DF29A97ACA0073908C /* 钱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D329A97AC90073908C /* 钱.mp3 */; };
+		042AF1E029A97ACA0073908C /* 做.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D429A97AC90073908C /* 做.mp3 */; };
+		042AF1E129A97ACA0073908C /* 了.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D529A97AC90073908C /* 了.mp3 */; };
+		042AF1E229A97ACA0073908C /* 呢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D629A97AC90073908C /* 呢.mp3 */; };
+		042AF1E329A97ACA0073908C /* 医生.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D729A97AC90073908C /* 医生.mp3 */; };
+		042AF1E429A97ACA0073908C /* 吗.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D829A97AC90073908C /* 吗.mp3 */; };
+		042AF1E529A97ACA0073908C /* 坐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1D929A97AC90073908C /* 坐.mp3 */; };
+		042AF1E629A97ACA0073908C /* 本.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DA29A97AC90073908C /* 本.mp3 */; };
+		042AF1E729A97ACA0073908C /* 医院.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DB29A97ACA0073908C /* 医院.mp3 */; };
+		042AF1E829A97ACA0073908C /* 的.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DC29A97ACA0073908C /* 的.mp3 */; };
+		042AF1E929A97ACA0073908C /* 睡觉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DD29A97ACA0073908C /* 睡觉.mp3 */; };
 		042E437329649B35007EBBCA /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437229649B35007EBBCA /* note.png */; };
 		042E437529649DC4007EBBCA /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437429649DC4007EBBCA /* play.png */; };
 		0450A3A9291188C900E4C60E /* CardsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* CardsVc.swift */; };
 		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
 		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
 		045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C9DFC2974032C00AE2C97 /* TopicData.swift */; };
+		048CCF1C29A95E2B00AFCF73 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */; };
+		048CCF2029A95EB500AFCF73 /* 人.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF1F29A95EB500AFCF73 /* 人.mp3 */; };
+		048CCF2929A95F1200AFCF73 /* 妈妈.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2129A95F1100AFCF73 /* 妈妈.mp3 */; };
+		048CCF2A29A95F1200AFCF73 /* 岁.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2229A95F1100AFCF73 /* 岁.mp3 */; };
+		048CCF2B29A95F1200AFCF73 /* 先生.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2329A95F1100AFCF73 /* 先生.mp3 */; };
+		048CCF2C29A95F1200AFCF73 /* 儿子.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2429A95F1200AFCF73 /* 儿子.mp3 */; };
+		048CCF2D29A95F1200AFCF73 /* 朋友.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2529A95F1200AFCF73 /* 朋友.mp3 */; };
+		048CCF2E29A95F1200AFCF73 /* 女儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2629A95F1200AFCF73 /* 女儿.mp3 */; };
+		048CCF2F29A95F1200AFCF73 /* 小姐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2729A95F1200AFCF73 /* 小姐.mp3 */; };
+		048CCF3229A95F4B00AFCF73 /* 家.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF3129A95F4B00AFCF73 /* 家.mp3 */; };
+		048CCF4929A9622100AFCF73 /* 商店.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF3F29A9622000AFCF73 /* 商店.mp3 */; };
+		048CCF4A29A9622100AFCF73 /* 电影.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4029A9622000AFCF73 /* 电影.mp3 */; };
+		048CCF4B29A9622100AFCF73 /* 电脑.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4129A9622000AFCF73 /* 电脑.mp3 */; };
+		048CCF4C29A9622100AFCF73 /* 衣服.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4229A9622000AFCF73 /* 衣服.mp3 */; };
+		048CCF4D29A9622100AFCF73 /* 东西.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4329A9622000AFCF73 /* 东西.mp3 */; };
+		048CCF4E29A9622100AFCF73 /* 书.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4429A9622100AFCF73 /* 书.mp3 */; };
+		048CCF4F29A9622100AFCF73 /* 桌子.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4529A9622100AFCF73 /* 桌子.mp3 */; };
+		048CCF5029A9622100AFCF73 /* 名字.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4629A9622100AFCF73 /* 名字.mp3 */; };
+		048CCF5129A9622100AFCF73 /* 电视.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4729A9622100AFCF73 /* 电视.mp3 */; };
+		048CCF5229A9622100AFCF73 /* 椅子.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF4829A9622100AFCF73 /* 椅子.mp3 */; };
+		048CCF5D29A9638500AFCF73 /* 中午.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5329A9637D00AFCF73 /* 中午.mp3 */; };
+		048CCF5E29A9638500AFCF73 /* 上午.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5429A9637E00AFCF73 /* 上午.mp3 */; };
+		048CCF5F29A9638500AFCF73 /* 下雨.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5529A9637F00AFCF73 /* 下雨.mp3 */; };
+		048CCF6029A9638500AFCF73 /* 天气.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5629A9637F00AFCF73 /* 天气.mp3 */; };
+		048CCF6129A9638500AFCF73 /* 中国.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5729A9638000AFCF73 /* 中国.mp3 */; };
+		048CCF6229A9638500AFCF73 /* 块.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5829A9638100AFCF73 /* 块.mp3 */; };
+		048CCF6329A9638500AFCF73 /* 北京.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5929A9638200AFCF73 /* 北京.mp3 */; };
+		048CCF6429A9638500AFCF73 /* 飞机.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5A29A9638300AFCF73 /* 飞机.mp3 */; };
+		048CCF6529A9638500AFCF73 /* 出租车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5B29A9638300AFCF73 /* 出租车.mp3 */; };
+		048CCF6629A9638500AFCF73 /* 下午.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF5C29A9638400AFCF73 /* 下午.mp3 */; };
+		048CCF7229A9662500AFCF73 /* 水果.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6829A9662400AFCF73 /* 水果.mp3 */; };
+		048CCF7329A9662500AFCF73 /* 杯子.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6929A9662400AFCF73 /* 杯子.mp3 */; };
+		048CCF7429A9662500AFCF73 /* 水.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6A29A9662400AFCF73 /* 水.mp3 */; };
+		048CCF7529A9662500AFCF73 /* 苹果.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6B29A9662400AFCF73 /* 苹果.mp3 */; };
+		048CCF7629A9662500AFCF73 /* 菜.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6C29A9662400AFCF73 /* 菜.mp3 */; };
+		048CCF7729A9662500AFCF73 /* 饭店.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6D29A9662400AFCF73 /* 饭店.mp3 */; };
+		048CCF7829A9662500AFCF73 /* 茶.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6E29A9662400AFCF73 /* 茶.mp3 */; };
+		048CCF7929A9662500AFCF73 /* 喝.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF6F29A9662500AFCF73 /* 喝.mp3 */; };
+		048CCF7A29A9662500AFCF73 /* 米饭.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7029A9662500AFCF73 /* 米饭.mp3 */; };
+		048CCF7B29A9662500AFCF73 /* 吃.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7129A9662500AFCF73 /* 吃.mp3 */; };
+		048CCF8629A9682B00AFCF73 /* 学习.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7C29A9682B00AFCF73 /* 学习.mp3 */; };
+		048CCF8729A9682B00AFCF73 /* 字.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7D29A9682B00AFCF73 /* 字.mp3 */; };
+		048CCF8829A9682B00AFCF73 /* 学生.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7E29A9682B00AFCF73 /* 学生.mp3 */; };
+		048CCF8929A9682B00AFCF73 /* 老师.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF7F29A9682B00AFCF73 /* 老师.mp3 */; };
+		048CCF8A29A9682B00AFCF73 /* 学校.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8029A9682B00AFCF73 /* 学校.mp3 */; };
+		048CCF8B29A9682B00AFCF73 /* 说.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8129A9682B00AFCF73 /* 说.mp3 */; };
+		048CCF8C29A9682B00AFCF73 /* 读.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8229A9682B00AFCF73 /* 读.mp3 */; };
+		048CCF8D29A9682B00AFCF73 /* 同学.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8329A9682B00AFCF73 /* 同学.mp3 */; };
+		048CCF8E29A9682B00AFCF73 /* 写.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8429A9682B00AFCF73 /* 写.mp3 */; };
+		048CCF8F29A9682B00AFCF73 /* 汉语.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8529A9682B00AFCF73 /* 汉语.mp3 */; };
+		048CCF9A29A96A8D00AFCF73 /* 什么.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9029A96A8C00AFCF73 /* 什么.mp3 */; };
+		048CCF9B29A96A8D00AFCF73 /* 和.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9129A96A8C00AFCF73 /* 和.mp3 */; };
+		048CCF9C29A96A8D00AFCF73 /* 他.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9229A96A8C00AFCF73 /* 他.mp3 */; };
+		048CCF9D29A96A8D00AFCF73 /* 她.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9329A96A8C00AFCF73 /* 她.mp3 */; };
+		048CCF9E29A96A8D00AFCF73 /* 我.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9429A96A8C00AFCF73 /* 我.mp3 */; };
+		048CCF9F29A96A8D00AFCF73 /* 谁.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9529A96A8C00AFCF73 /* 谁.mp3 */; };
+		048CCFA029A96A8D00AFCF73 /* 你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9629A96A8C00AFCF73 /* 你.mp3 */; };
+		048CCFA129A96A8D00AFCF73 /* 我们.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9729A96A8C00AFCF73 /* 我们.mp3 */; };
+		048CCFA229A96A8D00AFCF73 /* 这.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9829A96A8C00AFCF73 /* 这.mp3 */; };
+		048CCFA329A96A8D00AFCF73 /* 那.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9929A96A8D00AFCF73 /* 那.mp3 */; };
+		048CCFB729A96E3100AFCF73 /* 几.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA429A96E3000AFCF73 /* 几.mp3 */; };
+		048CCFB829A96E3100AFCF73 /* 五.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA529A96E3100AFCF73 /* 五.mp3 */; };
+		048CCFB929A96E3100AFCF73 /* 些.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA629A96E3100AFCF73 /* 些.mp3 */; };
+		048CCFBA29A96E3100AFCF73 /* 七.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA729A96E3100AFCF73 /* 七.mp3 */; };
+		048CCFBB29A96E3100AFCF73 /* 一点儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA829A96E3100AFCF73 /* 一点儿.mp3 */; };
+		048CCFBC29A96E3100AFCF73 /* 八.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFA929A96E3100AFCF73 /* 八.mp3 */; };
+		048CCFBD29A96E3100AFCF73 /* 四.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAA29A96E3100AFCF73 /* 四.mp3 */; };
+		048CCFBE29A96E3100AFCF73 /* 十.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAB29A96E3100AFCF73 /* 十.mp3 */; };
+		048CCFBF29A96E3100AFCF73 /* 一.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAC29A96E3100AFCF73 /* 一.mp3 */; };
+		048CCFC029A96E3200AFCF73 /* 六.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAD29A96E3100AFCF73 /* 六.mp3 */; };
+		048CCFC129A96E3200AFCF73 /* 三.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAE29A96E3100AFCF73 /* 三.mp3 */; };
+		048CCFC229A96E3200AFCF73 /* 个.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFAF29A96E3100AFCF73 /* 个.mp3 */; };
+		048CCFC329A96E3200AFCF73 /* 号.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB029A96E3100AFCF73 /* 号.mp3 */; };
+		048CCFC429A96E3200AFCF73 /* 二.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB129A96E3100AFCF73 /* 二.mp3 */; };
+		048CCFC529A96E3200AFCF73 /* 都.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB229A96E3100AFCF73 /* 都.mp3 */; };
+		048CCFC629A96E3200AFCF73 /* 少.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB329A96E3100AFCF73 /* 少.mp3 */; };
+		048CCFC729A96E3200AFCF73 /* 多.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB429A96E3100AFCF73 /* 多.mp3 */; };
+		048CCFC829A96E3200AFCF73 /* 九.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB529A96E3100AFCF73 /* 九.mp3 */; };
+		048CCFC929A96E3200AFCF73 /* 多少.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFB629A96E3100AFCF73 /* 多少.mp3 */; };
+		048CCFDE29A96FF900AFCF73 /* 前面.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCA29A96FF800AFCF73 /* 前面.mp3 */; };
+		048CCFDF29A96FF900AFCF73 /* 分钟.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCB29A96FF800AFCF73 /* 分钟.mp3 */; };
+		048CCFE029A96FF900AFCF73 /* 没有.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCC29A96FF800AFCF73 /* 没有.mp3 */; };
+		048CCFE129A96FF900AFCF73 /* 星期.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCD29A96FF800AFCF73 /* 星期.mp3 */; };
+		048CCFE229A96FF900AFCF73 /* 现在.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCE29A96FF800AFCF73 /* 现在.mp3 */; };
+		048CCFE329A96FF900AFCF73 /* 这儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFCF29A96FF800AFCF73 /* 这儿.mp3 */; };
+		048CCFE429A96FF900AFCF73 /* 有.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD029A96FF800AFCF73 /* 有.mp3 */; };
+		048CCFE529A96FF900AFCF73 /* 点.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD129A96FF800AFCF73 /* 点.mp3 */; };
+		048CCFE629A96FF900AFCF73 /* 那儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD229A96FF800AFCF73 /* 那儿.mp3 */; };
+		048CCFE729A96FF900AFCF73 /* 下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD329A96FF800AFCF73 /* 下.mp3 */; };
+		048CCFE829A96FF900AFCF73 /* 时候.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD429A96FF800AFCF73 /* 时候.mp3 */; };
+		048CCFE929A96FF900AFCF73 /* 里.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD529A96FF800AFCF73 /* 里.mp3 */; };
+		048CCFEA29A96FF900AFCF73 /* 上.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD629A96FF900AFCF73 /* 上.mp3 */; };
+		048CCFEB29A96FF900AFCF73 /* 年.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD729A96FF900AFCF73 /* 年.mp3 */; };
+		048CCFEC29A96FF900AFCF73 /* 月.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD829A96FF900AFCF73 /* 月.mp3 */; };
+		048CCFED29A96FF900AFCF73 /* 昨天.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFD929A96FF900AFCF73 /* 昨天.mp3 */; };
+		048CCFEE29A96FF900AFCF73 /* 今天.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFDA29A96FF900AFCF73 /* 今天.mp3 */; };
+		048CCFEF29A96FF900AFCF73 /* 哪儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFDB29A96FF900AFCF73 /* 哪儿.mp3 */; };
+		048CCFF029A96FF900AFCF73 /* 后面.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFDC29A96FF900AFCF73 /* 后面.mp3 */; };
+		048CCFF129A96FF900AFCF73 /* 明天.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFDD29A96FF900AFCF73 /* 明天.mp3 */; };
+		048CD00729A9754800AFCF73 /* 冷.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFF329A9754700AFCF73 /* 冷.mp3 */; };
+		048CD00829A9754800AFCF73 /* 小.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFF429A9754700AFCF73 /* 小.mp3 */; };
+		048CD00B29A9754800AFCF73 /* 漂亮.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFF729A9754700AFCF73 /* 漂亮.mp3 */; };
+		048CD00D29A9754800AFCF73 /* 谢谢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFF929A9754700AFCF73 /* 谢谢.mp3 */; };
+		048CD01029A9754800AFCF73 /* 太.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFFC29A9754800AFCF73 /* 太.mp3 */; };
+		048CD01129A9754800AFCF73 /* 大.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFFD29A9754800AFCF73 /* 大.mp3 */; };
+		048CD01229A9754800AFCF73 /* 哪.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCFFE29A9754800AFCF73 /* 哪.mp3 */; };
+		048CD01529A9754800AFCF73 /* 高兴.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CD00129A9754800AFCF73 /* 高兴.mp3 */; };
+		048CD01629A9754800AFCF73 /* 热.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CD00229A9754800AFCF73 /* 热.mp3 */; };
+		048CD01729A9754800AFCF73 /* 好.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CD00329A9754800AFCF73 /* 好.mp3 */; };
+		048CD01929A9754800AFCF73 /* 很.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CD00529A9754800AFCF73 /* 很.mp3 */; };
 		0498A32C296F47E3003D5082 /* TopicViewcontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */; };
 		04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1C92867705A00A3FC68 /* AppDelegate.swift */; };
 		04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */; };
@@ -39,24 +189,163 @@
 		0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDeckCollectionVC.swift; sourceTree = "<group>"; };
 		0411139F286DD0C0008B5DD9 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		041B4A732970C6D500607643 /* TopicCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		042AF19A29A978A10073908C /* 打电话.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "打电话.mp3"; sourceTree = "<group>"; };
+		042AF19B29A978A10073908C /* 会.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "会.mp3"; sourceTree = "<group>"; };
+		042AF19C29A978A10073908C /* 在.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "在.mp3"; sourceTree = "<group>"; };
+		042AF19D29A978A10073908C /* 认识.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "认识.mp3"; sourceTree = "<group>"; };
+		042AF19E29A978A10073908C /* 喜欢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "喜欢.mp3"; sourceTree = "<group>"; };
+		042AF19F29A978A20073908C /* 去.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "去.mp3"; sourceTree = "<group>"; };
+		042AF1A029A978A20073908C /* 想.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "想.mp3"; sourceTree = "<group>"; };
+		042AF1A129A978A20073908C /* 能.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "能.mp3"; sourceTree = "<group>"; };
+		042AF1A229A978A20073908C /* 来.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "来.mp3"; sourceTree = "<group>"; };
+		042AF1A329A978A20073908C /* 买.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "买.mp3"; sourceTree = "<group>"; };
+		042AF1A429A978A20073908C /* 请.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "请.mp3"; sourceTree = "<group>"; };
+		042AF1A529A978A20073908C /* 开.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "开.mp3"; sourceTree = "<group>"; };
+		042AF1A629A978A20073908C /* 叫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叫.mp3"; sourceTree = "<group>"; };
+		042AF1A729A978A20073908C /* 回.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "回.mp3"; sourceTree = "<group>"; };
+		042AF1A829A978A20073908C /* 说话.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "说话.mp3"; sourceTree = "<group>"; };
+		042AF1A929A978A20073908C /* 听.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "听.mp3"; sourceTree = "<group>"; };
+		042AF1AA29A978A20073908C /* 看.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "看.mp3"; sourceTree = "<group>"; };
+		042AF1AB29A978A20073908C /* 看见.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "看见.mp3"; sourceTree = "<group>"; };
+		042AF1AC29A978A20073908C /* 住.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "住.mp3"; sourceTree = "<group>"; };
+		042AF1C029A978FD0073908C /* 喂.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "喂.mp3"; sourceTree = "<group>"; };
+		042AF1C129A978FD0073908C /* 对不起.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "对不起.mp3"; sourceTree = "<group>"; };
+		042AF1C229A978FD0073908C /* 再见.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "再见.mp3"; sourceTree = "<group>"; };
+		042AF1C329A978FD0073908C /* 怎么.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "怎么.mp3"; sourceTree = "<group>"; };
+		042AF1C429A978FD0073908C /* 不.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "不.mp3"; sourceTree = "<group>"; };
+		042AF1C529A978FD0073908C /* 怎么样.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "怎么样.mp3"; sourceTree = "<group>"; };
+		042AF1C629A978FD0073908C /* 没关系.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "没关系.mp3"; sourceTree = "<group>"; };
+		042AF1C729A978FD0073908C /* 不客气.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "不客气.mp3"; sourceTree = "<group>"; };
+		042AF1D029A979450073908C /* 是.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "是.mp3"; sourceTree = "<group>"; };
+		042AF1D229A97AC90073908C /* 工作.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "工作.mp3"; sourceTree = "<group>"; };
+		042AF1D329A97AC90073908C /* 钱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "钱.mp3"; sourceTree = "<group>"; };
+		042AF1D429A97AC90073908C /* 做.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "做.mp3"; sourceTree = "<group>"; };
+		042AF1D529A97AC90073908C /* 了.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "了.mp3"; sourceTree = "<group>"; };
+		042AF1D629A97AC90073908C /* 呢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "呢.mp3"; sourceTree = "<group>"; };
+		042AF1D729A97AC90073908C /* 医生.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "医生.mp3"; sourceTree = "<group>"; };
+		042AF1D829A97AC90073908C /* 吗.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "吗.mp3"; sourceTree = "<group>"; };
+		042AF1D929A97AC90073908C /* 坐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "坐.mp3"; sourceTree = "<group>"; };
+		042AF1DA29A97AC90073908C /* 本.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "本.mp3"; sourceTree = "<group>"; };
+		042AF1DB29A97ACA0073908C /* 医院.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "医院.mp3"; sourceTree = "<group>"; };
+		042AF1DC29A97ACA0073908C /* 的.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "的.mp3"; sourceTree = "<group>"; };
+		042AF1DD29A97ACA0073908C /* 睡觉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "睡觉.mp3"; sourceTree = "<group>"; };
 		042E437229649B35007EBBCA /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
 		042E437429649DC4007EBBCA /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		0450A3A8291188C900E4C60E /* CardsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVc.swift; sourceTree = "<group>"; };
 		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
 		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
 		045C9DFC2974032C00AE2C97 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
+		048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爸爸.mp3"; sourceTree = "<group>"; };
+		048CCF1F29A95EB500AFCF73 /* 人.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "人.mp3"; sourceTree = "<group>"; };
+		048CCF2129A95F1100AFCF73 /* 妈妈.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "妈妈.mp3"; sourceTree = "<group>"; };
+		048CCF2229A95F1100AFCF73 /* 岁.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "岁.mp3"; sourceTree = "<group>"; };
+		048CCF2329A95F1100AFCF73 /* 先生.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "先生.mp3"; sourceTree = "<group>"; };
+		048CCF2429A95F1200AFCF73 /* 儿子.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "儿子.mp3"; sourceTree = "<group>"; };
+		048CCF2529A95F1200AFCF73 /* 朋友.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "朋友.mp3"; sourceTree = "<group>"; };
+		048CCF2629A95F1200AFCF73 /* 女儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "女儿.mp3"; sourceTree = "<group>"; };
+		048CCF2729A95F1200AFCF73 /* 小姐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小姐.mp3"; sourceTree = "<group>"; };
+		048CCF3129A95F4B00AFCF73 /* 家.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "家.mp3"; sourceTree = "<group>"; };
+		048CCF3F29A9622000AFCF73 /* 商店.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "商店.mp3"; sourceTree = "<group>"; };
+		048CCF4029A9622000AFCF73 /* 电影.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "电影.mp3"; sourceTree = "<group>"; };
+		048CCF4129A9622000AFCF73 /* 电脑.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "电脑.mp3"; sourceTree = "<group>"; };
+		048CCF4229A9622000AFCF73 /* 衣服.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "衣服.mp3"; sourceTree = "<group>"; };
+		048CCF4329A9622000AFCF73 /* 东西.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "东西.mp3"; sourceTree = "<group>"; };
+		048CCF4429A9622100AFCF73 /* 书.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "书.mp3"; sourceTree = "<group>"; };
+		048CCF4529A9622100AFCF73 /* 桌子.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "桌子.mp3"; sourceTree = "<group>"; };
+		048CCF4629A9622100AFCF73 /* 名字.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "名字.mp3"; sourceTree = "<group>"; };
+		048CCF4729A9622100AFCF73 /* 电视.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "电视.mp3"; sourceTree = "<group>"; };
+		048CCF4829A9622100AFCF73 /* 椅子.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "椅子.mp3"; sourceTree = "<group>"; };
+		048CCF5329A9637D00AFCF73 /* 中午.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "中午.mp3"; sourceTree = "<group>"; };
+		048CCF5429A9637E00AFCF73 /* 上午.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "上午.mp3"; sourceTree = "<group>"; };
+		048CCF5529A9637F00AFCF73 /* 下雨.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "下雨.mp3"; sourceTree = "<group>"; };
+		048CCF5629A9637F00AFCF73 /* 天气.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "天气.mp3"; sourceTree = "<group>"; };
+		048CCF5729A9638000AFCF73 /* 中国.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "中国.mp3"; sourceTree = "<group>"; };
+		048CCF5829A9638100AFCF73 /* 块.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "块.mp3"; sourceTree = "<group>"; };
+		048CCF5929A9638200AFCF73 /* 北京.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "北京.mp3"; sourceTree = "<group>"; };
+		048CCF5A29A9638300AFCF73 /* 飞机.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "飞机.mp3"; sourceTree = "<group>"; };
+		048CCF5B29A9638300AFCF73 /* 出租车.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "出租车.mp3"; sourceTree = "<group>"; };
+		048CCF5C29A9638400AFCF73 /* 下午.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "下午.mp3"; sourceTree = "<group>"; };
+		048CCF6829A9662400AFCF73 /* 水果.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "水果.mp3"; sourceTree = "<group>"; };
+		048CCF6929A9662400AFCF73 /* 杯子.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "杯子.mp3"; sourceTree = "<group>"; };
+		048CCF6A29A9662400AFCF73 /* 水.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "水.mp3"; sourceTree = "<group>"; };
+		048CCF6B29A9662400AFCF73 /* 苹果.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "苹果.mp3"; sourceTree = "<group>"; };
+		048CCF6C29A9662400AFCF73 /* 菜.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "菜.mp3"; sourceTree = "<group>"; };
+		048CCF6D29A9662400AFCF73 /* 饭店.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "饭店.mp3"; sourceTree = "<group>"; };
+		048CCF6E29A9662400AFCF73 /* 茶.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "茶.mp3"; sourceTree = "<group>"; };
+		048CCF6F29A9662500AFCF73 /* 喝.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "喝.mp3"; sourceTree = "<group>"; };
+		048CCF7029A9662500AFCF73 /* 米饭.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "米饭.mp3"; sourceTree = "<group>"; };
+		048CCF7129A9662500AFCF73 /* 吃.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "吃.mp3"; sourceTree = "<group>"; };
+		048CCF7C29A9682B00AFCF73 /* 学习.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "学习.mp3"; sourceTree = "<group>"; };
+		048CCF7D29A9682B00AFCF73 /* 字.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "字.mp3"; sourceTree = "<group>"; };
+		048CCF7E29A9682B00AFCF73 /* 学生.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "学生.mp3"; sourceTree = "<group>"; };
+		048CCF7F29A9682B00AFCF73 /* 老师.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "老师.mp3"; sourceTree = "<group>"; };
+		048CCF8029A9682B00AFCF73 /* 学校.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "学校.mp3"; sourceTree = "<group>"; };
+		048CCF8129A9682B00AFCF73 /* 说.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "说.mp3"; sourceTree = "<group>"; };
+		048CCF8229A9682B00AFCF73 /* 读.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "读.mp3"; sourceTree = "<group>"; };
+		048CCF8329A9682B00AFCF73 /* 同学.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "同学.mp3"; sourceTree = "<group>"; };
+		048CCF8429A9682B00AFCF73 /* 写.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "写.mp3"; sourceTree = "<group>"; };
+		048CCF8529A9682B00AFCF73 /* 汉语.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "汉语.mp3"; sourceTree = "<group>"; };
+		048CCF9029A96A8C00AFCF73 /* 什么.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "什么.mp3"; sourceTree = "<group>"; };
+		048CCF9129A96A8C00AFCF73 /* 和.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "和.mp3"; sourceTree = "<group>"; };
+		048CCF9229A96A8C00AFCF73 /* 他.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "他.mp3"; sourceTree = "<group>"; };
+		048CCF9329A96A8C00AFCF73 /* 她.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "她.mp3"; sourceTree = "<group>"; };
+		048CCF9429A96A8C00AFCF73 /* 我.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我.mp3"; sourceTree = "<group>"; };
+		048CCF9529A96A8C00AFCF73 /* 谁.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "谁.mp3"; sourceTree = "<group>"; };
+		048CCF9629A96A8C00AFCF73 /* 你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "你.mp3"; sourceTree = "<group>"; };
+		048CCF9729A96A8C00AFCF73 /* 我们.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我们.mp3"; sourceTree = "<group>"; };
+		048CCF9829A96A8C00AFCF73 /* 这.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "这.mp3"; sourceTree = "<group>"; };
+		048CCF9929A96A8D00AFCF73 /* 那.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那.mp3"; sourceTree = "<group>"; };
+		048CCFA429A96E3000AFCF73 /* 几.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "几.mp3"; sourceTree = "<group>"; };
+		048CCFA529A96E3100AFCF73 /* 五.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "五.mp3"; sourceTree = "<group>"; };
+		048CCFA629A96E3100AFCF73 /* 些.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "些.mp3"; sourceTree = "<group>"; };
+		048CCFA729A96E3100AFCF73 /* 七.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "七.mp3"; sourceTree = "<group>"; };
+		048CCFA829A96E3100AFCF73 /* 一点儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "一点儿.mp3"; sourceTree = "<group>"; };
+		048CCFA929A96E3100AFCF73 /* 八.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "八.mp3"; sourceTree = "<group>"; };
+		048CCFAA29A96E3100AFCF73 /* 四.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "四.mp3"; sourceTree = "<group>"; };
+		048CCFAB29A96E3100AFCF73 /* 十.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "十.mp3"; sourceTree = "<group>"; };
+		048CCFAC29A96E3100AFCF73 /* 一.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "一.mp3"; sourceTree = "<group>"; };
+		048CCFAD29A96E3100AFCF73 /* 六.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "六.mp3"; sourceTree = "<group>"; };
+		048CCFAE29A96E3100AFCF73 /* 三.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "三.mp3"; sourceTree = "<group>"; };
+		048CCFAF29A96E3100AFCF73 /* 个.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "个.mp3"; sourceTree = "<group>"; };
+		048CCFB029A96E3100AFCF73 /* 号.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "号.mp3"; sourceTree = "<group>"; };
+		048CCFB129A96E3100AFCF73 /* 二.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "二.mp3"; sourceTree = "<group>"; };
+		048CCFB229A96E3100AFCF73 /* 都.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "都.mp3"; sourceTree = "<group>"; };
+		048CCFB329A96E3100AFCF73 /* 少.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "少.mp3"; sourceTree = "<group>"; };
+		048CCFB429A96E3100AFCF73 /* 多.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "多.mp3"; sourceTree = "<group>"; };
+		048CCFB529A96E3100AFCF73 /* 九.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "九.mp3"; sourceTree = "<group>"; };
+		048CCFB629A96E3100AFCF73 /* 多少.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "多少.mp3"; sourceTree = "<group>"; };
+		048CCFCA29A96FF800AFCF73 /* 前面.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "前面.mp3"; sourceTree = "<group>"; };
+		048CCFCB29A96FF800AFCF73 /* 分钟.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "分钟.mp3"; sourceTree = "<group>"; };
+		048CCFCC29A96FF800AFCF73 /* 没有.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "没有.mp3"; sourceTree = "<group>"; };
+		048CCFCD29A96FF800AFCF73 /* 星期.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "星期.mp3"; sourceTree = "<group>"; };
+		048CCFCE29A96FF800AFCF73 /* 现在.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "现在.mp3"; sourceTree = "<group>"; };
+		048CCFCF29A96FF800AFCF73 /* 这儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "这儿.mp3"; sourceTree = "<group>"; };
+		048CCFD029A96FF800AFCF73 /* 有.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "有.mp3"; sourceTree = "<group>"; };
+		048CCFD129A96FF800AFCF73 /* 点.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "点.mp3"; sourceTree = "<group>"; };
+		048CCFD229A96FF800AFCF73 /* 那儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那儿.mp3"; sourceTree = "<group>"; };
+		048CCFD329A96FF800AFCF73 /* 下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "下.mp3"; sourceTree = "<group>"; };
+		048CCFD429A96FF800AFCF73 /* 时候.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "时候.mp3"; sourceTree = "<group>"; };
+		048CCFD529A96FF800AFCF73 /* 里.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "里.mp3"; sourceTree = "<group>"; };
+		048CCFD629A96FF900AFCF73 /* 上.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "上.mp3"; sourceTree = "<group>"; };
+		048CCFD729A96FF900AFCF73 /* 年.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "年.mp3"; sourceTree = "<group>"; };
+		048CCFD829A96FF900AFCF73 /* 月.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "月.mp3"; sourceTree = "<group>"; };
+		048CCFD929A96FF900AFCF73 /* 昨天.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "昨天.mp3"; sourceTree = "<group>"; };
+		048CCFDA29A96FF900AFCF73 /* 今天.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "今天.mp3"; sourceTree = "<group>"; };
+		048CCFDB29A96FF900AFCF73 /* 哪儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "哪儿.mp3"; sourceTree = "<group>"; };
+		048CCFDC29A96FF900AFCF73 /* 后面.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "后面.mp3"; sourceTree = "<group>"; };
+		048CCFDD29A96FF900AFCF73 /* 明天.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "明天.mp3"; sourceTree = "<group>"; };
+		048CCFF329A9754700AFCF73 /* 冷.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "冷.mp3"; sourceTree = "<group>"; };
+		048CCFF429A9754700AFCF73 /* 小.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小.mp3"; sourceTree = "<group>"; };
+		048CCFF729A9754700AFCF73 /* 漂亮.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "漂亮.mp3"; sourceTree = "<group>"; };
+		048CCFF929A9754700AFCF73 /* 谢谢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "谢谢.mp3"; sourceTree = "<group>"; };
+		048CCFFC29A9754800AFCF73 /* 太.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "太.mp3"; sourceTree = "<group>"; };
+		048CCFFD29A9754800AFCF73 /* 大.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "大.mp3"; sourceTree = "<group>"; };
+		048CCFFE29A9754800AFCF73 /* 哪.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "哪.mp3"; sourceTree = "<group>"; };
+		048CD00129A9754800AFCF73 /* 高兴.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "高兴.mp3"; sourceTree = "<group>"; };
+		048CD00229A9754800AFCF73 /* 热.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "热.mp3"; sourceTree = "<group>"; };
+		048CD00329A9754800AFCF73 /* 好.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "好.mp3"; sourceTree = "<group>"; };
+		048CD00529A9754800AFCF73 /* 很.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "很.mp3"; sourceTree = "<group>"; };
 		0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewcontrollerViewController.swift; sourceTree = "<group>"; };
-		04A72F5929A9518D00C5E923 /* 先生.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "先生.mp3"; sourceTree = "<group>"; };
-		04A72F5A29A9518D00C5E923 /* 妈吗.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "妈吗.mp3"; sourceTree = "<group>"; };
-		04A72F5B29A9518D00C5E923 /* 女儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "女儿.mp3"; sourceTree = "<group>"; };
-		04A72F5C29A9518D00C5E923 /* 小姐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小姐.mp3"; sourceTree = "<group>"; };
-		04A72F5D29A9518D00C5E923 /* 家 .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "家 .mp3"; sourceTree = "<group>"; };
-		04A72F5E29A9518D00C5E923 /* 儿子.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "儿子.mp3"; sourceTree = "<group>"; };
-		04A72F5F29A9518D00C5E923 /* 人.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "人.mp3"; sourceTree = "<group>"; };
-		04A72F6029A9518D00C5E923 /* 妈妈.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "妈妈.mp3"; sourceTree = "<group>"; };
-		04A72F6129A9518D00C5E923 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爸爸.mp3"; sourceTree = "<group>"; };
-		04A72F6229A9518D00C5E923 /* 岁.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "岁.mp3"; sourceTree = "<group>"; };
-		04A72F6329A9518D00C5E923 /* 朋友.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "朋友.mp3"; sourceTree = "<group>"; };
 		04AFC1C62867705A00A3FC68 /* HSK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AFC1C92867705A00A3FC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +353,7 @@
 		04AFC1D22867705B00A3FC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AFC1D52867705B00A3FC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AFC1D72867705B00A3FC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "HSK1/爱.mp3"; sourceTree = SOURCE_ROOT; };
+		04C58C93288987AA004DFA47 /* 爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "爱.mp3"; path = "HSK1/sounds/爱.mp3"; sourceTree = SOURCE_ROOT; };
 		04C58C9E2889A361004DFA47 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		04FF527A2875A59A00FE2F65 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +381,164 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		048CCF6729A964B300AFCF73 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				042AF1D529A97AC90073908C /* 了.mp3 */,
+				042AF1D429A97AC90073908C /* 做.mp3 */,
+				042AF1D729A97AC90073908C /* 医生.mp3 */,
+				042AF1DB29A97ACA0073908C /* 医院.mp3 */,
+				042AF1D829A97AC90073908C /* 吗.mp3 */,
+				042AF1D629A97AC90073908C /* 呢.mp3 */,
+				042AF1D929A97AC90073908C /* 坐.mp3 */,
+				042AF1D229A97AC90073908C /* 工作.mp3 */,
+				042AF1DA29A97AC90073908C /* 本.mp3 */,
+				042AF1DC29A97ACA0073908C /* 的.mp3 */,
+				042AF1DD29A97ACA0073908C /* 睡觉.mp3 */,
+				042AF1D329A97AC90073908C /* 钱.mp3 */,
+				042AF1C429A978FD0073908C /* 不.mp3 */,
+				042AF1C729A978FD0073908C /* 不客气.mp3 */,
+				042AF1C229A978FD0073908C /* 再见.mp3 */,
+				042AF1C029A978FD0073908C /* 喂.mp3 */,
+				042AF1C129A978FD0073908C /* 对不起.mp3 */,
+				042AF1C329A978FD0073908C /* 怎么.mp3 */,
+				042AF1C529A978FD0073908C /* 怎么样.mp3 */,
+				042AF1C629A978FD0073908C /* 没关系.mp3 */,
+				042AF1A329A978A20073908C /* 买.mp3 */,
+				042AF19B29A978A10073908C /* 会.mp3 */,
+				042AF1AC29A978A20073908C /* 住.mp3 */,
+				042AF19F29A978A20073908C /* 去.mp3 */,
+				042AF1A629A978A20073908C /* 叫.mp3 */,
+				042AF1A929A978A20073908C /* 听.mp3 */,
+				042AF19E29A978A10073908C /* 喜欢.mp3 */,
+				042AF1A729A978A20073908C /* 回.mp3 */,
+				042AF19C29A978A10073908C /* 在.mp3 */,
+				042AF1A529A978A20073908C /* 开.mp3 */,
+				042AF1A029A978A20073908C /* 想.mp3 */,
+				042AF19A29A978A10073908C /* 打电话.mp3 */,
+				042AF1A229A978A20073908C /* 来.mp3 */,
+				042AF1AA29A978A20073908C /* 看.mp3 */,
+				042AF1AB29A978A20073908C /* 看见.mp3 */,
+				042AF1A129A978A20073908C /* 能.mp3 */,
+				042AF19D29A978A10073908C /* 认识.mp3 */,
+				042AF1A829A978A20073908C /* 说话.mp3 */,
+				042AF1A429A978A20073908C /* 请.mp3 */,
+				048CCFF329A9754700AFCF73 /* 冷.mp3 */,
+				048CCFFE29A9754800AFCF73 /* 哪.mp3 */,
+				048CCFFD29A9754800AFCF73 /* 大.mp3 */,
+				048CCFFC29A9754800AFCF73 /* 太.mp3 */,
+				048CD00329A9754800AFCF73 /* 好.mp3 */,
+				048CCFF429A9754700AFCF73 /* 小.mp3 */,
+				042AF1D029A979450073908C /* 是.mp3 */,
+				048CD00529A9754800AFCF73 /* 很.mp3 */,
+				048CCFF729A9754700AFCF73 /* 漂亮.mp3 */,
+				048CD00229A9754800AFCF73 /* 热.mp3 */,
+				048CCFF929A9754700AFCF73 /* 谢谢.mp3 */,
+				048CD00129A9754800AFCF73 /* 高兴.mp3 */,
+				048CCFD629A96FF900AFCF73 /* 上.mp3 */,
+				048CCFD329A96FF800AFCF73 /* 下.mp3 */,
+				048CCFDA29A96FF900AFCF73 /* 今天.mp3 */,
+				048CCFCB29A96FF800AFCF73 /* 分钟.mp3 */,
+				048CCFCA29A96FF800AFCF73 /* 前面.mp3 */,
+				048CCFDC29A96FF900AFCF73 /* 后面.mp3 */,
+				048CCFDB29A96FF900AFCF73 /* 哪儿.mp3 */,
+				048CCFD729A96FF900AFCF73 /* 年.mp3 */,
+				048CCFD429A96FF800AFCF73 /* 时候.mp3 */,
+				048CCFDD29A96FF900AFCF73 /* 明天.mp3 */,
+				048CCFCD29A96FF800AFCF73 /* 星期.mp3 */,
+				048CCFD929A96FF900AFCF73 /* 昨天.mp3 */,
+				048CCFD829A96FF900AFCF73 /* 月.mp3 */,
+				048CCFD029A96FF800AFCF73 /* 有.mp3 */,
+				048CCFCC29A96FF800AFCF73 /* 没有.mp3 */,
+				048CCFD129A96FF800AFCF73 /* 点.mp3 */,
+				048CCFCE29A96FF800AFCF73 /* 现在.mp3 */,
+				048CCFCF29A96FF800AFCF73 /* 这儿.mp3 */,
+				048CCFD229A96FF800AFCF73 /* 那儿.mp3 */,
+				048CCFD529A96FF800AFCF73 /* 里.mp3 */,
+				048CCFAC29A96E3100AFCF73 /* 一.mp3 */,
+				048CCFA829A96E3100AFCF73 /* 一点儿.mp3 */,
+				048CCFA729A96E3100AFCF73 /* 七.mp3 */,
+				048CCFAE29A96E3100AFCF73 /* 三.mp3 */,
+				048CCFAF29A96E3100AFCF73 /* 个.mp3 */,
+				048CCFB529A96E3100AFCF73 /* 九.mp3 */,
+				048CCFB129A96E3100AFCF73 /* 二.mp3 */,
+				048CCFA529A96E3100AFCF73 /* 五.mp3 */,
+				048CCFA629A96E3100AFCF73 /* 些.mp3 */,
+				048CCFA929A96E3100AFCF73 /* 八.mp3 */,
+				048CCFAD29A96E3100AFCF73 /* 六.mp3 */,
+				048CCFA429A96E3000AFCF73 /* 几.mp3 */,
+				048CCFAB29A96E3100AFCF73 /* 十.mp3 */,
+				048CCFB029A96E3100AFCF73 /* 号.mp3 */,
+				048CCFAA29A96E3100AFCF73 /* 四.mp3 */,
+				048CCFB429A96E3100AFCF73 /* 多.mp3 */,
+				048CCFB629A96E3100AFCF73 /* 多少.mp3 */,
+				048CCFB329A96E3100AFCF73 /* 少.mp3 */,
+				048CCFB229A96E3100AFCF73 /* 都.mp3 */,
+				048CCF9029A96A8C00AFCF73 /* 什么.mp3 */,
+				048CCF9229A96A8C00AFCF73 /* 他.mp3 */,
+				048CCF9629A96A8C00AFCF73 /* 你.mp3 */,
+				048CCF9129A96A8C00AFCF73 /* 和.mp3 */,
+				048CCF9329A96A8C00AFCF73 /* 她.mp3 */,
+				048CCF9429A96A8C00AFCF73 /* 我.mp3 */,
+				048CCF9729A96A8C00AFCF73 /* 我们.mp3 */,
+				048CCF9529A96A8C00AFCF73 /* 谁.mp3 */,
+				048CCF9829A96A8C00AFCF73 /* 这.mp3 */,
+				048CCF9929A96A8D00AFCF73 /* 那.mp3 */,
+				048CCF8429A9682B00AFCF73 /* 写.mp3 */,
+				048CCF8329A9682B00AFCF73 /* 同学.mp3 */,
+				048CCF7D29A9682B00AFCF73 /* 字.mp3 */,
+				048CCF7C29A9682B00AFCF73 /* 学习.mp3 */,
+				048CCF8029A9682B00AFCF73 /* 学校.mp3 */,
+				048CCF7E29A9682B00AFCF73 /* 学生.mp3 */,
+				048CCF8529A9682B00AFCF73 /* 汉语.mp3 */,
+				048CCF7F29A9682B00AFCF73 /* 老师.mp3 */,
+				048CCF8129A9682B00AFCF73 /* 说.mp3 */,
+				048CCF8229A9682B00AFCF73 /* 读.mp3 */,
+				048CCF7129A9662500AFCF73 /* 吃.mp3 */,
+				048CCF6F29A9662500AFCF73 /* 喝.mp3 */,
+				048CCF6929A9662400AFCF73 /* 杯子.mp3 */,
+				048CCF6A29A9662400AFCF73 /* 水.mp3 */,
+				048CCF6829A9662400AFCF73 /* 水果.mp3 */,
+				048CCF7029A9662500AFCF73 /* 米饭.mp3 */,
+				048CCF6B29A9662400AFCF73 /* 苹果.mp3 */,
+				048CCF6E29A9662400AFCF73 /* 茶.mp3 */,
+				048CCF6C29A9662400AFCF73 /* 菜.mp3 */,
+				048CCF6D29A9662400AFCF73 /* 饭店.mp3 */,
+				048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */,
+				048CCF1F29A95EB500AFCF73 /* 人.mp3 */,
+				048CCF2429A95F1200AFCF73 /* 儿子.mp3 */,
+				048CCF2329A95F1100AFCF73 /* 先生.mp3 */,
+				048CCF3129A95F4B00AFCF73 /* 家.mp3 */,
+				048CCF2629A95F1200AFCF73 /* 女儿.mp3 */,
+				048CCF2129A95F1100AFCF73 /* 妈妈.mp3 */,
+				048CCF2729A95F1200AFCF73 /* 小姐.mp3 */,
+				048CCF2229A95F1100AFCF73 /* 岁.mp3 */,
+				048CCF2529A95F1200AFCF73 /* 朋友.mp3 */,
+				04C58C93288987AA004DFA47 /* 爱.mp3 */,
+				048CCF4329A9622000AFCF73 /* 东西.mp3 */,
+				048CCF4429A9622100AFCF73 /* 书.mp3 */,
+				048CCF4629A9622100AFCF73 /* 名字.mp3 */,
+				048CCF3F29A9622000AFCF73 /* 商店.mp3 */,
+				048CCF4529A9622100AFCF73 /* 桌子.mp3 */,
+				048CCF4829A9622100AFCF73 /* 椅子.mp3 */,
+				048CCF4029A9622000AFCF73 /* 电影.mp3 */,
+				048CCF4729A9622100AFCF73 /* 电视.mp3 */,
+				048CCF4129A9622000AFCF73 /* 电脑.mp3 */,
+				048CCF4229A9622000AFCF73 /* 衣服.mp3 */,
+				048CCF5429A9637E00AFCF73 /* 上午.mp3 */,
+				048CCF5C29A9638400AFCF73 /* 下午.mp3 */,
+				048CCF5529A9637F00AFCF73 /* 下雨.mp3 */,
+				048CCF5329A9637D00AFCF73 /* 中午.mp3 */,
+				048CCF5729A9638000AFCF73 /* 中国.mp3 */,
+				048CCF5B29A9638300AFCF73 /* 出租车.mp3 */,
+				048CCF5929A9638200AFCF73 /* 北京.mp3 */,
+				048CCF5829A9638100AFCF73 /* 块.mp3 */,
+				048CCF5629A9637F00AFCF73 /* 天气.mp3 */,
+				048CCF5A29A9638300AFCF73 /* 飞机.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		04AFC1BD2867705A00A3FC68 = {
 			isa = PBXGroup;
 			children = (
@@ -114,18 +561,7 @@
 				04AFC1C92867705A00A3FC68 /* AppDelegate.swift */,
 				04AFC1CB2867705A00A3FC68 /* SceneDelegate.swift */,
 				0411139B286C9430008B5DD9 /* DataMananger.swift */,
-				04A72F5F29A9518D00C5E923 /* 人.mp3 */,
-				04A72F5E29A9518D00C5E923 /* 儿子.mp3 */,
-				04A72F5929A9518D00C5E923 /* 先生.mp3 */,
-				04A72F5B29A9518D00C5E923 /* 女儿.mp3 */,
-				04A72F5A29A9518D00C5E923 /* 妈吗.mp3 */,
-				04A72F6029A9518D00C5E923 /* 妈妈.mp3 */,
-				04A72F5D29A9518D00C5E923 /* 家 .mp3 */,
-				04A72F5C29A9518D00C5E923 /* 小姐.mp3 */,
-				04A72F6229A9518D00C5E923 /* 岁.mp3 */,
-				04A72F6329A9518D00C5E923 /* 朋友.mp3 */,
-				04A72F6129A9518D00C5E923 /* 爸爸.mp3 */,
-				04C58C93288987AA004DFA47 /* 爱.mp3 */,
+				048CCF6729A964B300AFCF73 /* sounds */,
 				04C58C9D2889881A004DFA47 /* Models */,
 				04C58C9C288987FF004DFA47 /* Cells */,
 				041113A1286DE11E008B5DD9 /* ViewControllers */,
@@ -219,13 +655,163 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042AF1AD29A978A20073908C /* 打电话.mp3 in Resources */,
+				048CCFEA29A96FF900AFCF73 /* 上.mp3 in Resources */,
+				048CCFC129A96E3200AFCF73 /* 三.mp3 in Resources */,
+				042AF1B829A978A20073908C /* 开.mp3 in Resources */,
+				048CCFC829A96E3200AFCF73 /* 九.mp3 in Resources */,
+				042AF1BE29A978A20073908C /* 看见.mp3 in Resources */,
+				042AF1D129A979450073908C /* 是.mp3 in Resources */,
+				048CCFA229A96A8D00AFCF73 /* 这.mp3 in Resources */,
+				048CCFA129A96A8D00AFCF73 /* 我们.mp3 in Resources */,
+				042AF1E129A97ACA0073908C /* 了.mp3 in Resources */,
+				048CCFC629A96E3200AFCF73 /* 少.mp3 in Resources */,
+				048CCF8C29A9682B00AFCF73 /* 读.mp3 in Resources */,
+				042AF1CB29A978FD0073908C /* 怎么.mp3 in Resources */,
+				048CCFEC29A96FF900AFCF73 /* 月.mp3 in Resources */,
+				048CCF7729A9662500AFCF73 /* 饭店.mp3 in Resources */,
+				048CCFC229A96E3200AFCF73 /* 个.mp3 in Resources */,
+				048CCF6229A9638500AFCF73 /* 块.mp3 in Resources */,
+				048CCFA029A96A8D00AFCF73 /* 你.mp3 in Resources */,
+				048CCFE629A96FF900AFCF73 /* 那儿.mp3 in Resources */,
+				048CCFEF29A96FF900AFCF73 /* 哪儿.mp3 in Resources */,
+				048CCFE129A96FF900AFCF73 /* 星期.mp3 in Resources */,
+				048CCFC729A96E3200AFCF73 /* 多.mp3 in Resources */,
+				048CCF9F29A96A8D00AFCF73 /* 谁.mp3 in Resources */,
+				048CCFDE29A96FF900AFCF73 /* 前面.mp3 in Resources */,
+				048CCF8F29A9682B00AFCF73 /* 汉语.mp3 in Resources */,
+				042AF1B429A978A20073908C /* 能.mp3 in Resources */,
+				042AF1CF29A978FD0073908C /* 不客气.mp3 in Resources */,
+				048CCF8D29A9682B00AFCF73 /* 同学.mp3 in Resources */,
+				048CD01929A9754800AFCF73 /* 很.mp3 in Resources */,
+				048CCFE029A96FF900AFCF73 /* 没有.mp3 in Resources */,
+				042AF1BB29A978A20073908C /* 说话.mp3 in Resources */,
+				042AF1B529A978A20073908C /* 来.mp3 in Resources */,
+				048CCF3229A95F4B00AFCF73 /* 家.mp3 in Resources */,
+				048CCF2C29A95F1200AFCF73 /* 儿子.mp3 in Resources */,
+				042AF1E329A97ACA0073908C /* 医生.mp3 in Resources */,
+				042AF1DE29A97ACA0073908C /* 工作.mp3 in Resources */,
+				048CCF2A29A95F1200AFCF73 /* 岁.mp3 in Resources */,
+				048CCFB829A96E3100AFCF73 /* 五.mp3 in Resources */,
+				042AF1BA29A978A20073908C /* 回.mp3 in Resources */,
+				048CD00829A9754800AFCF73 /* 小.mp3 in Resources */,
+				042AF1E729A97ACA0073908C /* 医院.mp3 in Resources */,
+				048CCF4D29A9622100AFCF73 /* 东西.mp3 in Resources */,
+				042AF1CD29A978FD0073908C /* 怎么样.mp3 in Resources */,
+				048CCF9C29A96A8D00AFCF73 /* 他.mp3 in Resources */,
+				048CCF6629A9638500AFCF73 /* 下午.mp3 in Resources */,
+				048CCF9D29A96A8D00AFCF73 /* 她.mp3 in Resources */,
+				048CCFEE29A96FF900AFCF73 /* 今天.mp3 in Resources */,
+				048CCFEB29A96FF900AFCF73 /* 年.mp3 in Resources */,
+				048CCF6429A9638500AFCF73 /* 飞机.mp3 in Resources */,
+				048CCF4C29A9622100AFCF73 /* 衣服.mp3 in Resources */,
+				042AF1B229A978A20073908C /* 去.mp3 in Resources */,
+				042AF1B129A978A20073908C /* 喜欢.mp3 in Resources */,
+				048CCFC429A96E3200AFCF73 /* 二.mp3 in Resources */,
+				042AF1BD29A978A20073908C /* 看.mp3 in Resources */,
+				048CCF8829A9682B00AFCF73 /* 学生.mp3 in Resources */,
+				048CD01629A9754800AFCF73 /* 热.mp3 in Resources */,
+				048CCF2929A95F1200AFCF73 /* 妈妈.mp3 in Resources */,
+				048CCFBA29A96E3100AFCF73 /* 七.mp3 in Resources */,
+				048CCFBC29A96E3100AFCF73 /* 八.mp3 in Resources */,
+				048CCF2F29A95F1200AFCF73 /* 小姐.mp3 in Resources */,
+				048CCF2029A95EB500AFCF73 /* 人.mp3 in Resources */,
+				048CCF7B29A9662500AFCF73 /* 吃.mp3 in Resources */,
+				042AF1CE29A978FD0073908C /* 没关系.mp3 in Resources */,
+				048CCF1C29A95E2B00AFCF73 /* 爸爸.mp3 in Resources */,
+				048CCFE429A96FF900AFCF73 /* 有.mp3 in Resources */,
+				042AF1E229A97ACA0073908C /* 呢.mp3 in Resources */,
+				042AF1B929A978A20073908C /* 叫.mp3 in Resources */,
+				042AF1E529A97ACA0073908C /* 坐.mp3 in Resources */,
+				042AF1E929A97ACA0073908C /* 睡觉.mp3 in Resources */,
+				048CCFBE29A96E3100AFCF73 /* 十.mp3 in Resources */,
+				042AF1BF29A978A20073908C /* 住.mp3 in Resources */,
 				04AFC1D62867705B00A3FC68 /* LaunchScreen.storyboard in Resources */,
+				048CCF5229A9622100AFCF73 /* 椅子.mp3 in Resources */,
+				048CCF8629A9682B00AFCF73 /* 学习.mp3 in Resources */,
 				04AFC1D32867705B00A3FC68 /* Assets.xcassets in Resources */,
+				048CCF7629A9662500AFCF73 /* 菜.mp3 in Resources */,
+				048CCFBD29A96E3100AFCF73 /* 四.mp3 in Resources */,
+				048CCFDF29A96FF900AFCF73 /* 分钟.mp3 in Resources */,
+				042AF1B029A978A20073908C /* 认识.mp3 in Resources */,
+				042AF1E629A97ACA0073908C /* 本.mp3 in Resources */,
 				042E437529649DC4007EBBCA /* play.png in Resources */,
+				042AF1CA29A978FD0073908C /* 再见.mp3 in Resources */,
+				042AF1AE29A978A20073908C /* 会.mp3 in Resources */,
+				048CD01229A9754800AFCF73 /* 哪.mp3 in Resources */,
+				048CCF9B29A96A8D00AFCF73 /* 和.mp3 in Resources */,
+				048CCF8A29A9682B00AFCF73 /* 学校.mp3 in Resources */,
+				048CCFC529A96E3200AFCF73 /* 都.mp3 in Resources */,
+				048CCFF029A96FF900AFCF73 /* 后面.mp3 in Resources */,
+				048CCFE329A96FF900AFCF73 /* 这儿.mp3 in Resources */,
+				048CCF7A29A9662500AFCF73 /* 米饭.mp3 in Resources */,
+				048CCF4E29A9622100AFCF73 /* 书.mp3 in Resources */,
+				042AF1DF29A97ACA0073908C /* 钱.mp3 in Resources */,
+				048CCF8E29A9682B00AFCF73 /* 写.mp3 in Resources */,
+				048CCF6329A9638500AFCF73 /* 北京.mp3 in Resources */,
+				048CCFE529A96FF900AFCF73 /* 点.mp3 in Resources */,
+				048CCF6129A9638500AFCF73 /* 中国.mp3 in Resources */,
+				048CCF6029A9638500AFCF73 /* 天气.mp3 in Resources */,
+				048CCF5129A9622100AFCF73 /* 电视.mp3 in Resources */,
+				048CCFB729A96E3100AFCF73 /* 几.mp3 in Resources */,
+				048CCF5F29A9638500AFCF73 /* 下雨.mp3 in Resources */,
+				048CCF4B29A9622100AFCF73 /* 电脑.mp3 in Resources */,
+				048CCFED29A96FF900AFCF73 /* 昨天.mp3 in Resources */,
+				042AF1AF29A978A20073908C /* 在.mp3 in Resources */,
+				048CCF9A29A96A8D00AFCF73 /* 什么.mp3 in Resources */,
+				048CCFBB29A96E3100AFCF73 /* 一点儿.mp3 in Resources */,
+				048CCFF129A96FF900AFCF73 /* 明天.mp3 in Resources */,
+				048CCF7429A9662500AFCF73 /* 水.mp3 in Resources */,
+				048CCF2D29A95F1200AFCF73 /* 朋友.mp3 in Resources */,
+				048CCF7929A9662500AFCF73 /* 喝.mp3 in Resources */,
+				042AF1CC29A978FD0073908C /* 不.mp3 in Resources */,
+				048CCF5029A9622100AFCF73 /* 名字.mp3 in Resources */,
+				042AF1B329A978A20073908C /* 想.mp3 in Resources */,
+				048CCF6529A9638500AFCF73 /* 出租车.mp3 in Resources */,
+				048CCFE229A96FF900AFCF73 /* 现在.mp3 in Resources */,
+				048CD01729A9754800AFCF73 /* 好.mp3 in Resources */,
+				048CCF7329A9662500AFCF73 /* 杯子.mp3 in Resources */,
+				042AF1E029A97ACA0073908C /* 做.mp3 in Resources */,
+				042AF1BC29A978A20073908C /* 听.mp3 in Resources */,
+				048CCF2B29A95F1200AFCF73 /* 先生.mp3 in Resources */,
+				048CCFC329A96E3200AFCF73 /* 号.mp3 in Resources */,
+				048CD01029A9754800AFCF73 /* 太.mp3 in Resources */,
+				048CCF4F29A9622100AFCF73 /* 桌子.mp3 in Resources */,
+				048CCF9E29A96A8D00AFCF73 /* 我.mp3 in Resources */,
+				048CCF2E29A95F1200AFCF73 /* 女儿.mp3 in Resources */,
+				048CCFC929A96E3200AFCF73 /* 多少.mp3 in Resources */,
+				048CCF7829A9662500AFCF73 /* 茶.mp3 in Resources */,
+				048CCFE829A96FF900AFCF73 /* 时候.mp3 in Resources */,
+				048CD00D29A9754800AFCF73 /* 谢谢.mp3 in Resources */,
+				048CCFE729A96FF900AFCF73 /* 下.mp3 in Resources */,
+				048CCF5E29A9638500AFCF73 /* 上午.mp3 in Resources */,
+				048CD00729A9754800AFCF73 /* 冷.mp3 in Resources */,
+				042AF1C929A978FD0073908C /* 对不起.mp3 in Resources */,
+				048CCF8B29A9682B00AFCF73 /* 说.mp3 in Resources */,
+				048CCF7229A9662500AFCF73 /* 水果.mp3 in Resources */,
+				048CCFBF29A96E3100AFCF73 /* 一.mp3 in Resources */,
+				048CD01129A9754800AFCF73 /* 大.mp3 in Resources */,
+				048CCF8929A9682B00AFCF73 /* 老师.mp3 in Resources */,
+				042AF1B629A978A20073908C /* 买.mp3 in Resources */,
+				048CCF5D29A9638500AFCF73 /* 中午.mp3 in Resources */,
+				048CCFC029A96E3200AFCF73 /* 六.mp3 in Resources */,
+				048CD00B29A9754800AFCF73 /* 漂亮.mp3 in Resources */,
 				04AFC1D12867705A00A3FC68 /* Main.storyboard in Resources */,
+				042AF1E429A97ACA0073908C /* 吗.mp3 in Resources */,
+				048CCFA329A96A8D00AFCF73 /* 那.mp3 in Resources */,
+				048CCFB929A96E3100AFCF73 /* 些.mp3 in Resources */,
+				048CCF7529A9662500AFCF73 /* 苹果.mp3 in Resources */,
 				042E437329649B35007EBBCA /* note.png in Resources */,
+				048CCF4929A9622100AFCF73 /* 商店.mp3 in Resources */,
+				042AF1E829A97ACA0073908C /* 的.mp3 in Resources */,
+				042AF1C829A978FD0073908C /* 喂.mp3 in Resources */,
+				048CCFE929A96FF900AFCF73 /* 里.mp3 in Resources */,
+				042AF1B729A978A20073908C /* 请.mp3 in Resources */,
 				045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */,
+				048CD01529A9754800AFCF73 /* 高兴.mp3 in Resources */,
+				048CCF8729A9682B00AFCF73 /* 字.mp3 in Resources */,
 				04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */,
+				048CCF4A29A9622100AFCF73 /* 电影.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

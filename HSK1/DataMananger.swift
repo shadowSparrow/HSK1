@@ -116,9 +116,7 @@ class DataManager {
         CharacterData(character: "年", imageName: "hospital", pingYing: "nián", translation: "год"),
         CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
         CharacterData(character: "星期", imageName:"", pingYing: "xīngqī" , translation: "неделя"),
-        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
         CharacterData(character: "点", imageName:"", pingYing: "diǎn" , translation: "(который)час"),
-        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
         CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута"),
     ]
     var placeCharacters = [
@@ -126,14 +124,12 @@ class DataManager {
         CharacterData(character: "那儿", imageName: "hospital", pingYing: "nàr", translation: "там"),
         CharacterData(character: "这儿", imageName: "shop", pingYing: "zhèr", translation: "тут"),
         CharacterData(character: "里", imageName: "love", pingYing: "lǐ", translation: "внутри"),
-        CharacterData(character: "现在", imageName: "family", pingYing: "xiànzài", translation: "сейчас (в настоящее время)" ),
-        CharacterData(character: "年", imageName: "hospital", pingYing: "nián", translation: "год"),
-        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
-        CharacterData(character: "星期", imageName:"", pingYing: "xīngqī" , translation: "неделя"),
-        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
-        CharacterData(character: "点", imageName:"", pingYing: "diǎn" , translation: "(который)час"),
-        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
-        CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута")
+        CharacterData(character: "前面", imageName: "family", pingYing: "qiánmiàn", translation: "впереди (перед)"),
+        CharacterData(character: "上", imageName: "hospital", pingYing: "shàng", translation: "выше (над, на верху)"),
+        CharacterData(character: "下", imageName: "shop", pingYing: "xià" , translation: "иже, под, следующий; идет (дождь, снег)"),
+        CharacterData(character: "后面", imageName:"", pingYing: "hòumiàn" , translation: "позади (сзади, за чем-либо)"),
+        CharacterData(character: "有", imageName:"", pingYing: "yǒu" , translation: "иметь (существовать)"),
+        CharacterData(character: "没有", imageName:"", pingYing: "méiyǒu" , translation: "не иметь (нет, не имеется)")
     ]
     var adjectivesCharacters = [
         CharacterData(character: "大", imageName: "family", pingYing: "dà", translation: "большой"),
