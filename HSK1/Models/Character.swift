@@ -22,6 +22,16 @@ class Character {
     }
 }
 extension Character {
+    
+    static func getCharacters(charactersData:[CharacterData]) -> [Character] {
+        var characters:[Character] = []
+        for character in charactersData {
+        let currentCharacter = Character(name: character.character, imageName: character.imageName, pingYing: character.pingYing, translation: character.translation)
+            characters.append(currentCharacter)
+        }
+        return characters
+             }
+    
     static func getCharacters() -> [Character] {
         let charactersName = DataManager.shared.characters
         var characters:[Character] = []

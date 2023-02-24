@@ -37,17 +37,6 @@ class MainMenuViewController: UICollectionViewController {
             collectionView.collectionViewLayout = createLayout()
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let topicVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
-        if UIDevice.current.orientation.isLandscape {
-            topicVC.layout = topicVC.createLandscapeLayout()
-        } else {
-            topicVC.layout = topicVC.createLayout()
-        }
-         */
-    }
      private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)

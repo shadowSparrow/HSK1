@@ -42,15 +42,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             topicCollectionView.collectionViewLayout = createLayout()
         }
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "learnSegue" else { return }
-        guard let destination = segue.destination as? CardsDeckCollectionVC else { return }
-        
-            destination.characters = Character.getFamilyCharacters()
-    }
-    */
-     public func createLayout() -> UICollectionViewCompositionalLayout {
+     private func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
         let itemTwo = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
@@ -62,7 +54,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
        let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
-   public func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+   private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 20, bottom: 2, trailing: 20)
         let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
@@ -77,9 +69,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCellCollectionViewCell
-        
         cell.setCell(image: UIImage(named:topics[indexPath.row])!, label: topics[indexPath.row])
-    
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -88,21 +78,19 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         } completion: { Bool in
-            
-
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let lernVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
-            
-            if cell.cellLabel.text == "Family"{
-                 lernVC.characters = Character.getFamilyCharacters()
-            } else if cell.cellLabel.text == "Travel"  {
-                lernVC.characters = Character.getTravelCharacters()
-            } else if cell.cellLabel.text == "Education" {
-                lernVC.characters = Character.getEducationCharacters()
-            } else {
-                lernVC.characters = Character.getCharacters()
+            switch cell.cellLabel.text {
+            case "Family":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.familyCharacters)
+            case "Travel":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.travelCharacters)
+            case "Education":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.educationCharacters)
+            default:
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.characters)
             }
             self.show(lernVC, sender: nil)
-        }
+             }
     }
 }
