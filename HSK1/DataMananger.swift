@@ -50,12 +50,167 @@ class DataManager {
         
     ]
     
-    var characters = [
-        CharacterData(character: "家", imageName: "family", pingYing: "jiā", translation: "дом, семья" ),
-        CharacterData(character: "医院", imageName: "hospital", pingYing: "yīyuàn", translation: "больница, госпиталь"),
-        CharacterData(character: "商店", imageName: "shop", pingYing: "shāngdiàn", translation: "магазин, лавка"),
-        CharacterData(character: "爱", imageName: "love", pingYing: "ài", translation: "Любить, любовь")
+    var objectCharacters = [
+        CharacterData(character: "电脑", imageName: "family", pingYing: "diànnǎo", translation: "компьютер" ),
+        CharacterData(character: "电视", imageName: "hospital", pingYing: "diànshì", translation: "телевизор"),
+        CharacterData(character: "电影", imageName: "shop", pingYing: "diànyǐng", translation: "кинофильм"),
+        CharacterData(character: "东西", imageName: "love", pingYing: "dōngxi", translation: "вещи, предметы"),
+        CharacterData(character: "名字", imageName: "family", pingYing: "míngzi", translation: "наименование, имя" ),
+        CharacterData(character: "商店", imageName: "hospital", pingYing: "shāngdiàn", translation: "магазин"),
+        CharacterData(character: "书", imageName: "shop", pingYing: "shū", translation: "книга"),
+        CharacterData(character: "衣服", imageName: "love", pingYing: "yīfu", translation: "одежда"),
+        CharacterData(character: "椅子", imageName: "shop", pingYing: "yǐzi", translation: "стул"),
+        CharacterData(character: "桌子", imageName: "love", pingYing: "zhuōzi", translation: "стол"),
+    ]
+    
+    var foodCharacters = [
+        CharacterData(character: "吃", imageName: "family", pingYing: "chī", translation: "кушать" ),
+        CharacterData(character: "喝", imageName: "hospital", pingYing: "hē", translation: "пить"),
+        CharacterData(character: "米饭", imageName: "shop", pingYing: "mǐfàn", translation: "рис"),
+        CharacterData(character: " 水", imageName: "love", pingYing: "shuǐ", translation: "вода"),
+        CharacterData(character: "菜", imageName: "family", pingYing: "cài", translation: "овощи (готовое блюдо)" ),
+        CharacterData(character: "水果", imageName: "hospital", pingYing: "shuǐguǒ", translation: "фрукты"),
+        CharacterData(character: "茶", imageName: "shop", pingYing: "chá", translation: "чай"),
+        CharacterData(character: "苹果", imageName: "love", pingYing: "píngguǒ", translation: "яблоко"),
+        CharacterData(character: "饭店", imageName: "shop", pingYing: "fàndiàn", translation: "ресторан (гостиница)"),
+        CharacterData(character: "杯子", imageName: "love", pingYing: "bēizi", translation: "стакан (чашка)")
+    ]
+    var nounsCharacters = [
+        CharacterData(character: "我", imageName: "family", pingYing: "wǒ", translation: "я" ),
+        CharacterData(character: "我们", imageName: "hospital", pingYing: "wǒmen", translation: "мы"),
+        CharacterData(character: "他", imageName: "shop", pingYing: "tā", translation: "он"),
+        CharacterData(character: "她", imageName: "love", pingYing: "tā", translation: "она"),
+        CharacterData(character: "你", imageName: "family", pingYing: "nǐ", translation: "ты (вы)" ),
+        CharacterData(character: "和", imageName: "hospital", pingYing: "hé", translation: "и, вместе с"),
+        CharacterData(character: "谁", imageName: "shop", pingYing: "shéi", translation: "кто"),
+        CharacterData(character: "什么", imageName: "love", pingYing: "shénme", translation: "что"),
+        CharacterData(character: "那", imageName: "shop", pingYing: "nà", translation: "то (тот, та, те)"),
+        CharacterData(character: "这", imageName: "love", pingYing: "zhè", translation: "это (этот, эта, эти)"),
+    ]
+    
+    var countCharacters = [
+        CharacterData(character: "一", imageName: "family", pingYing: "yī", translation: "один" ),
+        CharacterData(character: "号", imageName: "hospital", pingYing: "hào", translation: "число (месяца)"),
+        CharacterData(character: "个", imageName: "shop", pingYing: "gè", translation: "счетное слово общего назначения"),
+        CharacterData(character: "少", imageName: "love", pingYing: "shǎo", translation: "мало"),
+        CharacterData(character: "一点儿", imageName: "family", pingYing: "yìdiǎnr", translation: "чуть-чуть" ),
+        CharacterData(character: "些", imageName: "hospital", pingYing: "xiē", translation: "несколько, неопределенное количество"),
+        CharacterData(character: "几", imageName: "shop", pingYing: "jǐ", translation: "сколько, немного (если меньше 10)"),
+        CharacterData(character: "多少", imageName: "love", pingYing: "duōshao", translation: "сколько, немало (если больше 10)"),
+        CharacterData(character: "多", imageName: "shop", pingYing: "duō", translation: "много (тж. употребляется в вопросах о количестве или степени)"),
+        CharacterData(character: "都", imageName: "love", pingYing: "dōu", translation: "все"),
+    ]
+    var numberCharacters = [
+        CharacterData(character: "十", imageName: "family", pingYing: "shí", translation: "десять" ),
+        CharacterData(character: "零", imageName: "hospital", pingYing: "líng", translation: "ноль"),
+        CharacterData(character: "二", imageName: "shop", pingYing: "èr", translation: "два"),
+        CharacterData(character: "三", imageName: "love", pingYing: "sān", translation: "три"),
+        CharacterData(character: "四", imageName: "family", pingYing: "sì", translation: "четыре" ),
+        CharacterData(character: "五", imageName: "hospital", pingYing: "wǔ", translation: "пять"),
+        CharacterData(character: "六", imageName: "shop", pingYing: "liù", translation: "шесть"),
+        CharacterData(character: "七 ", imageName: "love", pingYing: "qī", translation: "семь"),
+        CharacterData(character: "八", imageName: "shop", pingYing: "bā", translation: "восемь"),
+        CharacterData(character: "九", imageName: "love", pingYing: "jiǔ", translation: "девять"),
+    ]
+    var timeCharacters = [
+        CharacterData(character: "时候", imageName: "family", pingYing: "shíhou", translation: "период (время)" ),
+        CharacterData(character: "昨天", imageName: "hospital", pingYing: "zuótiān", translation: "вчера"),
+        CharacterData(character: "今天", imageName: "shop", pingYing: "jīntiān", translation: "сегодня"),
+        CharacterData(character: "明天", imageName: "love", pingYing: "míngtiān", translation: "завтра"),
+        CharacterData(character: "现在", imageName: "family", pingYing: "xiànzài", translation: "сейчас (в настоящее время)" ),
+        CharacterData(character: "年", imageName: "hospital", pingYing: "nián", translation: "год"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "星期", imageName:"", pingYing: "xīngqī" , translation: "неделя"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "点", imageName:"", pingYing: "diǎn" , translation: "(который)час"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута"),
+    ]
+    
+    var placeCharacters = [
+        CharacterData(character: "哪儿", imageName: "family", pingYing: "nǎr", translation: "где"),
+        CharacterData(character: "那儿", imageName: "hospital", pingYing: "nàr", translation: "там"),
+        CharacterData(character: "这儿", imageName: "shop", pingYing: "zhèr", translation: "тут"),
+        CharacterData(character: "里", imageName: "love", pingYing: "lǐ", translation: "внутри"),
+        CharacterData(character: "现在", imageName: "family", pingYing: "xiànzài", translation: "сейчас (в настоящее время)" ),
+        CharacterData(character: "年", imageName: "hospital", pingYing: "nián", translation: "год"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "星期", imageName:"", pingYing: "xīngqī" , translation: "неделя"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "点", imageName:"", pingYing: "diǎn" , translation: "(который)час"),
+        CharacterData(character: "月", imageName: "shop", pingYing: "yuè" , translation: "месяц"),
+        CharacterData(character: "分钟", imageName:"", pingYing: "fēnzhōng" , translation: "минута")
+    ]
+    
+    var adjectivesCharacters = [
+        CharacterData(character: "大", imageName: "family", pingYing: "dà", translation: "большой"),
+        CharacterData(character: "小", imageName: "hospital", pingYing: "xiǎo", translation: "маленький"),
+        CharacterData(character: "好", imageName: "shop", pingYing: "hǎo", translation: "хороший"),
+        CharacterData(character: "漂亮", imageName: "love", pingYing: "piàoliɑng", translation: "красивый"),
+        CharacterData(character: "高兴", imageName: "family", pingYing: "gāoxìng", translation: "веселый, (радостный, счастливый)" ),
+        CharacterData(character: "热", imageName: "hospital", pingYing: "rè", translation: "горячий"),
+        CharacterData(character: "冷", imageName: "shop", pingYing: "lěng", translation: "холодный"),
+        CharacterData(character: "太", imageName:"", pingYing: "tài" , translation: "чрезвычайно"),
+        CharacterData(character: "很", imageName: "shop", pingYing: "hěn" , translation: "очень"),
+        CharacterData(character: "哪", imageName:"", pingYing: "nǎ" , translation: "какой (который)")
     ]
     private init(){}
 }
 
+/*
+ 10. Прилагательные
+ 
+ 漂亮 piàoliɑng красивый高兴 gāoxìng веселый (радостный, счастливый)热 rè горячий冷 lěng холодный太 tài чрезвычайно很 hěn очень哪 nǎ какой (который)
+
+ 12. Фразы
+ 喂 wèi алло, привет
+ 是 shì да (тж. - глагол "быть")
+ 不 bù нет (не)
+ 怎么样 zěnmeyàng как ты считаешь (как по твоему мнению)
+ 怎么 zěnme каким образом (как, в каком состоянии, почему)
+ 谢谢 xièxie спасибо (благодарить)
+ 不客气 bú kèqi не стоит
+ 对不起 duìbuqǐ извините
+ 没关系 méi guānxi ничего не случилось (не бойтесь)
+ 再见 zàijiàn до свидания
+
+ 13. Глаголы 1
+ 说话 shuōhuà разговаривать (говорить)
+ 打电话 dǎdiànhuà звонить (говорить) по телефону
+ 叫 jiào звать (именем)
+ 认识 rènshi быть знакомыми (знакомиться)
+ 请 qǐng просить
+ 想 xiǎng собираться что-то сделать (думать)
+ 听 tīng слышать. слушать
+ 看 kàn смотреть, читать (глядеть)
+ 看见 kànjiàn увидеть
+ 喜欢 xǐhuan нравится
+
+ 14. Глаголы 2
+ 能 néng можно
+ 去 qù уйти, уехать (поехать, пойти куда-либо)
+ 来 lái прийти, приехать
+ 会 huì уметь
+ 爱 ài любить (любить делать что-либо)
+ 回 huí вернуться
+ 开 kāi водить машину
+ 买 mǎi покупать
+ 在 zài находиться (тж. обозначает, что действие находится в процессе)
+ 住 zhù жить где-либо
+
+ 15 .Все остальное
+ 做 zuò заниматься, делать (изготавливать)
+ 坐 zuò сидеть, ехать (на транспортном средстве)
+ 睡觉 shuìjiào спать, ложиться спать
+ 工作 gōngzuò работать (работа)
+ 钱 qián деньги
+ 本 běn том (счетное слово для книг)
+ 医生 yīshēng врач
+ 医院 yīyuàn больница
+ 吗 ma вопросительная частица в конце предложения
+ 的 de притяжательная частица (присоединяет определение;
+ также употребляется для усиления)
+ 了 le - употребляется в конце предложения для обозначения происшедших изменений
+ 呢 ne - вопросительная частица, ставится в конце предложения;
+ также ставится в конце повествовательного предложения
+ */

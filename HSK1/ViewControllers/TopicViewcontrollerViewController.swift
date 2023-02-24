@@ -87,8 +87,25 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.travelCharacters)
             case "Education":
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.educationCharacters)
+            case "Objects":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.objectCharacters)
+            case "Food":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.foodCharacters)
+            case "Persons":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.nounsCharacters)
+            case "Count":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.countCharacters)
+            case "Numbers":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.numberCharacters)
+            case "Time":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.timeCharacters)
+            case "Locations":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.placeCharacters)
+            case "Adjectives":
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.adjectivesCharacters)
+                
             default:
-                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.characters)
+                lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.nounsCharacters)
             }
             self.show(lernVC, sender: nil)
              }
