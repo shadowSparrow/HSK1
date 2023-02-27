@@ -121,7 +121,7 @@
         <!--Cards Deck CollectionVC-->
         <scene sceneID="Rta-0N-C8i">
             <objects>
-                <collectionViewController storyboardIdentifier="learnVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="ha5-Wf-Okz" customClass="CardsDeckCollectionVC" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="learnVC" automaticallyAdjustsScrollViewInsets="NO" id="ha5-Wf-Okz" customClass="CardsDeckCollectionVC" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" springLoaded="YES" id="Qzb-Bm-JOq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

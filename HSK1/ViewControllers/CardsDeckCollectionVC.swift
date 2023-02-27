@@ -22,6 +22,17 @@ class CardsDeckCollectionVC: UICollectionViewController {
             collectionView.collectionViewLayout = layout
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice.current.orientation.isLandscape {
+           let layout = createHorizontalLayout()
+            collectionView.collectionViewLayout = layout
+        } else {
+            let layout = createLayout()
+            collectionView.collectionViewLayout = layout
+        }
+    }
+    
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
             let layout = createHorizontalLayout()
@@ -77,7 +88,7 @@ private func createHorizontalLayout() -> UICollectionViewCompositionalLayout {
     
     let section = NSCollectionLayoutSection(group: horizontalGroup)
     section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20)
-    section.orthogonalScrollingBehavior = .groupPaging
+    section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
@@ -85,10 +96,10 @@ private func createLayout() -> UICollectionViewCompositionalLayout {
     let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
     let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
     
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 80, leading: 5, bottom: 80, trailing: 5)
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
     let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.orthogonalScrollingBehavior = .paging
-    section.contentInsets = NSDirectionalEdgeInsets(top: 80, leading: 5, bottom: 80, trailing: 5)
+    section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }
