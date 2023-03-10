@@ -10,41 +10,24 @@ import AVFoundation
 
 private let reuseIdentifier = "cell"
 class CardsDeckCollectionVC: UICollectionViewController {
+    
     @IBOutlet weak var pageControl: UIPageControl!
-    var characters: [Character] = []//Character.getCharacters()
+    
+    var currentPage: Int = 0
+    
+    var characters: [Character] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UIDevice.current.orientation.isLandscape {
-            let layout = createHorizontalLayout()
-            collectionView.collectionViewLayout = layout
-        } else {
-            let layout = createLayout()
-            collectionView.collectionViewLayout = layout
-        }
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.orientation.isLandscape {
-           let layout = createHorizontalLayout()
-            collectionView.collectionViewLayout = layout
-        } else {
-            let layout = createLayout()
-            collectionView.collectionViewLayout = layout
-        }
+        
+        pageControl.numberOfPages = characters.count
     }
     
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            let layout = createHorizontalLayout()
-            collectionView.collectionViewLayout = layout
-        } else {
-            let layout = createLayout()
-            collectionView.collectionViewLayout = layout
-        }
-    }
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        pageControl.numberOfPages = characters.count
         return characters.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -73,33 +56,35 @@ class CardsDeckCollectionVC: UICollectionViewController {
             } completion: { bool in
                 UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
                 cell.transform = CGAffineTransform.init(scaleX: 1, y: 1)
-                }
-               }
-              }
-             }
-            }
-private func createHorizontalLayout() -> UICollectionViewCompositionalLayout {
-    let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-    item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 100, bottom: 4, trailing: 100)
-    let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
-    
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20)
-    horizontalGroup.interItemSpacing = .none
-    
-    let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20)
-    section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-    let layout = UICollectionViewCompositionalLayout(section: section)
-    return layout
+                        }
+                      }
+                    }
+                  }
+                
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let windth = scrollView.frame.width
+        currentPage = Int(scrollView.contentOffset.x / windth)
+        pageControl.currentPage = currentPage
+    }
 }
+
+extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/1.5)
+    }
+}
+
+
+
 private func createLayout() -> UICollectionViewCompositionalLayout {
     let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-    let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+    let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
     
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
+    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 20 , leading: 5, bottom: 120, trailing: 5)
     let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
+    section.orthogonalScrollingBehavior = .groupPagingCentered
+    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 120, trailing: 5)
     let layout = UICollectionViewCompositionalLayout(section: section)
     return layout
 }

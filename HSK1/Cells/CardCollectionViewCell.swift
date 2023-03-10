@@ -36,11 +36,11 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.characterView.layer.shadowColor = UIColor.green.cgColor
         
         //DetailViewSettings
-        self.detailCharacterLabel.text = character.name
+       
         self.detailView.layer.cornerRadius = 5
         self.PingYingLabel.text = character.pingYing
         
-        self.detailCharacterLabel.layer.cornerRadius = 0
+        
         self.detailTranslationLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.text = character.translation
         

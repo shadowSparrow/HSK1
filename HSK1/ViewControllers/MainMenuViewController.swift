@@ -11,6 +11,7 @@ class MainMenuViewController: UICollectionViewController {
     let menuItems = MenuItem.getItems()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if UIDevice.current.orientation.isLandscape {
             collectionView.collectionViewLayout = createLandscapeLayout()
         } else {

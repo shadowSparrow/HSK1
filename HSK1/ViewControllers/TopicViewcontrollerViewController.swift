@@ -15,7 +15,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         topicCollectionView.dataSource = self
         topicCollectionView.delegate = self
     }
-    override func viewWillLayoutSubviews() {
+    override func viewWillAppear(_ animated: Bool) {
         if UIDevice.current.orientation.isLandscape {
             topicCollectionView.collectionViewLayout = createLandscapeLayout()
         } else {
