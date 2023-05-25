@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class CharacterData {
     var character: String
     var imageName: String

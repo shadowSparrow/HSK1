@@ -42,6 +42,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             topicCollectionView.collectionViewLayout = createLayout()
         }
     }
+    
      private func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
@@ -69,7 +70,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCellCollectionViewCell
-        cell.setCell(image: UIImage(named:topics[indexPath.row])!, label: topics[indexPath.row])
+        cell.setCell(image: UIImage(named:topics[indexPath.row].rawValue)!, label: topics[indexPath.row].rawValue)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -78,8 +79,10 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         } completion: { Bool in
+            
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let lernVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
+            
             switch cell.cellLabel.text {
             case "Family":
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.familyCharacters)

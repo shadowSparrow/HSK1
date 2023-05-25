@@ -7,12 +7,21 @@
 
 import Foundation
 
+enum Topics: String{
+    case Family, Travel, Education, Objects, Food, Persons, Count, Numbers,Time, Locations, Adjectives, Phrazes, Actions, Particles
+}
+
+
 class DataManager {
     static let shared = DataManager()
     var imageNames = ["graduationcap","brain", "gamecontroller"]
     var labelNames = ["Cards","Exercises","Games"]
+    
     var characterNames = ["学习","练习","游戏"]
-    var topicNames = ["Family",  "Travel", "Education","Objects", "Food", "Persons","Count","Numbers","Time","Locations","Adjectives","Phrazes","Actions","Particles"]
+    
+ 
+    var topicNames: [Topics] = [.Family,.Travel,.Education,.Objects, .Food, .Persons,.Count,.Numbers,.Time,.Locations,.Adjectives,.Phrazes,.Actions,.Particles]
+    
     var familyCharacters = [
         CharacterData(character: "爸爸", imageName: "family", pingYing: "bàba", translation: "отец" ),
         CharacterData(character: "家", imageName: "hospital", pingYing: "jiā", translation: "семья"),
@@ -194,7 +203,3 @@ class DataManager {
     private init(){}
 }
 
-/*
- 做 zuò заниматься, делать (изготавливать)坐 zuò сидеть, ехать (на транспортном средстве)
- 睡觉 shuìjiào спать, ложиться спать工作 gōngzuò работать (работа)钱 qián деньги本 běnтом(счетное слово для книг)医生 yīshēng врач医院 yīyuàn больница吗 ma вопросительная частица в конце предложения的 de притяжательная частица (присоединяет определение;также употребляется для усиления)了 le - употребляется в конце предложения для обозначения происшедших изменений呢 ne - вопросительная частица, ставится в конце предложения;также ставится в конце повествовательного предложения
- */

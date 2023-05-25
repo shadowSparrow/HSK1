@@ -108,7 +108,6 @@
 		048CCF8B29A9682B00AFCF73 /* 说.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8129A9682B00AFCF73 /* 说.mp3 */; };
 		048CCF8C29A9682B00AFCF73 /* 读.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8229A9682B00AFCF73 /* 读.mp3 */; };
 		048CCF8D29A9682B00AFCF73 /* 同学.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8329A9682B00AFCF73 /* 同学.mp3 */; };
-		048CCF8E29A9682B00AFCF73 /* 写.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8429A9682B00AFCF73 /* 写.mp3 */; };
 		048CCF8F29A9682B00AFCF73 /* 汉语.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF8529A9682B00AFCF73 /* 汉语.mp3 */; };
 		048CCF9A29A96A8D00AFCF73 /* 什么.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9029A96A8C00AFCF73 /* 什么.mp3 */; };
 		048CCF9B29A96A8D00AFCF73 /* 和.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF9129A96A8C00AFCF73 /* 和.mp3 */; };
@@ -283,7 +282,6 @@
 		048CCF8129A9682B00AFCF73 /* 说.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "说.mp3"; sourceTree = "<group>"; };
 		048CCF8229A9682B00AFCF73 /* 读.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "读.mp3"; sourceTree = "<group>"; };
 		048CCF8329A9682B00AFCF73 /* 同学.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "同学.mp3"; sourceTree = "<group>"; };
-		048CCF8429A9682B00AFCF73 /* 写.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "写.mp3"; sourceTree = "<group>"; };
 		048CCF8529A9682B00AFCF73 /* 汉语.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "汉语.mp3"; sourceTree = "<group>"; };
 		048CCF9029A96A8C00AFCF73 /* 什么.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "什么.mp3"; sourceTree = "<group>"; };
 		048CCF9129A96A8C00AFCF73 /* 和.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "和.mp3"; sourceTree = "<group>"; };
@@ -372,13 +370,21 @@
 		041113A1286DE11E008B5DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0450A3A8291188C900E4C60E /* CardsVc.swift */,
-				0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */,
+				04873C2129BD236E00D71610 /* SwiftUIScreens */,
 				0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */,
 				04111395286B17F0008B5DD9 /* MainMenuViewController.swift */,
 				0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04873C2129BD236E00D71610 /* SwiftUIScreens */ = {
+			isa = PBXGroup;
+			children = (
+				0450A3A8291188C900E4C60E /* CardsVc.swift */,
+				0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */,
+			);
+			path = SwiftUIScreens;
 			sourceTree = "<group>";
 		};
 		048CCF6729A964B300AFCF73 /* sounds */ = {
@@ -484,7 +490,6 @@
 				048CCF9529A96A8C00AFCF73 /* 谁.mp3 */,
 				048CCF9829A96A8C00AFCF73 /* 这.mp3 */,
 				048CCF9929A96A8D00AFCF73 /* 那.mp3 */,
-				048CCF8429A9682B00AFCF73 /* 写.mp3 */,
 				048CCF8329A9682B00AFCF73 /* 同学.mp3 */,
 				048CCF7D29A9682B00AFCF73 /* 字.mp3 */,
 				048CCF7C29A9682B00AFCF73 /* 学习.mp3 */,
@@ -747,7 +752,6 @@
 				048CCF7A29A9662500AFCF73 /* 米饭.mp3 in Resources */,
 				048CCF4E29A9622100AFCF73 /* 书.mp3 in Resources */,
 				042AF1DF29A97ACA0073908C /* 钱.mp3 in Resources */,
-				048CCF8E29A9682B00AFCF73 /* 写.mp3 in Resources */,
 				048CCF6329A9638500AFCF73 /* 北京.mp3 in Resources */,
 				048CCFE529A96FF900AFCF73 /* 点.mp3 in Resources */,
 				048CCF6129A9638500AFCF73 /* 中国.mp3 in Resources */,

@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 
 private let reuseIdentifier = "cell"
+
 class CardsDeckCollectionVC: UICollectionViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
@@ -22,7 +23,6 @@ class CardsDeckCollectionVC: UICollectionViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         pageControl.numberOfPages = characters.count
     }
     
@@ -69,13 +69,10 @@ class CardsDeckCollectionVC: UICollectionViewController {
 }
 
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/1.5)
     }
 }
-
-
 
 private func createLayout() -> UICollectionViewCompositionalLayout {
     let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))

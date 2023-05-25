@@ -8,17 +8,51 @@
 import UIKit
 
 class MainMenuViewController: UICollectionViewController {
-    let menuItems = MenuItem.getItems()
+    
+    private let menuItems = MenuItem.getItems()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        showLayout()
+    }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+       showLayout()
+    }     
+}
+
+extension MainMenuViewController {
+    
+    private func showLayout() {
         if UIDevice.current.orientation.isLandscape {
             collectionView.collectionViewLayout = createLandscapeLayout()
         } else {
             collectionView.collectionViewLayout = createLayout()
         }
+        animateLayout()
     }
-    override func viewDidAppear(_ animated: Bool) {
+    
+    private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+       let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+       item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)
+       let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+       let section = NSCollectionLayoutSection(group: group)
+       let layout = UICollectionViewCompositionalLayout(section: section)
+       return layout
+   }
+    
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)))
+        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 50, bottom: 2, trailing: 50)
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+        let section = NSCollectionLayoutSection(group: group)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
+    
+    private func animateLayout() {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             for cell in self.collectionView.visibleCells {
                 cell.transform = CGAffineTransform(scaleX: 0.9 , y: 0.9)
@@ -31,29 +65,10 @@ class MainMenuViewController: UICollectionViewController {
             }
         }
     }
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            collectionView.collectionViewLayout = createLandscapeLayout()
-        } else {
-            collectionView.collectionViewLayout = createLayout()
-        }
-    }
-     private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
-        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 100, bottom: 2, trailing: 100)
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
-        let section = NSCollectionLayoutSection(group: group)
-        let layout = UICollectionViewCompositionalLayout(section: section)
-        return layout
-    }
-    private func createLayout() -> UICollectionViewCompositionalLayout {
-        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)))
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 50, bottom: 2, trailing: 50)
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
-        let section = NSCollectionLayoutSection(group: group)
-        let layout = UICollectionViewCompositionalLayout(section: section)
-        return layout
-    }
+    
+}
+
+extension MainMenuViewController {
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuItems.count
@@ -68,6 +83,7 @@ class MainMenuViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
+        
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
@@ -75,5 +91,5 @@ class MainMenuViewController: UICollectionViewController {
                 self.performSegue(withIdentifier: "topicSegue", sender: nil)
             }
         }
-    }
+}
 
