@@ -9,20 +9,62 @@ import UIKit
 
 class TopicViewcontrollerViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var topicCollectionView: UICollectionView!
-    let topics = Topic.getTopics()
+    
+    private let topics = Topic.getTopics()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         topicCollectionView.dataSource = self
         topicCollectionView.delegate = self
     }
     override func viewWillAppear(_ animated: Bool) {
+        showLayout()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+       showLayout()
+    }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        showLayout()
+    }
+    
+}
+
+extension TopicViewcontrollerViewController {
+    
+    private func showLayout() {
         if UIDevice.current.orientation.isLandscape {
             topicCollectionView.collectionViewLayout = createLandscapeLayout()
         } else {
             topicCollectionView.collectionViewLayout = createLayout()
         }
+        animateLayout()
     }
-    override func viewDidAppear(_ animated: Bool) {
+    
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+       let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)))
+       item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+       let itemTwo = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+       itemTwo.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+       let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)), subitems: [item,item])
+       let groupTwo = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)), subitems: [group,itemTwo])
+      let section = NSCollectionLayoutSection(group: groupTwo)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+      let layout = UICollectionViewCompositionalLayout(section: section)
+       return layout
+   }
+    
+    private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
+         let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+         item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 20, bottom: 2, trailing: 20)
+         let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
+         
+         let section = NSCollectionLayoutSection(group: group)
+         section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+         let layout = UICollectionViewCompositionalLayout(section: section)
+         return layout
+     }
+    
+    private func animateLayout() {
         UICollectionView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
             for cell in self.topicCollectionView.visibleCells {
                 cell.transform = CGAffineTransform(scaleX: 0.9 , y: 0.9)
@@ -35,36 +77,10 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             }
         }
     }
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            topicCollectionView.collectionViewLayout = createLandscapeLayout()
-        } else {
-            topicCollectionView.collectionViewLayout = createLayout()
-        }
-    }
+}
+
+extension TopicViewcontrollerViewController {
     
-     private func createLayout() -> UICollectionViewCompositionalLayout {
-        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)))
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
-        let itemTwo = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
-        itemTwo.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)), subitems: [item,item])
-        let groupTwo = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)), subitems: [group,itemTwo])
-       let section = NSCollectionLayoutSection(group: groupTwo)
-         section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-       let layout = UICollectionViewCompositionalLayout(section: section)
-        return layout
-    }
-   private func createLandscapeLayout() -> UICollectionViewCompositionalLayout {
-        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 20, bottom: 2, trailing: 20)
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item,item])
-        
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-        let layout = UICollectionViewCompositionalLayout(section: section)
-        return layout
-    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         topics.count
     }
@@ -118,4 +134,5 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
             self.show(lernVC, sender: nil)
              }
     }
+    
 }
