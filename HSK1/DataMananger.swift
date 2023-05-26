@@ -7,13 +7,14 @@
 
 import Foundation
 
-enum Topics: String{
+enum Topics: String {
     case Family, Travel, Education, Objects, Food, Persons, Count, Numbers,Time, Locations, Adjectives, Phrazes, Actions, Particles
 }
 
 
 class DataManager {
     static let shared = DataManager()
+    
     var imageNames = ["graduationcap","brain", "gamecontroller"]
     var labelNames = ["Cards","Exercises","Games"]
     

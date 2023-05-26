@@ -30,7 +30,6 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
 }
 
 extension TopicViewcontrollerViewController {
-    
     private func showLayout() {
         if UIDevice.current.orientation.isLandscape {
             topicCollectionView.collectionViewLayout = createLandscapeLayout()
@@ -100,33 +99,33 @@ extension TopicViewcontrollerViewController {
             let lernVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
             
             switch cell.cellLabel.text {
-            case "Family":
+            case Topics.Family.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.familyCharacters)
-            case "Travel":
+            case Topics.Travel.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.travelCharacters)
-            case "Education":
+            case Topics.Education.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.educationCharacters)
-            case "Objects":
+            case Topics.Objects.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.objectCharacters)
-            case "Food":
+            case Topics.Food.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.foodCharacters)
-            case "Persons":
+            case Topics.Persons.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.nounsCharacters)
-            case "Count":
+            case Topics.Count.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.countCharacters)
-            case "Numbers":
+            case Topics.Numbers.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.numberCharacters)
-            case "Time":
+            case Topics.Time.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.timeCharacters)
-            case "Locations":
+            case Topics.Locations.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.placeCharacters)
-            case "Adjectives":
+            case Topics.Adjectives.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.adjectivesCharacters)
-            case "Actions":
+            case Topics.Actions.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.verbsCharacters)
-            case "Phrazes":
+            case Topics.Phrazes.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.phrazesCharacters)
-            case "Particles":
+            case Topics.Particles.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.particlesCharacters)
             default:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.nounsCharacters)
