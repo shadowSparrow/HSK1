@@ -30,6 +30,8 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
 }
 
 extension TopicViewcontrollerViewController {
+    
+    //MARK: - Layout
     private func showLayout() {
         if UIDevice.current.orientation.isLandscape {
             topicCollectionView.collectionViewLayout = createLandscapeLayout()
@@ -79,6 +81,7 @@ extension TopicViewcontrollerViewController {
 }
 
 extension TopicViewcontrollerViewController {
+    //MARK: - CollectionVCdelegateAndDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         topics.count
@@ -134,4 +137,6 @@ extension TopicViewcontrollerViewController {
              }
     }
     
+    private func getTopicsGards(label: UILabel) {
+    }
 }
