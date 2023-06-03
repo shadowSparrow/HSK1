@@ -148,10 +148,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="457"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-bf-K2m">
-                                                    <rect key="frame" x="16" y="41.666666666666657" width="342" height="374"/>
+                                                    <rect key="frame" x="16" y="27.666666666666657" width="342" height="402"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-1N-CgU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="98"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-1N-CgU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="102"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
                                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
@@ -171,14 +171,14 @@
                                                                         </attributedString>
                                                                     </state>
                                                                     <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                                                        <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                                                        <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                                     </buttonConfiguration>
                                                                     <connections>
                                                                         <action selector="firstExampleButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="nLf-KX-E7r"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wo baba hen hao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-qV-EhT">
-                                                                    <rect key="frame" x="0.0" y="58" width="342" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="62" width="342" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="h2e-uH-dp9"/>
                                                                     </constraints>
@@ -192,12 +192,11 @@
                                                                 <constraint firstAttribute="trailing" secondItem="4Dj-qV-EhT" secondAttribute="trailing" id="5dY-HT-uHe"/>
                                                                 <constraint firstAttribute="trailing" secondItem="QSq-wC-6gu" secondAttribute="trailing" id="JC4-sG-ral"/>
                                                                 <constraint firstItem="QSq-wC-6gu" firstAttribute="leading" secondItem="i0I-1N-CgU" secondAttribute="leading" id="aUf-hG-yVN"/>
-                                                                <constraint firstItem="4Dj-qV-EhT" firstAttribute="top" secondItem="QSq-wC-6gu" secondAttribute="bottom" constant="8" id="cd6-XJ-shH"/>
                                                                 <constraint firstItem="4Dj-qV-EhT" firstAttribute="leading" secondItem="i0I-1N-CgU" secondAttribute="leading" id="e9p-6M-O1n"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A61-2l-74x">
-                                                            <rect key="frame" x="0.0" y="146" width="342" height="90"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="A61-2l-74x">
+                                                            <rect key="frame" x="0.0" y="150" width="342" height="102"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
                                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
@@ -232,7 +231,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhe shi wo baba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-zz-AOZ">
-                                                                    <rect key="frame" x="0.0" y="50" width="342" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="62" width="342" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="6eQ-oe-dUD"/>
                                                                     </constraints>
@@ -244,13 +243,12 @@
                                                             <constraints>
                                                                 <constraint firstItem="caW-zj-I4T" firstAttribute="leading" secondItem="A61-2l-74x" secondAttribute="leading" id="AYH-7W-hg9"/>
                                                                 <constraint firstAttribute="trailing" secondItem="caW-zj-I4T" secondAttribute="trailing" id="LdQ-GO-l3s"/>
-                                                                <constraint firstAttribute="bottom" secondItem="6tU-zz-AOZ" secondAttribute="bottom" id="NOx-6h-HqD"/>
                                                                 <constraint firstItem="6tU-zz-AOZ" firstAttribute="leading" secondItem="A61-2l-74x" secondAttribute="leading" id="hXu-sf-yO0"/>
                                                                 <constraint firstAttribute="trailing" secondItem="6tU-zz-AOZ" secondAttribute="trailing" id="rVA-Nn-jpv"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ah4-Rh-Fg8">
-                                                            <rect key="frame" x="0.0" y="284" width="342" height="90"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ah4-Rh-Fg8">
+                                                            <rect key="frame" x="0.0" y="300" width="342" height="102"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-Ba-qtS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
@@ -285,7 +283,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhe shi wo baba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gST-fA-OWK">
-                                                                    <rect key="frame" x="0.0" y="50" width="342" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="62" width="342" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="6fX-mN-iXs"/>
                                                                     </constraints>
@@ -298,7 +296,6 @@
                                                                 <constraint firstAttribute="trailing" secondItem="wcf-Ba-qtS" secondAttribute="trailing" id="AmB-Gz-25X"/>
                                                                 <constraint firstItem="wcf-Ba-qtS" firstAttribute="leading" secondItem="Ah4-Rh-Fg8" secondAttribute="leading" id="Ha3-WS-s5b"/>
                                                                 <constraint firstAttribute="trailing" secondItem="gST-fA-OWK" secondAttribute="trailing" id="XaB-Wr-boM"/>
-                                                                <constraint firstAttribute="bottom" secondItem="gST-fA-OWK" secondAttribute="bottom" id="f5E-2e-TqZ"/>
                                                                 <constraint firstItem="gST-fA-OWK" firstAttribute="leading" secondItem="Ah4-Rh-Fg8" secondAttribute="leading" id="fXG-ox-IbG"/>
                                                             </constraints>
                                                         </stackView>
@@ -332,7 +329,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZxI-cc-ZFO">
                                                     <rect key="frame" x="120" y="333" width="118" height="123.33333333333331"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-fb-PxY">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-fb-PxY">
                                                             <rect key="frame" x="0.0" y="0.0" width="118" height="28.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -525,21 +522,6 @@
             </objects>
             <point key="canvasLocation" x="2248.8000000000002" y="94.581280788177338"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3Wc-2S-9Bf">
-            <objects>
-                <viewController id="wNB-kR-NIS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lE7-ec-pNh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vLU-eH-Puf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dZ4-H6-SmZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-743" y="95"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="LBY-ab-YTI">
             <objects>
@@ -570,21 +552,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFL-11-nqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="300" y="95.320197044334975"/>
-        </scene>
-        <!--Cards Vc-->
-        <scene sceneID="0u1-r5-7BF">
-            <objects>
-                <viewController id="Ttp-qh-s6a" customClass="CardsVc" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9hc-6d-XlD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="cYt-65-6Ju"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lCF-Kh-fYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="571" y="905"/>
         </scene>
     </scenes>
     <resources>
