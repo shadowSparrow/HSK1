@@ -50,6 +50,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.playButton.layer.cornerRadius = 2
         
         exampleLabels.first?.setTitle("这是我爸爸", for: .normal)
+        exampleLabels[1].setTitle("我爱我爸爸", for: .normal)
         exampleLabels.last?.setTitle("我爸爸很好", for: .normal)
         
         exampleLabels.first?.titleLabel?.font = UIFont.systemFont(ofSize: 48, weight: .bold)
@@ -58,8 +59,6 @@ class CardCollectionViewCell: UICollectionViewCell {
         for label in examplePingYingLabels {
             label.isHidden = true
         }
-        
-        
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
@@ -108,6 +107,16 @@ class CardCollectionViewCell: UICollectionViewCell {
 
         } else if tag == 2 {
             UIView.animate(withDuration: 0.2, animations:  {
+                self.examplePingYingLabels[1].isHidden = false
+                
+            }) { bool in
+                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                    self.examplePingYingLabels[1].isHidden = true
+                }
+            }
+
+        } else if tag == 3 {
+            UIView.animate(withDuration: 0.2, animations:  {
                 self.examplePingYingLabels.last?.isHidden = false
                 
             }) { bool in
@@ -115,7 +124,6 @@ class CardCollectionViewCell: UICollectionViewCell {
                     self.examplePingYingLabels.last?.isHidden = true
                 }
             }
-
         }
         
         

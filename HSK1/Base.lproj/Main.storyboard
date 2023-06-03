@@ -148,7 +148,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="457"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-bf-K2m">
-                                                    <rect key="frame" x="16" y="110.66666666666669" width="342" height="236"/>
+                                                    <rect key="frame" x="16" y="41.666666666666657" width="342" height="374"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-1N-CgU">
                                                             <rect key="frame" x="0.0" y="0.0" width="342" height="98"/>
@@ -178,12 +178,12 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wo baba hen hao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-qV-EhT">
-                                                                    <rect key="frame" x="0.0" y="57.999999999999986" width="342" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="58" width="342" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="h2e-uH-dp9"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -237,7 +237,7 @@
                                                                         <constraint firstAttribute="height" constant="40" id="6eQ-oe-dUD"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -247,6 +247,59 @@
                                                                 <constraint firstAttribute="bottom" secondItem="6tU-zz-AOZ" secondAttribute="bottom" id="NOx-6h-HqD"/>
                                                                 <constraint firstItem="6tU-zz-AOZ" firstAttribute="leading" secondItem="A61-2l-74x" secondAttribute="leading" id="hXu-sf-yO0"/>
                                                                 <constraint firstAttribute="trailing" secondItem="6tU-zz-AOZ" secondAttribute="trailing" id="rVA-Nn-jpv"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ah4-Rh-Fg8">
+                                                            <rect key="frame" x="0.0" y="284" width="342" height="90"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-Ba-qtS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="d5P-Qi-6aw"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="dam-o6-EbQ"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Button">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Button">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" size="24" name="Helvetica"/>
+                                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                    </state>
+                                                                    <buttonConfiguration key="configuration" style="tinted">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Button">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" size="48" name="Helvetica"/>
+                                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                    </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="firstExampleButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="JW2-Rr-mag"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhe shi wo baba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gST-fA-OWK">
+                                                                    <rect key="frame" x="0.0" y="50" width="342" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="6fX-mN-iXs"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="wcf-Ba-qtS" secondAttribute="trailing" id="AmB-Gz-25X"/>
+                                                                <constraint firstItem="wcf-Ba-qtS" firstAttribute="leading" secondItem="Ah4-Rh-Fg8" secondAttribute="leading" id="Ha3-WS-s5b"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gST-fA-OWK" secondAttribute="trailing" id="XaB-Wr-boM"/>
+                                                                <constraint firstAttribute="bottom" secondItem="gST-fA-OWK" secondAttribute="bottom" id="f5E-2e-TqZ"/>
+                                                                <constraint firstItem="gST-fA-OWK" firstAttribute="leading" secondItem="Ah4-Rh-Fg8" secondAttribute="leading" id="fXG-ox-IbG"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
@@ -360,6 +413,8 @@
                                     <outletCollection property="exampleLabels" destination="caW-zj-I4T" collectionClass="NSMutableArray" id="3r6-mA-gAe"/>
                                     <outletCollection property="examplePingYingLabels" destination="4Dj-qV-EhT" collectionClass="NSMutableArray" id="oT6-cx-1Kq"/>
                                     <outletCollection property="examplePingYingLabels" destination="6tU-zz-AOZ" collectionClass="NSMutableArray" id="zpg-pe-ZEN"/>
+                                    <outletCollection property="examplePingYingLabels" destination="gST-fA-OWK" collectionClass="NSMutableArray" id="UoG-6M-xTg"/>
+                                    <outletCollection property="exampleLabels" destination="wcf-Ba-qtS" collectionClass="NSMutableArray" id="h4d-AM-l01"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
