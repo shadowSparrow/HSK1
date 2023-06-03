@@ -91,24 +91,40 @@ class CardCollectionViewCell: UICollectionViewCell {
         playsound(name: character?.name ?? "")
     }
     
-    @IBAction func exampleButtonClick(_ sender: Any) {
-        UIView.animate(withDuration: 0.3, animations:  {
-            
-            for label in self.examplePingYingLabels {
-                label.isHidden = false
-            }
-            
-        }) { bool in
-            UIView.animate(withDuration: 0.3, delay: 2.0) {
-                for label in self.examplePingYingLabels {
-                    label.isHidden = true
-                }
+
+    @IBAction func firstExampleButtonAction(_ sender: UIButton) {
+        
+        guard let tag = (sender as? UIButton)?.tag else {return}
+        
+        if tag == 1 {
+            UIView.animate(withDuration: 0.2, animations:  {
+                self.examplePingYingLabels.first?.isHidden = false
                 
+            }) { bool in
+                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                    self.examplePingYingLabels.first?.isHidden = true
+                }
             }
+
+        } else if tag == 2 {
+            UIView.animate(withDuration: 0.2, animations:  {
+                self.examplePingYingLabels.last?.isHidden = false
+                
+            }) { bool in
+                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                    self.examplePingYingLabels.last?.isHidden = true
+                }
+            }
+
         }
+        
+        
+        
     }
     
-  
+
+    
+     
     
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)

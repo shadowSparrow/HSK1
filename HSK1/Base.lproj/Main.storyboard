@@ -153,7 +153,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-1N-CgU">
                                                             <rect key="frame" x="0.0" y="0.0" width="342" height="98"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
+                                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
                                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="zua-Pq-9PI"/>
@@ -174,7 +174,7 @@
                                                                         <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
                                                                     </buttonConfiguration>
                                                                     <connections>
-                                                                        <action selector="exampleButtonClick:" destination="hhZ-1z-fto" eventType="touchUpInside" id="xeh-yL-FTL"/>
+                                                                        <action selector="firstExampleButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="nLf-KX-E7r"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wo baba hen hao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-qV-EhT">
@@ -199,7 +199,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A61-2l-74x">
                                                             <rect key="frame" x="0.0" y="146" width="342" height="90"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
+                                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
                                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="VQ4-FC-H3n"/>
@@ -228,7 +228,7 @@
                                                                         </attributedString>
                                                                     </buttonConfiguration>
                                                                     <connections>
-                                                                        <action selector="exampleButtonClick:" destination="hhZ-1z-fto" eventType="touchUpInside" id="Aex-Vc-Kgl"/>
+                                                                        <action selector="firstExampleButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="A9m-Wb-Ngh"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhe shi wo baba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-zz-AOZ">
