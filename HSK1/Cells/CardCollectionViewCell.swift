@@ -19,7 +19,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var playButton: UIButton!
     
     @IBOutlet var exampleLabels: [UIButton]!
-    
+    @IBOutlet var examplePingYingLabels: [UILabel]!
     
     var player: AVAudioPlayer?
     var character: Character?
@@ -51,8 +51,15 @@ class CardCollectionViewCell: UICollectionViewCell {
         
         exampleLabels.first?.setTitle("这是我爸爸", for: .normal)
         exampleLabels.last?.setTitle("我爸爸很好", for: .normal)
+        
         exampleLabels.first?.titleLabel?.font = UIFont.systemFont(ofSize: 48, weight: .bold)
         exampleLabels.last?.titleLabel?.font = UIFont.systemFont(ofSize: 48, weight: .bold)
+        
+        for label in examplePingYingLabels {
+            label.isHidden = true
+        }
+        
+        
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
@@ -82,6 +89,23 @@ class CardCollectionViewCell: UICollectionViewCell {
             }
         }
         playsound(name: character?.name ?? "")
+    }
+    
+    @IBAction func exampleButtonClick(_ sender: Any) {
+        UIView.animate(withDuration: 0.3, animations:  {
+            
+            for label in self.examplePingYingLabels {
+                label.isHidden = false
+            }
+            
+        }) { bool in
+            UIView.animate(withDuration: 0.3, delay: 2.0) {
+                for label in self.examplePingYingLabels {
+                    label.isHidden = true
+                }
+                
+            }
+        }
     }
     
   

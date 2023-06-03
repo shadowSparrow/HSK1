@@ -147,75 +147,117 @@
                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-10-mdn">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="457"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NQu-ZW-NyS">
-                                                    <rect key="frame" x="16" y="153.66666666666666" width="342" height="149.99999999999997"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-bf-K2m">
+                                                    <rect key="frame" x="16" y="110.66666666666669" width="342" height="236"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-1N-CgU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="98"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="zua-Pq-9PI"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Button">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Button">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" size="24" name="Helvetica"/>
+                                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                    </state>
+                                                                    <buttonConfiguration key="configuration" style="tinted" title="Button">
+                                                                        <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                                                    </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="exampleButtonClick:" destination="hhZ-1z-fto" eventType="touchUpInside" id="xeh-yL-FTL"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wo baba hen hao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-qV-EhT">
+                                                                    <rect key="frame" x="0.0" y="57.999999999999986" width="342" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="h2e-uH-dp9"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="50" id="zua-Pq-9PI"/>
+                                                                <constraint firstItem="QSq-wC-6gu" firstAttribute="top" secondItem="i0I-1N-CgU" secondAttribute="top" id="4kD-NG-FCn"/>
+                                                                <constraint firstAttribute="trailing" secondItem="4Dj-qV-EhT" secondAttribute="trailing" id="5dY-HT-uHe"/>
+                                                                <constraint firstAttribute="trailing" secondItem="QSq-wC-6gu" secondAttribute="trailing" id="JC4-sG-ral"/>
+                                                                <constraint firstItem="QSq-wC-6gu" firstAttribute="leading" secondItem="i0I-1N-CgU" secondAttribute="leading" id="aUf-hG-yVN"/>
+                                                                <constraint firstItem="4Dj-qV-EhT" firstAttribute="top" secondItem="QSq-wC-6gu" secondAttribute="bottom" constant="8" id="cd6-XJ-shH"/>
+                                                                <constraint firstItem="4Dj-qV-EhT" firstAttribute="leading" secondItem="i0I-1N-CgU" secondAttribute="leading" id="e9p-6M-O1n"/>
                                                             </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Button">
-                                                                <attributedString key="attributedTitle">
-                                                                    <fragment content="Button">
-                                                                        <attributes>
-                                                                            <font key="NSFont" size="24" name="Helvetica"/>
-                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                                        </attributes>
-                                                                    </fragment>
-                                                                </attributedString>
-                                                            </state>
-                                                            <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                                                <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
-                                                            </buttonConfiguration>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
-                                                            <rect key="frame" x="0.0" y="100" width="342" height="50"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A61-2l-74x">
+                                                            <rect key="frame" x="0.0" y="146" width="342" height="90"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="VQ4-FC-H3n"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vnU-Fm-EZ4"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Button">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Button">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" size="24" name="Helvetica"/>
+                                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                    </state>
+                                                                    <buttonConfiguration key="configuration" style="tinted">
+                                                                        <attributedString key="attributedTitle">
+                                                                            <fragment content="Button">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" size="48" name="Helvetica"/>
+                                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                    </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="exampleButtonClick:" destination="hhZ-1z-fto" eventType="touchUpInside" id="Aex-Vc-Kgl"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhe shi wo baba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-zz-AOZ">
+                                                                    <rect key="frame" x="0.0" y="50" width="342" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="6eQ-oe-dUD"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="50" id="VQ4-FC-H3n"/>
+                                                                <constraint firstItem="caW-zj-I4T" firstAttribute="leading" secondItem="A61-2l-74x" secondAttribute="leading" id="AYH-7W-hg9"/>
+                                                                <constraint firstAttribute="trailing" secondItem="caW-zj-I4T" secondAttribute="trailing" id="LdQ-GO-l3s"/>
+                                                                <constraint firstAttribute="bottom" secondItem="6tU-zz-AOZ" secondAttribute="bottom" id="NOx-6h-HqD"/>
+                                                                <constraint firstItem="6tU-zz-AOZ" firstAttribute="leading" secondItem="A61-2l-74x" secondAttribute="leading" id="hXu-sf-yO0"/>
+                                                                <constraint firstAttribute="trailing" secondItem="6tU-zz-AOZ" secondAttribute="trailing" id="rVA-Nn-jpv"/>
                                                             </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Button">
-                                                                <attributedString key="attributedTitle">
-                                                                    <fragment content="Button">
-                                                                        <attributes>
-                                                                            <font key="NSFont" size="24" name="Helvetica"/>
-                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                                        </attributes>
-                                                                    </fragment>
-                                                                </attributedString>
-                                                            </state>
-                                                            <buttonConfiguration key="configuration" style="tinted">
-                                                                <attributedString key="attributedTitle">
-                                                                    <fragment content="Button">
-                                                                        <attributes>
-                                                                            <font key="NSFont" size="48" name="Helvetica"/>
-                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                                        </attributes>
-                                                                    </fragment>
-                                                                </attributedString>
-                                                            </buttonConfiguration>
-                                                        </button>
+                                                        </stackView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="caW-zj-I4T" secondAttribute="trailing" id="9I7-f8-elP"/>
-                                                        <constraint firstItem="QSq-wC-6gu" firstAttribute="leading" secondItem="NQu-ZW-NyS" secondAttribute="leading" id="DVz-AQ-cn4"/>
-                                                        <constraint firstAttribute="trailing" secondItem="QSq-wC-6gu" secondAttribute="trailing" id="P4p-8e-ooS"/>
-                                                        <constraint firstItem="caW-zj-I4T" firstAttribute="leading" secondItem="NQu-ZW-NyS" secondAttribute="leading" id="VLC-zI-ehU"/>
-                                                        <constraint firstItem="QSq-wC-6gu" firstAttribute="top" secondItem="NQu-ZW-NyS" secondAttribute="top" id="ZT2-gh-QzV"/>
-                                                        <constraint firstAttribute="bottom" secondItem="caW-zj-I4T" secondAttribute="bottom" id="z5m-HQ-bsc"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             <constraints>
-                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="centerY" secondItem="DB2-10-mdn" secondAttribute="centerY" id="OZW-hT-3Ul"/>
-                                                <constraint firstAttribute="trailing" secondItem="NQu-ZW-NyS" secondAttribute="trailing" constant="16" id="QVz-dH-s1V"/>
-                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="16" id="l4V-oc-axL"/>
-                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="centerX" secondItem="DB2-10-mdn" secondAttribute="centerX" id="vH8-7g-kys"/>
+                                                <constraint firstItem="JbF-bf-K2m" firstAttribute="centerX" secondItem="DB2-10-mdn" secondAttribute="centerX" id="A7E-qc-zIn"/>
+                                                <constraint firstAttribute="trailing" secondItem="JbF-bf-K2m" secondAttribute="trailing" constant="16" id="E6N-sd-EKD"/>
+                                                <constraint firstItem="JbF-bf-K2m" firstAttribute="centerY" secondItem="DB2-10-mdn" secondAttribute="centerY" id="eBs-Yz-d2W"/>
+                                                <constraint firstItem="JbF-bf-K2m" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="16" id="sIW-J3-q3H"/>
                                             </constraints>
                                         </view>
                                         <view hidden="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-vl-wb0">
@@ -316,6 +358,8 @@
                                     <outlet property="playButton" destination="Wim-Lq-Bbr" id="IVl-1o-wIp"/>
                                     <outletCollection property="exampleLabels" destination="QSq-wC-6gu" collectionClass="NSMutableArray" id="mSF-99-hSk"/>
                                     <outletCollection property="exampleLabels" destination="caW-zj-I4T" collectionClass="NSMutableArray" id="3r6-mA-gAe"/>
+                                    <outletCollection property="examplePingYingLabels" destination="4Dj-qV-EhT" collectionClass="NSMutableArray" id="oT6-cx-1Kq"/>
+                                    <outletCollection property="examplePingYingLabels" destination="6tU-zz-AOZ" collectionClass="NSMutableArray" id="zpg-pe-ZEN"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
