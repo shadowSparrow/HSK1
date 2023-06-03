@@ -152,7 +152,7 @@
                                             <rect key="frame" x="8" y="0.0" width="358" height="457"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-wL-Edo">
-                                                    <rect key="frame" x="16" y="8" width="326" height="233"/>
+                                                    <rect key="frame" x="16" y="50" width="326" height="233"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="零">
                                                             <attributes>
@@ -165,7 +165,7 @@
                                                     <color key="highlightedColor" red="0.99462067129999998" green="0.99462067129999998" blue="0.99462067129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZxI-cc-ZFO">
-                                                    <rect key="frame" x="120" y="257" width="118" height="86.666666666666686"/>
+                                                    <rect key="frame" x="120" y="333" width="118" height="123.33333333333331"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-fb-PxY">
                                                             <rect key="frame" x="0.0" y="0.0" width="118" height="28.666666666666668"/>
@@ -176,8 +176,15 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                             </variation>
                                                         </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalCompressionResistancePriority="751" text="ноль" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
+                                                            <rect key="frame" x="0.0" y="36.666666666666686" width="118" height="28.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                        </label>
                                                         <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wim-Lq-Bbr">
-                                                            <rect key="frame" x="0.0" y="36.666666666666686" width="118" height="50"/>
+                                                            <rect key="frame" x="0.0" y="73.333333333333314" width="118" height="50"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                                             </accessibility>
@@ -206,55 +213,13 @@
                                                         </button>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WRj-l2-MOG">
-                                                    <rect key="frame" x="16" y="359.66666666666669" width="326" height="71"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zby-eb-sT3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="34.333333333333336"/>
-                                                            <accessibility key="accessibilityConfiguration">
-                                                                <accessibilityTraits key="traits" button="YES" staticText="YES"/>
-                                                            </accessibility>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="47" maxY="0.0"/>
-                                                            <state key="normal" title="">
-                                                                <attributedString key="attributedTitle">
-                                                                    <fragment content="Text">
-                                                                        <attributes>
-                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                            <font key="NSFont" metaFont="system" size="44"/>
-                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                        </attributes>
-                                                                    </fragment>
-                                                                </attributedString>
-                                                                <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
-                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
-                                                            </state>
-                                                            <buttonConfiguration key="configuration" style="plain" title="translate"/>
-                                                            <connections>
-                                                                <action selector="playButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="CsU-Xc-2Gt"/>
-                                                                <action selector="showTranslationButtonAction:" destination="hhZ-1z-fto" eventType="touchUpInside" id="Dym-xi-Dl1"/>
-                                                            </connections>
-                                                        </button>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalCompressionResistancePriority="751" text="ноль" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-hH-add">
-                                                            <rect key="frame" x="0.0" y="42.333333333333314" width="326" height="28.666666666666671"/>
-                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             <constraints>
-                                                <constraint firstItem="WRj-l2-MOG" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="16" id="06d-p3-fQ9"/>
                                                 <constraint firstItem="JxG-wL-Edo" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="16" id="Hrd-Ed-lgT"/>
                                                 <constraint firstAttribute="trailing" secondItem="ZxI-cc-ZFO" secondAttribute="trailing" constant="120" id="QUu-0t-KxO"/>
-                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="OCc-vl-wb0" secondAttribute="top" constant="8" id="Yfj-fH-F9q"/>
-                                                <constraint firstItem="WRj-l2-MOG" firstAttribute="centerX" secondItem="OCc-vl-wb0" secondAttribute="centerX" id="ZMs-sZ-kLZ"/>
-                                                <constraint firstItem="WRj-l2-MOG" firstAttribute="top" secondItem="ZxI-cc-ZFO" secondAttribute="bottom" constant="16" id="mkR-DF-zZH"/>
-                                                <constraint firstItem="ZxI-cc-ZFO" firstAttribute="top" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="16" id="n7f-yi-Sq9"/>
-                                                <constraint firstAttribute="trailing" secondItem="WRj-l2-MOG" secondAttribute="trailing" constant="16" id="qL5-5i-TFB"/>
+                                                <constraint firstItem="JxG-wL-Edo" firstAttribute="top" secondItem="OCc-vl-wb0" secondAttribute="top" constant="50" id="Yfj-fH-F9q"/>
+                                                <constraint firstItem="ZxI-cc-ZFO" firstAttribute="top" secondItem="JxG-wL-Edo" secondAttribute="bottom" constant="50" id="n7f-yi-Sq9"/>
                                                 <constraint firstAttribute="trailing" secondItem="JxG-wL-Edo" secondAttribute="trailing" constant="16" id="v0B-Wx-Grn"/>
                                                 <constraint firstItem="ZxI-cc-ZFO" firstAttribute="leading" secondItem="OCc-vl-wb0" secondAttribute="leading" constant="120" id="v33-Js-6h5"/>
                                             </constraints>

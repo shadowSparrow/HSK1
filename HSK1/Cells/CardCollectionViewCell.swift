@@ -69,9 +69,11 @@ class CardCollectionViewCell: UICollectionViewCell {
             }) { bool in
                 UIView.animate(withDuration: 0.2, animations:  {
                     self.PingYingLabel.isHidden = false
+                    self.detailTranslationLabel.isHidden = false
                 }) { bool in
                     UIView.animate(withDuration: 0.2, delay: 2.0) {
                         self.PingYingLabel.isHidden = true
+                        self.detailTranslationLabel.isHidden = true
                     }
                 }
             }
@@ -79,9 +81,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         playsound(name: character?.name ?? "")
     }
     
-    @IBAction func showTranslationButtonAction(_ sender: Any) {
-        self.detailTranslationLabel.isHidden = false
-    }
+  
     
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
