@@ -11,14 +11,14 @@ import AVFoundation
 class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterView: UIView!
     @IBOutlet weak var detailView: UIView!
-    @IBOutlet weak var detailCharacterLabel: UILabel!
+    
     @IBOutlet weak var detailTranslationLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
-    @IBOutlet weak var characterViewImage: UIImageView!
-    @IBOutlet weak var characterDetailViewImage: UIImageView!
+   
     @IBOutlet weak var PingYingLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
+    @IBOutlet var exampleLabels: [UIButton]!
     
     
     var player: AVAudioPlayer?
@@ -45,11 +45,14 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.detailTranslationLabel.text = character.translation
         self.detailTranslationLabel.isHidden = true
      
-        
-        
         self.playButton.layer.borderWidth = 0.5
         self.playButton.layer.borderColor = UIColor.white.cgColor
         self.playButton.layer.cornerRadius = 2
+        
+        exampleLabels.first?.setTitle("这是我爸爸", for: .normal)
+        exampleLabels.last?.setTitle("我爸爸很好", for: .normal)
+        exampleLabels.first?.titleLabel?.font = UIFont.systemFont(ofSize: 48, weight: .bold)
+        exampleLabels.last?.titleLabel?.font = UIFont.systemFont(ofSize: 48, weight: .bold)
         
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)

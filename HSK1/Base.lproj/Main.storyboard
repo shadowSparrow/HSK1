@@ -146,7 +146,77 @@
                                     <subviews>
                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-10-mdn">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="457"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NQu-ZW-NyS">
+                                                    <rect key="frame" x="16" y="153.66666666666666" width="342" height="149.99999999999997"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-wC-6gu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="zua-Pq-9PI"/>
+                                                            </constraints>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Button">
+                                                                <attributedString key="attributedTitle">
+                                                                    <fragment content="Button">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Helvetica"/>
+                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                            </state>
+                                                            <buttonConfiguration key="configuration" style="tinted" title="Button">
+                                                                <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caW-zj-I4T">
+                                                            <rect key="frame" x="0.0" y="100" width="342" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="VQ4-FC-H3n"/>
+                                                            </constraints>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Button">
+                                                                <attributedString key="attributedTitle">
+                                                                    <fragment content="Button">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Helvetica"/>
+                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                            </state>
+                                                            <buttonConfiguration key="configuration" style="tinted">
+                                                                <attributedString key="attributedTitle">
+                                                                    <fragment content="Button">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="48" name="Helvetica"/>
+                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="caW-zj-I4T" secondAttribute="trailing" id="9I7-f8-elP"/>
+                                                        <constraint firstItem="QSq-wC-6gu" firstAttribute="leading" secondItem="NQu-ZW-NyS" secondAttribute="leading" id="DVz-AQ-cn4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="QSq-wC-6gu" secondAttribute="trailing" id="P4p-8e-ooS"/>
+                                                        <constraint firstItem="caW-zj-I4T" firstAttribute="leading" secondItem="NQu-ZW-NyS" secondAttribute="leading" id="VLC-zI-ehU"/>
+                                                        <constraint firstItem="QSq-wC-6gu" firstAttribute="top" secondItem="NQu-ZW-NyS" secondAttribute="top" id="ZT2-gh-QzV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="caW-zj-I4T" secondAttribute="bottom" id="z5m-HQ-bsc"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <constraints>
+                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="centerY" secondItem="DB2-10-mdn" secondAttribute="centerY" id="OZW-hT-3Ul"/>
+                                                <constraint firstAttribute="trailing" secondItem="NQu-ZW-NyS" secondAttribute="trailing" constant="16" id="QVz-dH-s1V"/>
+                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="leading" secondItem="DB2-10-mdn" secondAttribute="leading" constant="16" id="l4V-oc-axL"/>
+                                                <constraint firstItem="NQu-ZW-NyS" firstAttribute="centerX" secondItem="DB2-10-mdn" secondAttribute="centerX" id="vH8-7g-kys"/>
+                                            </constraints>
                                         </view>
                                         <view hidden="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-vl-wb0">
                                             <rect key="frame" x="8" y="0.0" width="358" height="457"/>
@@ -244,6 +314,8 @@
                                     <outlet property="detailTranslationLabel" destination="CN6-hH-add" id="8dn-QJ-B7i"/>
                                     <outlet property="detailView" destination="DB2-10-mdn" id="X3A-ub-Cno"/>
                                     <outlet property="playButton" destination="Wim-Lq-Bbr" id="IVl-1o-wIp"/>
+                                    <outletCollection property="exampleLabels" destination="QSq-wC-6gu" collectionClass="NSMutableArray" id="mSF-99-hSk"/>
+                                    <outletCollection property="exampleLabels" destination="caW-zj-I4T" collectionClass="NSMutableArray" id="3r6-mA-gAe"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
