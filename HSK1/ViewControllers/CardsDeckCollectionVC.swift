@@ -15,8 +15,8 @@ class CardsDeckCollectionVC: UICollectionViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var currentPage: Int = 0
-    
     var characters: [Character] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,17 +72,5 @@ extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/1.5)
     }
-}
-
-private func createLayout() -> UICollectionViewCompositionalLayout {
-    let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-    let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
-    
-    horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 20 , leading: 5, bottom: 120, trailing: 5)
-    let section = NSCollectionLayoutSection(group: horizontalGroup)
-    section.orthogonalScrollingBehavior = .groupPagingCentered
-    section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 120, trailing: 5)
-    let layout = UICollectionViewCompositionalLayout(section: section)
-    return layout
 }
 

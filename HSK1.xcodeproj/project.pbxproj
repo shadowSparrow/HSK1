@@ -56,8 +56,6 @@
 		042AF1E929A97ACA0073908C /* 睡觉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DD29A97ACA0073908C /* 睡觉.mp3 */; };
 		042E437329649B35007EBBCA /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437229649B35007EBBCA /* note.png */; };
 		042E437529649DC4007EBBCA /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437429649DC4007EBBCA /* play.png */; };
-		0450A3A9291188C900E4C60E /* CardsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3A8291188C900E4C60E /* CardsVc.swift */; };
-		0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */; };
 		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
 		045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C9DFC2974032C00AE2C97 /* TopicData.swift */; };
 		048CCF1C29A95E2B00AFCF73 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */; };
@@ -230,8 +228,6 @@
 		042AF1DD29A97ACA0073908C /* 睡觉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "睡觉.mp3"; sourceTree = "<group>"; };
 		042E437229649B35007EBBCA /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
 		042E437429649DC4007EBBCA /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		0450A3A8291188C900E4C60E /* CardsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVc.swift; sourceTree = "<group>"; };
-		0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILaunchScreenView.swift; sourceTree = "<group>"; };
 		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
 		045C9DFC2974032C00AE2C97 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
 		048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爸爸.mp3"; sourceTree = "<group>"; };
@@ -370,21 +366,11 @@
 		041113A1286DE11E008B5DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				04873C2129BD236E00D71610 /* SwiftUIScreens */,
 				0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */,
 				04111395286B17F0008B5DD9 /* MainMenuViewController.swift */,
 				0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		04873C2129BD236E00D71610 /* SwiftUIScreens */ = {
-			isa = PBXGroup;
-			children = (
-				0450A3A8291188C900E4C60E /* CardsVc.swift */,
-				0450A3AA2912BC5100E4C60E /* SwiftUILaunchScreenView.swift */,
-			);
-			path = SwiftUIScreens;
 			sourceTree = "<group>";
 		};
 		048CCF6729A964B300AFCF73 /* sounds */ = {
@@ -571,8 +557,8 @@
 				04C58C9C288987FF004DFA47 /* Cells */,
 				041113A1286DE11E008B5DD9 /* ViewControllers */,
 				04AFC1CF2867705A00A3FC68 /* Main.storyboard */,
-				045C7EB42969A09C00732746 /* graduationcap@2x.png */,
 				04AFC1D22867705B00A3FC68 /* Assets.xcassets */,
+				045C7EB42969A09C00732746 /* graduationcap@2x.png */,
 				042E437229649B35007EBBCA /* note.png */,
 				04AFC1D42867705B00A3FC68 /* LaunchScreen.storyboard */,
 				04AFC1D72867705B00A3FC68 /* Info.plist */,
@@ -829,7 +815,6 @@
 				04FF527B2875A59A00FE2F65 /* Character.swift in Sources */,
 				045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */,
 				041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */,
-				0450A3AB2912BC5100E4C60E /* SwiftUILaunchScreenView.swift in Sources */,
 				04111396286B17F0008B5DD9 /* MainMenuViewController.swift in Sources */,
 				04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */,
 				0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */,
@@ -838,7 +823,6 @@
 				04AFC1CC2867705A00A3FC68 /* SceneDelegate.swift in Sources */,
 				04C58C9F2889A361004DFA47 /* CharacterData.swift in Sources */,
 				0411139A286B6647008B5DD9 /* MenuItem.swift in Sources */,
-				0450A3A9291188C900E4C60E /* CardsVc.swift in Sources */,
 				0411139E286CA89B008B5DD9 /* CardsDeckCollectionVC.swift in Sources */,
 				0498A32C296F47E3003D5082 /* TopicViewcontrollerViewController.swift in Sources */,
 			);

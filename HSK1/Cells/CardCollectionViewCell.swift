@@ -20,6 +20,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var playButton: UIButton!
     
     
+    
     var player: AVAudioPlayer?
     var character: Character?
     
@@ -39,10 +40,12 @@ class CardCollectionViewCell: UICollectionViewCell {
        
         self.detailView.layer.cornerRadius = 5
         self.PingYingLabel.text = character.pingYing
-        
-        
+        self.PingYingLabel.isHidden = true
         self.detailTranslationLabel.layer.cornerRadius = 0
         self.detailTranslationLabel.text = character.translation
+        self.detailTranslationLabel.isHidden = true
+     
+        
         
         self.playButton.layer.borderWidth = 0.5
         self.playButton.layer.borderColor = UIColor.white.cgColor
@@ -58,18 +61,28 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBAction func playButtonAction(_ sender: Any) {
     
         UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState) {
-            
         self.playButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             
         } completion: { bool in
             UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
-            
                 self.playButton.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }, completion: nil)
-            
+            }) { bool in
+                UIView.animate(withDuration: 0.2, animations:  {
+                    self.PingYingLabel.isHidden = false
+                }) { bool in
+                    UIView.animate(withDuration: 0.2, delay: 2.0) {
+                        self.PingYingLabel.isHidden = true
+                    }
+                }
+            }
         }
         playsound(name: character?.name ?? "")
     }
+    
+    @IBAction func showTranslationButtonAction(_ sender: Any) {
+        self.detailTranslationLabel.isHidden = false
+    }
+    
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
     }
