@@ -107,7 +107,7 @@ class CardCollectionViewCell: UICollectionViewCell {
                 self.exampleTranslationLabel.first?.isHidden = false
                 
             }) { bool in
-                UIView.animate(withDuration: 0.4, delay: 3.0) {
+                UIView.animate(withDuration: 0.2, delay: 3.0) {
                     self.examplePingYingLabels.first?.isHidden = true
                     self.exampleTranslationLabel.first?.isHidden = true
                 }
@@ -119,7 +119,7 @@ class CardCollectionViewCell: UICollectionViewCell {
                 self.exampleTranslationLabel[1].isHidden = false
                 
             }) { bool in
-                UIView.animate(withDuration: 0.4, delay: 3.0) {
+                UIView.animate(withDuration: 0.2, delay: 3.0) {
                     self.examplePingYingLabels[1].isHidden = true
                     self.exampleTranslationLabel[1].isHidden = true
                 }
@@ -131,7 +131,7 @@ class CardCollectionViewCell: UICollectionViewCell {
                 self.exampleTranslationLabel.last?.isHidden = false
                 
             }) { bool in
-                UIView.animate(withDuration: 0.4, delay: 3.0) {
+                UIView.animate(withDuration: 0.2, delay: 3.0) {
                     self.examplePingYingLabels.last?.isHidden = true
                     self.exampleTranslationLabel.last?.isHidden = true
                 }
@@ -141,10 +141,6 @@ class CardCollectionViewCell: UICollectionViewCell {
         
         
     }
-    
-
-    
-     
     
     func flipCard() {
         UIView.transition(from: characterView, to: detailView, duration: 0.5, options: [.transitionFlipFromLeft,.showHideTransitionViews], completion: nil)
