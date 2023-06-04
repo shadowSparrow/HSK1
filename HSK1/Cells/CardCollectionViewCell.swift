@@ -20,6 +20,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var exampleLabels: [UIButton]!
     @IBOutlet var examplePingYingLabels: [UILabel]!
+    @IBOutlet var exampleTranslationLabel: [UILabel]!
     
     var player: AVAudioPlayer?
     var character: Character?
@@ -60,6 +61,10 @@ class CardCollectionViewCell: UICollectionViewCell {
             label.isHidden = true
         }
         
+        for label in exampleTranslationLabel {
+            label.isHidden = true
+        }
+        
         if character.isFlipped == true {
             UIView.transition(from: characterView, to: detailView, duration: 0, options: [.transitionFlipFromRight,.showHideTransitionViews], completion: nil)
              }
@@ -96,32 +101,39 @@ class CardCollectionViewCell: UICollectionViewCell {
         guard let tag = (sender as? UIButton)?.tag else {return}
         
         if tag == 1 {
-            UIView.animate(withDuration: 0.2, animations:  {
+            UIView.animate(withDuration: 0.3, animations:  {
                 self.examplePingYingLabels.first?.isHidden = false
                 
+                self.exampleTranslationLabel.first?.isHidden = false
+                
             }) { bool in
-                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                UIView.animate(withDuration: 0.4, delay: 3.0) {
                     self.examplePingYingLabels.first?.isHidden = true
+                    self.exampleTranslationLabel.first?.isHidden = true
                 }
             }
 
         } else if tag == 2 {
-            UIView.animate(withDuration: 0.2, animations:  {
+            UIView.animate(withDuration: 0.3, animations:  {
                 self.examplePingYingLabels[1].isHidden = false
+                self.exampleTranslationLabel[1].isHidden = false
                 
             }) { bool in
-                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                UIView.animate(withDuration: 0.4, delay: 3.0) {
                     self.examplePingYingLabels[1].isHidden = true
+                    self.exampleTranslationLabel[1].isHidden = true
                 }
             }
 
         } else if tag == 3 {
-            UIView.animate(withDuration: 0.2, animations:  {
+            UIView.animate(withDuration: 0.3, animations:  {
                 self.examplePingYingLabels.last?.isHidden = false
+                self.exampleTranslationLabel.last?.isHidden = false
                 
             }) { bool in
-                UIView.animate(withDuration: 0.2, delay: 2.0) {
+                UIView.animate(withDuration: 0.4, delay: 3.0) {
                     self.examplePingYingLabels.last?.isHidden = true
+                    self.exampleTranslationLabel.last?.isHidden = true
                 }
             }
         }
