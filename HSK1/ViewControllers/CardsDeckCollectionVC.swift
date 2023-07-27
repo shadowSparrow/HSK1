@@ -16,15 +16,16 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     var currentPage: Int = 0
     var characters: [Character] = []
-    
+    var text: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = text
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        pageControl.numberOfPages = characters.count
+        //pageControl.numberOfPages = characters.count
     }
     
     // MARK: UICollectionViewDataSource

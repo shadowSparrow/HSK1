@@ -100,7 +100,7 @@ extension TopicViewcontrollerViewController {
             
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let lernVC = storyboard.instantiateViewController(withIdentifier: "learnVC") as! CardsDeckCollectionVC
-            
+            lernVC.text = cell.cellLabel.text
             switch cell.cellLabel.text {
             case Topics.Family.rawValue:
                 lernVC.characters = Character.getCharacters(charactersData: DataManager.shared.familyCharacters)

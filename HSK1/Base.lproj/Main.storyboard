@@ -464,15 +464,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="ao5-hc-jJy">
                         <nil key="title"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="y6X-IO-6qr">
-                            <rect key="frame" x="129.66666666666666" y="9" width="115.66666666666666" height="26"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
-                        </pageControl>
                     </navigationItem>
-                    <connections>
-                        <outlet property="pageControl" destination="y6X-IO-6qr" id="Hyr-EX-lyy"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSh-oC-kti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -554,7 +546,7 @@
                             <constraint firstItem="Ucw-hh-oqI" firstAttribute="bottom" secondItem="VKl-U2-Ggb" secondAttribute="bottom" id="uTR-RU-wGU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uWf-nA-wgK"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="uWf-nA-wgK"/>
                     <connections>
                         <outlet property="topicCollectionView" destination="VKl-U2-Ggb" id="oBr-jd-7Rj"/>
                         <segue destination="ha5-Wf-Okz" kind="show" identifier="learnSegue" id="6WS-z1-cuo"/>
@@ -578,13 +570,14 @@
                             <color key="textColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="0.031850870698690414" green="0.04619983583688736" blue="0.016882719472050667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
-                        <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="shadowColor" red="0.031850870698690414" green="0.04619983583688736" blue="0.016882719472050667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
                         </navigationBarAppearance>
-                        <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
