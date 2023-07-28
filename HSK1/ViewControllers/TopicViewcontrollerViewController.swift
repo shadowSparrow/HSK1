@@ -12,8 +12,11 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
     
     private let topics = Topic.getTopics()
     
+    var text: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = text
         topicCollectionView.dataSource = self
         topicCollectionView.delegate = self
     }

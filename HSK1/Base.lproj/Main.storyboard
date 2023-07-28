@@ -470,7 +470,7 @@
             </objects>
             <point key="canvasLocation" x="3376.8000000000002" y="94.581280788177338"/>
         </scene>
-        <!--Topic Viewcontroller View Controller-->
+        <!--Cell-->
         <scene sceneID="DMV-Er-7kK">
             <objects>
                 <viewController storyboardIdentifier="topicVC" id="Qvq-Hp-u4h" customClass="TopicViewcontrollerViewController" customModule="HSK1" customModuleProvider="target" sceneMemberID="viewController">
@@ -546,7 +546,7 @@
                             <constraint firstItem="Ucw-hh-oqI" firstAttribute="bottom" secondItem="VKl-U2-Ggb" secondAttribute="bottom" id="uTR-RU-wGU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="uWf-nA-wgK"/>
+                    <navigationItem key="navigationItem" title="Cell" largeTitleDisplayMode="never" id="uWf-nA-wgK"/>
                     <connections>
                         <outlet property="topicCollectionView" destination="VKl-U2-Ggb" id="oBr-jd-7Rj"/>
                         <segue destination="ha5-Wf-Okz" kind="show" identifier="learnSegue" id="6WS-z1-cuo"/>
@@ -564,20 +564,18 @@
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="Ao5-3K-VZQ">
                         <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.031850870698690414" green="0.04619983583688736" blue="0.016882719472050667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="0.031850870698690414" green="0.04619983583688736" blue="0.016882719472050667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
-                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular">
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="shadowColor" red="0.031850870698690414" green="0.04619983583688736" blue="0.016882719472050667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <textAttributes key="titleTextAttributes">
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>
                         </navigationBarAppearance>
-                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

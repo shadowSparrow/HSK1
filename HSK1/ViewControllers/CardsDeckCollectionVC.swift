@@ -20,12 +20,10 @@ class CardsDeckCollectionVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = text
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //pageControl.numberOfPages = characters.count
     }
     
     // MARK: UICollectionViewDataSource
@@ -66,13 +64,17 @@ class CardsDeckCollectionVC: UICollectionViewController {
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let windth = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / windth)
-        pageControl.currentPage = currentPage
+        //pageControl.currentPage = currentPage
     }
 }
 
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height - 150)
+        
+        let windth = collectionView.frame.width
+        let height = UIScreen.main.bounds.height-150
+        
+        return CGSize(width: windth, height: height)
     }
 }
 

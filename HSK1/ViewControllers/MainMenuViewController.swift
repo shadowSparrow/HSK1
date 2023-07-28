@@ -88,7 +88,12 @@ extension MainMenuViewController {
             cell.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             cell.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
         }) { bool in
-                self.performSegue(withIdentifier: "topicSegue", sender: nil)
+            
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let topicVC = storyboard.instantiateViewController(withIdentifier: "topicVC") as! TopicViewcontrollerViewController
+            topicVC.text = cell.cellLabel.text
+            self.show(topicVC, sender: nil)
+                
             }
         }
 }
