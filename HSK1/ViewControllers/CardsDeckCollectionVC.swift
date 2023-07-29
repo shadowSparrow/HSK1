@@ -64,16 +64,13 @@ class CardsDeckCollectionVC: UICollectionViewController {
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let windth = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / windth)
-        //pageControl.currentPage = currentPage
     }
 }
 
 extension CardsDeckCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let windth = collectionView.frame.width
         let height = UIScreen.main.bounds.height-150
-        
         return CGSize(width: windth, height: height)
     }
 }
