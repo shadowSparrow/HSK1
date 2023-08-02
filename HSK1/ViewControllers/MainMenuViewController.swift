@@ -77,7 +77,7 @@ extension MainMenuViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         let item = menuItems[indexPath.row]
         
-        cell.setCell(image: UIImage(named: item.imageName)!, label: item.labelText)
+        cell.setCell(image: UIImage(named: item.imageName) ?? UIImage(), label: item.labelText)
         return cell
     }
     // MARK: UICollectionViewDelegate

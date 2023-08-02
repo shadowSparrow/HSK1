@@ -91,7 +91,7 @@ extension TopicViewcontrollerViewController {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! TopicCellCollectionViewCell
-        cell.setCell(image: UIImage(named:topics[indexPath.row].rawValue)!, label: topics[indexPath.row].rawValue)
+        cell.setCell(image: UIImage(named:topics[indexPath.row].rawValue) ?? UIImage(), label: topics[indexPath.row].rawValue)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

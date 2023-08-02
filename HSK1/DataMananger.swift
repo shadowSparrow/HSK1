@@ -11,11 +11,10 @@ enum Topics: String {
     case Family, Travel, Education, Objects, Food, Persons, Count, Numbers,Time, Locations, Adjectives, Phrazes, Actions, Particles
 }
 
-
 class DataManager {
     static let shared = DataManager()
     
-    var imageNames = ["graduationcap","brain", "gamecontroller"]
+    var imageNames = ["Education","brain", "gamecontroller"]
     var labelNames = ["Cards","Exercises","Games"]
     
 

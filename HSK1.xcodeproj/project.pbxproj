@@ -54,10 +54,8 @@
 		042AF1E729A97ACA0073908C /* 医院.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DB29A97ACA0073908C /* 医院.mp3 */; };
 		042AF1E829A97ACA0073908C /* 的.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DC29A97ACA0073908C /* 的.mp3 */; };
 		042AF1E929A97ACA0073908C /* 睡觉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042AF1DD29A97ACA0073908C /* 睡觉.mp3 */; };
-		042E437329649B35007EBBCA /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437229649B35007EBBCA /* note.png */; };
-		042E437529649DC4007EBBCA /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 042E437429649DC4007EBBCA /* play.png */; };
-		045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C7EB42969A09C00732746 /* graduationcap@2x.png */; };
 		045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C9DFC2974032C00AE2C97 /* TopicData.swift */; };
+		046EB81B2A7AC94100D37599 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EB81A2A7AC94100D37599 /* TabBarViewController.swift */; };
 		048CCF1C29A95E2B00AFCF73 /* 爸爸.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */; };
 		048CCF2029A95EB500AFCF73 /* 人.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF1F29A95EB500AFCF73 /* 人.mp3 */; };
 		048CCF2929A95F1200AFCF73 /* 妈妈.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048CCF2129A95F1100AFCF73 /* 妈妈.mp3 */; };
@@ -226,10 +224,8 @@
 		042AF1DB29A97ACA0073908C /* 医院.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "医院.mp3"; sourceTree = "<group>"; };
 		042AF1DC29A97ACA0073908C /* 的.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "的.mp3"; sourceTree = "<group>"; };
 		042AF1DD29A97ACA0073908C /* 睡觉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "睡觉.mp3"; sourceTree = "<group>"; };
-		042E437229649B35007EBBCA /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
-		042E437429649DC4007EBBCA /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		045C7EB42969A09C00732746 /* graduationcap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graduationcap@2x.png"; sourceTree = "<group>"; };
 		045C9DFC2974032C00AE2C97 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
+		046EB81A2A7AC94100D37599 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		048CCF1129A95E2B00AFCF73 /* 爸爸.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爸爸.mp3"; sourceTree = "<group>"; };
 		048CCF1F29A95EB500AFCF73 /* 人.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "人.mp3"; sourceTree = "<group>"; };
 		048CCF2129A95F1100AFCF73 /* 妈妈.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "妈妈.mp3"; sourceTree = "<group>"; };
@@ -366,8 +362,9 @@
 		041113A1286DE11E008B5DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */,
+				046EB81A2A7AC94100D37599 /* TabBarViewController.swift */,
 				04111395286B17F0008B5DD9 /* MainMenuViewController.swift */,
+				0498A32B296F47E3003D5082 /* TopicViewcontrollerViewController.swift */,
 				0411139D286CA89B008B5DD9 /* CardsDeckCollectionVC.swift */,
 			);
 			path = ViewControllers;
@@ -558,11 +555,8 @@
 				041113A1286DE11E008B5DD9 /* ViewControllers */,
 				04AFC1CF2867705A00A3FC68 /* Main.storyboard */,
 				04AFC1D22867705B00A3FC68 /* Assets.xcassets */,
-				045C7EB42969A09C00732746 /* graduationcap@2x.png */,
-				042E437229649B35007EBBCA /* note.png */,
 				04AFC1D42867705B00A3FC68 /* LaunchScreen.storyboard */,
 				04AFC1D72867705B00A3FC68 /* Info.plist */,
-				042E437429649DC4007EBBCA /* play.png */,
 			);
 			path = HSK1;
 			sourceTree = "<group>";
@@ -726,7 +720,6 @@
 				048CCFDF29A96FF900AFCF73 /* 分钟.mp3 in Resources */,
 				042AF1B029A978A20073908C /* 认识.mp3 in Resources */,
 				042AF1E629A97ACA0073908C /* 本.mp3 in Resources */,
-				042E437529649DC4007EBBCA /* play.png in Resources */,
 				042AF1CA29A978FD0073908C /* 再见.mp3 in Resources */,
 				042AF1AE29A978A20073908C /* 会.mp3 in Resources */,
 				048CD01229A9754800AFCF73 /* 哪.mp3 in Resources */,
@@ -791,13 +784,11 @@
 				048CCFA329A96A8D00AFCF73 /* 那.mp3 in Resources */,
 				048CCFB929A96E3100AFCF73 /* 些.mp3 in Resources */,
 				048CCF7529A9662500AFCF73 /* 苹果.mp3 in Resources */,
-				042E437329649B35007EBBCA /* note.png in Resources */,
 				048CCF4929A9622100AFCF73 /* 商店.mp3 in Resources */,
 				042AF1E829A97ACA0073908C /* 的.mp3 in Resources */,
 				042AF1C829A978FD0073908C /* 喂.mp3 in Resources */,
 				048CCFE929A96FF900AFCF73 /* 里.mp3 in Resources */,
 				042AF1B729A978A20073908C /* 请.mp3 in Resources */,
-				045C7EB52969A09C00732746 /* graduationcap@2x.png in Resources */,
 				048CD01529A9754800AFCF73 /* 高兴.mp3 in Resources */,
 				048CCF8729A9682B00AFCF73 /* 字.mp3 in Resources */,
 				04C58C9A288987AA004DFA47 /* 爱.mp3 in Resources */,
@@ -816,6 +807,7 @@
 				045C9DFD2974032C00AE2C97 /* TopicData.swift in Sources */,
 				041113A0286DD0C0008B5DD9 /* CardCollectionViewCell.swift in Sources */,
 				04111396286B17F0008B5DD9 /* MainMenuViewController.swift in Sources */,
+				046EB81B2A7AC94100D37599 /* TabBarViewController.swift in Sources */,
 				04AFC1CA2867705A00A3FC68 /* AppDelegate.swift in Sources */,
 				0411139C286C9430008B5DD9 /* DataMananger.swift in Sources */,
 				041B4A742970C6D500607643 /* TopicCellCollectionViewCell.swift in Sources */,
