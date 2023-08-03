@@ -24,6 +24,7 @@ class TopicViewcontrollerViewController: UIViewController, UICollectionViewDeleg
         showLayout()
     }
     override func viewDidAppear(_ animated: Bool) {
+        //tabBarController?.tabBar.isHidden = true
        showLayout()
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -139,7 +140,6 @@ extension TopicViewcontrollerViewController {
             self.show(lernVC, sender: nil)
              }
     }
-    
     private func getTopicsGards(label: UILabel) {
     }
 }

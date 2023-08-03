@@ -9,19 +9,55 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
-    let menuItem = UITabBarItem(title: "Learn", image: UIImage(named: "brain"), tag: 1)
-    let profileItem = UITabBarItem(title: "Profile", image: UIImage(named: "Persons"), tag: 2)
-    let settingsItem = UITabBarItem(title: "Settings", image: UIImage(named: "Particles"), tag: 3)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       setItems()
+        
+    
+      // setItems()
         
     }
     
-    private func setItems() {
-    let items = [menuItem, profileItem, settingsItem]
-        self.tabBar.setItems(items, animated: true)
+    private func setItems() -> UIViewController {
+        let controller = UINavigationController(rootViewController: MainMenuViewController())
+        controller.tabBarItem = UITabBarItem(title: "learn", image: UIImage(named: "brain"), tag: 1)
+        
+        return controller
     }
     
 }
+
+
+/*
+ class TabBarViewController: UITabBarController {
+   
+     override func viewDidLoad() {
+         super.viewDidLoad()
+     }
+     
+     override func viewDidAppear(_ animated: Bool) {
+         //Прописать в ручную на занятии
+         let controllers: [UINavigationController] = Tabs.allCases.map { tab in
+             let controller = UINavigationController(rootViewController: setController(for: tab))
+             controller.tabBarItem = UITabBarItem(title: Tabs.rawSting(tab: tab),
+                                                  image: UIImage(systemName: elemensNames.tabBarIconName),
+                                                  tag: tab.rawValue)
+             return controller
+         }
+         setViewControllers(controllers, animated: false)
+     }
+     
+     private func setController(for tab: Tabs) -> UIViewController {
+         switch tab {
+         case .income:
+             return IncomeViewController()
+         case .chart:
+             return ChartViewController()
+         case .expenses:
+             return ExpenseViewController()
+         }
+     }
+     
+ }
+ */
